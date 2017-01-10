@@ -58,6 +58,21 @@ DashboardAsset::register($this);
           <?php endif ?>
         </div>
       </div>
+    </div>
+
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-10 col-md-offset-2">
+                <?php if (Yii::$app->session->hasFlash('danger')): ?>
+                    <div class="alert alert-danger alert-dismissable">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                            <h4><i class="icon fa fa-check"></i>Saved!</h4>
+                        <?= Yii::$app->session->getFlash('danger') ?>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div> 
         <?= $content ?>
     </div>
         

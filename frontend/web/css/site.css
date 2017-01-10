@@ -30,10 +30,13 @@ input[type=text]:focus{
 }
 
 
-.alert {
+.alert-success {
   height: 80px;
-  text-align: center;
   background-color: #42B996;
+}
+.alert-danger {
+  height: 80px;
+  background-color: #E63838;
 }
 #map {
   height: 50%;

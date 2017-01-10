@@ -7,6 +7,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
 use yii;
 
 class DashboardController extends Controller
@@ -40,13 +41,7 @@ class DashboardController extends Controller
 
         if (!isset($setPassword))
         {
-            // gebruiker heeft nog geen password
-
-            $model = new User();
-
-                return $this->renderAjax('/user/_password', ['model' => $model]);
-        } else {
-            return $this->render('contest');
+            Yii::$app->session->setFlash('danger', "Je hebt nog geen wachtwoord ingesteld.");
         }
 
         $this->layout = 'dashboard/main';
