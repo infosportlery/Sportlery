@@ -8,7 +8,7 @@ return [
             'password' => 'n734snt6',
             'charset' => 'utf8',
         ],
-        'gzdb' => [
+        'manage' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=vserver175.axc.nl;dbname=folkewi175_testn',
             'username' => 'folkewi175',
