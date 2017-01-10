@@ -12,9 +12,10 @@ class SportclubsAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
         'css/partner.css',
         'css/social.css',
+        'css/cosmo.css',
+        'css/site.css'
     ];
     public $js = [
         'js/main.js',
