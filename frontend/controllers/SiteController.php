@@ -113,8 +113,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-      $paid = Yii::$app->gzdb->createCommand("SELECT * from `time_gz_time_slot_users`")->queryAll();
-      $sport = Yii::$app->gzdb->createCommand("SELECT * from `time_gz_time_slot_type`")->queryAll();
+      $paid = Yii::$app->manage->createCommand("SELECT * from `time_gz_time_slot_users`")->queryAll();
+      $sport = Yii::$app->manage->createCommand("SELECT * from `time_gz_time_slot_type`")->queryAll();
 
 
       $mailing = new Mailing();
