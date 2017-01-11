@@ -46,7 +46,7 @@ class Location extends \yii\db\ActiveRecord
             [['description'], 'string'],
             [['type'], 'integer'],
             [['name', 'city'], 'string', 'max' => 40],
-            [['price'], 'string', 'max' => 10],
+            [['price'], 'string', 'max' => 20],
             [['avatar'], 'string', 'max' => 200],
             [['file'], 'file'],
             [['zipcode'], 'string', 'max' => 7],
