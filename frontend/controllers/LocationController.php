@@ -96,21 +96,19 @@ class LocationController extends Controller
 
             if ($model->load(Yii::$app->request->post())) {
 
-                if(!empty($model->file))
-                {
+                $imageName = self::generateImageName();
 
-                    $imageName = $model->name;
+                // get the instance of the uploaded file
+                $model->file = UploadedFile::getInstance($model, 'file');
+                $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
 
-                    // get the instance of the uploaded file
-                    $model->file = UploadedFile::getInstance($model, 'file');
-                    $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+                // save the path in db
+                $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
 
-                    // save the path in db
-                    $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
-                    $model->save();
-                }
+                $model->save();
 
                 return $this->redirect(['view', 'id' => $model->id]);
+
             } else {
                 $this->layout = "dashboard/main";
                 return $this->render('create', [
