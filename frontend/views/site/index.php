@@ -5,6 +5,7 @@
   use yii\widgets\ActiveForm;
   use yii\helpers\Url;
 
+
 ?>
 <div class="header">
   <div class="container">
@@ -30,7 +31,7 @@
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-12 hidden-xs text-center">
-      <h3>Word nu <b>gratis</b> lid van onze community:</h3>
+      <h3>Word nu <b>gratis</b> lid van onze community: </h3>
       </div> <!-- end col -->
     </div>
 
