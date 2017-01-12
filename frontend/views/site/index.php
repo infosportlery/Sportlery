@@ -17,17 +17,23 @@
     </div>
     <hr class="hr-invisible-sm">
     <div class="row">
-      <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
         <?php echo $this->render('@app/views/location/_globalsearch', array('model'=>$searchModel)); ?>
       </div> <!-- end col -->
     </div>
-    <hr class="hr-invisible">
+    <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-12 hidden-xs text-center">
       <h3><b>Zoek jouw sport, vind een Sportbuddy, boek een sportlocatie en speel!</b></h3>
       </div> <!-- end col -->
     </div>
-    <hr class="hr-invisible">
+    <hr class="hr-invisible-sm">
+    <div class="row">
+      <div class="col-md-12 hidden-xs text-center">
+      <h3>Word nu <b>gratis</b> lid van onze community:</h3>
+      </div> <!-- end col -->
+    </div>
+
     <div class="row">
       <div class="col-md-12 text-center">
          <?= Html::a('Create BETA account', [Url::to('site/signup')], ['class' => 'btn btn-primary btn-lg']); ?>
