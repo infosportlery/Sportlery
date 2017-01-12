@@ -42,7 +42,8 @@ class User extends ActiveRecord implements IdentityInterface
 
         $user = new User();
 
-        $id = $service->getServiceName().'-'.$service->getId();
+        $id = self::generateId();
+
         $attributes = [
             'id' => $id,
             'username' => $service->getAttribute('name'),
@@ -64,7 +65,7 @@ class User extends ActiveRecord implements IdentityInterface
         if(!$exists) {
 
             // true, email doesnt exists. Register user.
-
+            $user->id = $service->getAttribute('id');
             $user->username = $service->getAttribute('first_name');
             $user->firstname = $service->getAttribute('first_name');
             $user->lastname = $service->getAttribute('last_name');
@@ -105,9 +106,8 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            ['new_password', 'required'],
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            [['username', 'firstname', 'lastname', 'email', 'favorite_sport', 'favorite_athlete', 'birthday', 'gender'], 'string'],
+            [['username', 'firstname', 'lastname', 'email', 'new_password', 'favorite_sport', 'favorite_athlete', 'birthday', 'gender'], 'string'],
             [['avatar'], 'string', 'max' => 200],
             ['new_password', 'string', 'min' => 6],
             [['file'], 'file'],
@@ -191,6 +191,12 @@ class User extends ActiveRecord implements IdentityInterface
         return $this->getPrimaryKey();
     }
 
+    public function getUserId()
+    {
+        $userId = 1;
+        return $userId;
+    }
+
     /**
      * @inheritdoc
      */
@@ -254,7 +260,7 @@ class User extends ActiveRecord implements IdentityInterface
 
     public function getAvatarUrl()
     {
-        if (!file_exists($this->avatar)) {
+        if (empty($this->avatar)) {
             return Yii::$app->request->BaseUrl.'/uploads/default.jpg';
         } else {
             return Yii::$app->request->BaseUrl.'/'.$this->avatar;
@@ -263,5 +269,32 @@ class User extends ActiveRecord implements IdentityInterface
 
     public function updatePassword($new_password) {
         $this->password_hash = Yii::$app->security->generatePasswordHash($new_password);
-      }
+    }
+
+    public function generateImageName()
+    {
+        $avatarName = Yii::$app->security->generateRandomString();
+
+        return $avatarName;
+    }
+    public function generateId()
+    {
+        $id = Yii::$app->security->generateRandomString();
+
+        return $id;
+    }
+
+    public function saveAvatar()
+    {
+        $imageName = self::generateImageName();
+
+        // get the instance of the uploaded file
+        $model->file = UploadedFile::getInstance($model, 'file');
+        $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+
+        // save the path in db
+        $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
+
+        $model->save();
+    }
 }
