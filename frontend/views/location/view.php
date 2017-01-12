@@ -19,12 +19,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="profile_avatar">
-                        <?php if(empty($model->avatar)): ?>
-                          <img class="img-thumbnail img-avatar" src="<?= $model->avatar ?>">
-                        <?php else : ?>
-                          <img class="img-thumbnail img-avatar" src="<?= Yii::$app->request->BaseUrl.'/uploads/default.jpg'; ?>">
-                        <?php endif ?>
+                    <div class="profile_avatar img-thumbnail">
+                        <?php echo Html::img($model->avatarurl); ?>
                     </div>
                 </div>
 
@@ -54,12 +50,14 @@ $this->params['breadcrumbs'][] = $this->title;
                     <h3 class="panel-title">Informatie</h3>
                 </div>
                 <div class="panel-body">
+
                     <li><b>Naam</b>: <?= $model->name; ?></li>
                     <li><b>Straat</b>: <?= $model->street; ?></li>
                     <li><b>Postcode</b>: <?= $model->zipcode; ?></li>
                     <li><b>Stad</b>: <?= $model->city; ?></li>
                     <li><b>Prijs</b>: <?= $model->price; ?></li>
-                    <li><b>Category</b>: <?= $model->category_id ; ?></li>
+                    <li><b>Prijs</b>: <?= $model->type; ?></li>
+                    <li><b>Category</b>: <?= $model->category_id; ?></li>
                     <hr>
                     <p><b>Beschrijving</b>:<br> <?= $model->description; ?></p>
 
@@ -167,20 +165,4 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
     </div>  -->
-
-       <?= DetailView::widget([
-            'model' => $model,
-            'attributes' => [
-                //'id',
-                'name',
-                'street',
-                'zipcode',
-                'category',
-                'description:ntext',
-                'price',
-                //'avatar',
-                'city',
-                //'type',
-            ],
-        ]) ?> 
 </div>

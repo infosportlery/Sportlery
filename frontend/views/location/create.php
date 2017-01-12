@@ -12,31 +12,29 @@ $this->params['breadcrumbs'][] = ['label' => 'Dashboard', 'url' => ['dashboard/i
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
- 	<h1 class="page-header"><i class="fa fa-cog"></i> <?= $this->title; ?></h1>
+<h1 class="page-header"><i class="fa fa-cog"></i> <?= $this->title; ?></h1>
 
- 	<?php 
-        echo Breadcrumbs::widget([
-            'homeLink' => [ 
-                'label' => Yii::t('yii', 'Home'),
-                'url' => Yii::$app->homeUrl,
-            ],
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]);
-    ?>
+<?php 
+echo Breadcrumbs::widget([
+    'homeLink' => [ 
+        'label' => Yii::t('yii', 'Home'),
+        'url' => Yii::$app->homeUrl,
+    ],
+    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+]);
+?>
 
- 	<div class="row">
-	 	<div class="col-md-6">
-		 	<div class="panel panel-default">
-		        <div class="panel-heading">
-		            <h3 class="panel-title">Persoonlijke Informatie</h3>
-		        </div>
-		        <div class="panel-body">
-		           <?= $this->render('_form', [
-				        'model' => $model,
-				    ]) ?>
-		        </div>
-		    </div>
-		</div>
-	</div>
+<div class="row">
+	<div class="col-md-6">
+ 	<div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Persoonlijke Informatie</h3>
+        </div>
+        <div class="panel-body">
+           <?= $this->render('_form', [
+		        'model' => $model,
+		    ]) ?>
+        </div>
+    </div>
+</div>
 </div>

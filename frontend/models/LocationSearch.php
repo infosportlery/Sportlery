@@ -67,18 +67,26 @@ class LocationSearch extends Location
             ->orFilterWhere(['like', 'category', $this->globalSearch])
             ->orFilterWhere(['like', 'city', $this->globalSearch]);
 
-        $query->orFilterWhere(['like', 'name', $this->name])
-            ->orFilterWhere(['like', 'city', $this->city])
-            ->orFilterWhere(['like', 'category', $this->category])
-            ->orFilterWhere(['like', 'type', $this->type]);
 
         return $dataProvider;
+    }
+
+    public function publicSearch()
+    {
+
+        $query = Location::find()->where(['type' => 0]);
+
+        $publicProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+
+        return $publicProvider;
     }
 
     public function paidSearch()
     {
 
-        $query = PaidLocation::find();
+        $query = Location::find()->where(['type' => 1]);
 
         $paidProvider = new ActiveDataProvider([
             'query' => $query,
@@ -86,4 +94,5 @@ class LocationSearch extends Location
 
         return $paidProvider;
     }
+
 }

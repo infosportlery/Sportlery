@@ -43,12 +43,14 @@ class LocationController extends Controller
     {
         $searchModel = new LocationSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $publicProvider = $searchModel->publicSearch(Yii::$app->request->queryParams);
         $paidProvider = $searchModel->paidSearch(Yii::$app->request->queryParams);
         
         $this->layout = "default";
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'publicProvider' => $publicProvider,
             'paidProvider' => $paidProvider,
         ]);
     }
@@ -105,9 +107,8 @@ class LocationController extends Controller
 
                     // save the path in db
                     $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
-                    
+                    $model->save();
                 }
-                $model->save();
 
                 return $this->redirect(['view', 'id' => $model->id]);
             } else {
@@ -135,7 +136,7 @@ class LocationController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
     
-            $imageName = $model->name;
+            $imageName = self::generateImageName();
 
             // get the instance of the uploaded file
             $model->file = UploadedFile::getInstance($model, 'file');
@@ -181,5 +182,12 @@ class LocationController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function generateImageName()
+    {
+        $avatarName = Yii::$app->security->generateRandomString();
+
+        return $avatarName;
     }
 }

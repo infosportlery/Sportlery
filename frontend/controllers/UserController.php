@@ -7,7 +7,6 @@ use common\models\User;
 use common\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\web\UploadedFile;
 use yii\filters\VerbFilter;
 
 /**
@@ -27,11 +26,6 @@ class UserController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
-             'eauth' => [
-                        // required to disable csrf validation on OpenID requests
-                        'class' => \nodge\eauth\openid\ControllerBehavior::className(),
-                        'only' => ['login'],
-                    ],
         ];
     }
 
@@ -57,8 +51,15 @@ class UserController extends Controller
      */
     public function actionView($id)
     {
+        $user = Yii::$app->getUser()->getIdentity();
+
+        $avatar = User::generateAvatarName();
+
+
         return $this->render('view', [
             'model' => $this->findModel($id),
+            'user' => $user,
+            'avatar' => $avatar,
         ]);
     }
 
@@ -90,26 +91,33 @@ class UserController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post())) {
-
-            if(!empty($model->file))
-                {
-
-                    $imageName = $model->name;
-
-                    // get the instance of the uploaded file
-                    $model->file = UploadedFile::getInstance($model, 'file');
-                    $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
-
-                    // save the path in db
-                    $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
-                    
-                }
-                $model->save(); 
-
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            $this->layout = "dashboard/main";
-            return $this->render('update', [
+            
+            if(Yii::$app->request->isAjax)
+            {
+                return $this->renderAjax('/user/_form', [
+                    'model' => $model,
+                ]);
+            } else {
+                $this->layout = "dashboard/main";
+                return $this->render('update', [
+                    'model' => $model,
+                ]); 
+            }
+
+        }
+    }
+
+    public function actionEditavatar($id)
+    {
+        $model = $this->findModel($id);
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            return $this->renderAjax('editavatar', [
                 'model' => $model,
             ]);
         }
@@ -143,4 +151,6 @@ class UserController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+
 }
