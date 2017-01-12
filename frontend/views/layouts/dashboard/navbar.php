@@ -12,7 +12,9 @@ use yii\bootstrap\NavBar;
         'innerContainerOptions' => ['class' => 'container-fluid'],
     ]);
         $menuItems = [
-            ['label' => 'Locaties', 'url' => ['/location/index']],
+            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
+            ['label' => 'Matchmaking', 'url' => ['/matchmaking/index']],
+            ['label' => 'Coming Soon', 'url' => ['/site/comingsoon']],
         ];
 
     if (Yii::$app->user->isGuest) {

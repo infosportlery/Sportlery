@@ -18,6 +18,7 @@ class DashboardAsset extends AssetBundle
     ];
     public $js = [
         'js/main.js',
+        'js/modal.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

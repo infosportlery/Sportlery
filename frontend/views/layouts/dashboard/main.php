@@ -39,14 +39,20 @@ DashboardAsset::register($this);
           <div class="row text-center">
             <img src="<?= Yii::$app->user->identity->avatar ?>" class="avatar img-circle"><br>
 
-            Welkom, <b><a href='index.php?r=site/profile&id=<?= Yii::$app->user->identity->id?> '><?= Yii::$app->user->identity->username ?> </a></b>
+            <?= Html::button('Edit', ['value' => Url::to(['user/editAvatar', 'id' => Yii::$app->user->identity->id]), 'class' => 'btn btn-xs btn-default pull-right', 'id' => 'editAvatar']); ?></h3>
+
+
+            Welkom, <b><a href='index.php?r=user/view&id=<?= Yii::$app->user->identity->id?> '><?= Yii::$app->user->identity->username ?> </a></b>
             <hr>
           </div>
           <ul class="nav nav-sidebar">
-            <li class="active"><?= Html::a('<i class="fa fa-home"></i> Dashboard', Url::to('index.php?r=dashboard/index')); ?></li>
+            <li class="active"><?= Html::a('<i class="fa fa-home"></i> Dashboard', Url::to(['dashboard/index'])); ?></li>
+            <li><?= Html::a('<i class="fa fa-envelope"></i> Berichten', Url::to('index.php?r=site/comingsoon')); ?></li>
+            <li><?= Html::a('<i class="fa fa-soccer-ball-o"></i> Sporten', Url::to('index.php?r=site/comingsoon')); ?></li>
+            <li><?= Html::a('<i class="fa fa-address-book-o"></i> Sportbuddies', Url::to('index.php?r=user/index')); ?></li>
           </ul>
            <ul class="nav nav-sidebar">
-            <li><?= Html::a('<i class="fa fa-cog"></i> Settings', Url::to(['dashboard/settings', 'id' => Yii::$app->user->identity->id])); ?></li>
+            <li><?= Html::a('<i class="fa fa-cog"></i> Settings', Url::to(['user/update', 'id' => Yii::$app->user->identity->id])); ?></li>
           </ul>
           <?php if(Yii::$app->user->can('admin')): ?>
             
@@ -66,17 +72,20 @@ DashboardAsset::register($this);
                 <?php if (Yii::$app->session->hasFlash('danger')): ?>
                     <div class="alert alert-danger alert-dismissable">
                         <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                            <h4><i class="icon fa fa-check"></i>Saved!</h4>
+                            <h4><i class="icon fa fa-times"></i> Oeps!</h4>
                         <?= Yii::$app->session->getFlash('danger') ?>
                     </div>
                 <?php endif; ?>
             </div>
         </div>
     </div> 
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         <?= $content ?>
     </div>
-        
-          
+    </div>
+    
+
+  
     
 
 <?php $this->endBody() ?>

@@ -175,6 +175,12 @@ class SiteController extends Controller
       return $this->render('contest');
     }
 
+    public function actionComingsoon()
+    {
+      $this->layout = 'default';
+      return $this->render('comingsoon');
+    }
+
     public function actionDashboard()
     {
       $events = Event::find()->all();

@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
         'js/main.js',
         'js/maps.js',
         'js/analytics.js',
+        'js/modal.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

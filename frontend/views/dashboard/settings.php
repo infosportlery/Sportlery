@@ -8,7 +8,7 @@
 		            <h3 class="panel-title">Persoonlijke Informatie</h3>
 		        </div>
 		        <div class="panel-body">
-		           <?= $this->renderAjax('/user/_form', [
+		           <?= $this->render('/user/_form', [
 				        'model' => $model,
 				    ]) ?>
 		        </div>

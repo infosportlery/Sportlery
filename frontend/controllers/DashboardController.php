@@ -53,21 +53,6 @@ class DashboardController extends Controller
         }
     }
 
-    public function actionSettings($id)
-    {
-      $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            $model->save();
-            $this->layout = "dashboard/main";
-            return $this->render('index');
-        } else {
-
-            $this->layout = 'dashboard/main';
-            return $this->redirect(['/user/update', 'id' => Yii::$app->user->identity->id]);
-        }
-    }
-
     protected function findModel($id)
     {
         if (($model = User::findOne($id)) !== null) {

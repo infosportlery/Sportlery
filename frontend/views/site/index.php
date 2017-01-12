@@ -10,22 +10,30 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="thin">Sportlery</h1>
+        <h1 class="thin">sportlery</h1>
         <p class="lead thin">TOGETHER WE SPORT</p>
         <br>
       </div>
     </div>
-    <hr class="hr-invisible">
+    <hr class="hr-invisible-sm">
     <div class="row">
-      <div class="col-md-4 col-md-offset-4 text-center">
+      <div class="col-md-4 col-xs-10 col-xs-offset-1 col-md-offset-4 text-center">
         <?php echo $this->render('@app/views/location/_search', array('model'=>$searchModel)); ?>
       </div> <!-- end col -->
     </div>
-  </div>
+    <hr class="hr-invisible-sm">
+    <div class="row">
+      <div class="col-md-12 hidden-xs text-center">
+      <h3>Zoek op jouw sport, vind sportbuddies, vind een sportlocatie en speel.</h3>
+      </div> <!-- end col -->
+    </div>
     <hr class="hr-invisible">
-    <button class="btn btn-primary" id="btn-locations">Locaties</button>
-    <button class="btn btn-primary" id="btn-matchmaking">Matchmaking</button>
-    <button class="btn btn-primary" id="btn-lessons">Lessen</button>
+    <div class="row">
+      <div class="col-md-12 text-center">
+         <?= Html::a('Create BETA account', [Url::to('site/signup')], ['class' => 'btn btn-primary btn-lg']); ?>
+      </div> <!-- end col -->
+    </div>
+  </div>
 </div>
 
 <div class="container">
@@ -37,24 +45,24 @@
   </div> <!-- end row -->
   
   <div class="row text-center">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="col-md-4">
+    <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
+      <div class="col-md-4 col-sm-4">
         <img src="images/icons/location.png" height="80px" style="width: 80px;"><br>
         <h1 class="h1-default text-center"><?= Yii::t('app', 'Locaties'); ?></h1>
         <p>Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!</p>
-        <?= Html::a('Bekijk alle locaties', [Url::to('location/index')]); ?>
+        <?= Html::a('Bekijk alle locaties', [Url::to('location/index')], ['class' => 'btn btn-primary']); ?>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-4">
         <img src="images/icons/matchmaking.png" height="80px" style="width: 80px;"><br>
         <h1 class="h1-default text-center"><?= Yii::t('app', 'Matchmaking'); ?></h1>
         <p>Vind sportbuddies, creëer of participeer in evenementen en vind vervanging voor jouw sporten.</p>
-         <?= Html::a('Go and Play!', [Url::to('')], ['id' => 'link-matchmaking']); ?>
+         <?= Html::a('Go and Play!', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-matchmaking']); ?>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-4">
         <img src="images/icons/trainer.png" height="80px" style="width: 80px;"><br>
         <h1 class="h1-default text-center"><?= Yii::t('app', 'Lessen'); ?></h1>
         <p>Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.</p>
-         <?= Html::a('Bekijk alle lessen', [Url::to('')], ['id' => 'link-lessons']); ?>
+         <?= Html::a('Bekijk alle lessen', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-lessons']); ?>
       </div>
     </div>
   </div> <!-- end row -->
@@ -281,10 +289,10 @@
     </div>
     <hr class="hr-invisible-sm">
     <div class="row">
-      <div class="col-md-4 col-md-offset-2">
+      <div class="col-xs-6 col-md-4 col-md-offset-2">
         <?= Html::a('Sportclubs', ['site/sportclub'], ['class' => 'btn btn-default']); ?>
       </div>
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
         <?= Html::a('Trainer', ['site/trainer'], ['class' => 'btn btn-default']); ?>
       </div>
     </div><!-- end row -->
