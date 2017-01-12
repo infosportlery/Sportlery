@@ -6,6 +6,7 @@ use Yii;
 use common\models\User;
 use common\models\UserSearch;
 use yii\web\Controller;
+use yii\web\UploadedFile;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -53,13 +54,9 @@ class UserController extends Controller
     {
         $user = Yii::$app->getUser()->getIdentity();
 
-        $avatar = User::generateAvatarName();
-
-
         return $this->render('view', [
             'model' => $this->findModel($id),
             'user' => $user,
-            'avatar' => $avatar,
         ]);
     }
 
@@ -89,24 +86,53 @@ class UserController extends Controller
      */
     public function actionUpdate($id)
     {
+
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+    
+            $imageName = self::generateImageName();
+
+            // get the instance of the uploaded file
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+
+            // save the path in db
+            $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
+
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
-            
-            if(Yii::$app->request->isAjax)
-            {
-                return $this->renderAjax('/user/_form', [
-                    'model' => $model,
-                ]);
-            } else {
-                $this->layout = "dashboard/main";
-                return $this->render('update', [
-                    'model' => $model,
-                ]); 
-            }
+            return $this->renderAjax('update', [
+                'model' => $model,
+            ]);
+        }
+    }
 
+    public function actionSettings($id)
+    {
+        $model = $this->findModel($id);
+
+        if ($model->load(Yii::$app->request->post())) {
+    
+            $imageName = self::generateImageName();
+
+            // get the instance of the uploaded file
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+
+            // save the path in db
+            $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
+
+            $model->save();
+
+            return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            $this->layout = "dashboard/main";
+            return $this->render('settings', [
+                'model' => $model,
+            ]);
         }
     }
 
@@ -114,7 +140,19 @@ class UserController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+    
+            $imageName = self::generateImageName();
+
+            // get the instance of the uploaded file
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+
+            // save the path in db
+            $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
+
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->renderAjax('editavatar', [
@@ -151,6 +189,11 @@ class UserController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+    public function generateImageName()
+    {
+        $avatarName = Yii::$app->security->generateRandomString();
 
+        return $avatarName;
+    }
 
 }

@@ -7,6 +7,34 @@ ORANGE++: #D7440E
 BLUE: #29719B
 BLUE+: #105C89
 -------------------------------------------------- */
+input .addon {
+  color: red;
+}
+#login-form-inline {
+  
+}
+.location-list > h3 > a {
+  text-decoration: none !important;
+  color: #29719B;
+  font-weight: 400;
+}
+.location-avatar img{
+  width: 100px;
+  height: 100px;
+}
+.location-list {
+  border: none;
+}
+.location-list .btn {
+  margin-top: 65px;
+}
+.location-list h3 {
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+.btn-hidden{
+  display: none;
+}
 .btn-logout {
   color: black !important;
 }

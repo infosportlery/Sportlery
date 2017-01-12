@@ -46,12 +46,6 @@ $id = $_GET['id'];
                     <li>Lastname: <?= $user->lastname; ?></li>
                     <li>Fovorite Sport: <?= $user->favorite_sport; ?></li>
                     <li>Favorite Athlete: <?= $user->favorite_athlete; ?></li>
-
-                    <?php 
-
-                    echo $avatar;
-
-                    ?>
                 </div>
             </div>
         </div>

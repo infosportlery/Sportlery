@@ -45,12 +45,18 @@ class LocationController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $publicProvider = $searchModel->publicSearch(Yii::$app->request->queryParams);
         $paidProvider = $searchModel->paidSearch(Yii::$app->request->queryParams);
+
+        $city = (new Query())
+        ->select(['city'])
+        ->from('location')
+        ->all();
         
         $this->layout = "default";
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'publicProvider' => $publicProvider,
+            'city' => $city,
             'paidProvider' => $paidProvider,
         ]);
     }

@@ -9,106 +9,152 @@ use yii\bootstrap\Tabs;
 /* @var $searchModel frontend\models\LocationSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Locations';
+$this->title = 'Locaties';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<div class="sm-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center"><?= Html::encode($this->title) ?></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="hr-invisible">
+
 <div class="container">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
     <p>
-        <?= Html::a('Locatie Toevoegen', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Locatie Toevoegen', ['create'], ['class' => 'btn btn-success pull-right']) ?>
     </p>
+
     <?php 
         $publicGridView = GridView::widget([
-            'id' => 'publiclocations',
-            'dataProvider'=>$publicProvider,
-
-            //'filterModel' => $searchModel,
-            'filterUrl' => Url::to('location/index'),
+            'dataProvider' => $publicProvider,
             'showHeader' => false,
-            'showFooter' => true,
             'summary' => false,
             'columns' => [
                 [
                     'format' => 'html',
                     'value' => function($model) { 
-                        $info = '<div class="locationAvatar img-responsive">' .
-                        Html::img($model->avatarurl) . '</div><br>' . 
-                        'Price: ' . $model->price . '<br>' . 
-                        'Category: ' . $model->category;
+                        $info = '<div class="img-thumbnail">' . Html::img($model->avatarurl) . '</div>';
                         return $info;
                     },
-                    'contentOptions'=>['style'=>'max-width: 85px;']
+                    'contentOptions'=>[
+                        'class'=>'col-md-1 location-avatar img-responsive']
                 ],
                 [
-                    'format' => 'raw',
-                    'value' => function($model) {
-                        $info = 
-                        '<div class="locationList"><h3>' . Html::a($model->name, urldecode('index.php?r=location/view&id=' . $model->id)) . ' | <span class="text-muted">' . $model->city . '</span></h1><br>' . 
-                        substr($model->description, 0, 500) .
-                        '</div>';
+                'class' => 'yii\grid\DataColumn', // can be omitted, as it is the default
+                'format' => 'html',
+                'value' => function ($data) {
+
+                        $info = '<h3>' . Html::a($data->name, ['location/view', 'id' => $data->id]) . '</h3><br>' .
+                                $data->city . '<br>' . 
+                                '<hr>' . 
+                                '<i class="fa fa-soccer-o"></i>'
+                                ;
+
                         return $info;
-                    },
-                    'contentOptions'=>['style'=>'max-width: 400px;']
+                },
+                'contentOptions'=>['class'=>'col-md-4 location-list']
                 ],
-                ['class' => 'yii\grid\ActionColumn'],
+                [
+                'class' => 'yii\grid\DataColumn', // can be omitted, as it is the default
+                'format' => 'html',
+                'value' => function ($data) {
+
+                        if($data->type == 1)
+                        {
+                            $button = Html::a('Boek Nu!', ['location/view', 'id' => $data->id], ['class' => 'btn btn-primary pull-right']);
+                        } elseif ($data->type == 0) {
+                            $button = Html::a('Bekijk', ['location/view', 'id' => $data->id], ['class' => 'btn btn-primary pull-right']);
+                        }
+                        return $button;
+                },
+                'contentOptions'=>['class'=>'col-md-1 location-list']
+                ],
             ],
         ]);
-    ?>
-    <?php 
-        $paidGridView = GridView::widget([
-            'id' => 'paidlocations',
-            'dataProvider'=>$paidProvider,
 
-            //'filterModel' => $searchModel,
-            'filterUrl' => Url::to('location/index'),
+        $paidGridView = GridView::widget([
+            'dataProvider' => $paidProvider,
             'showHeader' => false,
-            'showFooter' => true,
             'summary' => false,
             'columns' => [
                 [
                     'format' => 'html',
                     'value' => function($model) { 
-                        $info = '<div class="locationAvatar">' .
-                        Html::img($model->avatarurl) . '</div><br>' . 
-                        'Price: ' . $model->price . '<br>' . 
-                        'Category: ' . $model->category;
+                        $info = '<div class="img-thumbnail">' . Html::img($model->avatarurl) . '</div>';
                         return $info;
                     },
-                    'contentOptions'=>['style'=>'max-width: 85px;']
+                    'contentOptions'=>[
+                        'class'=>'col-md-1 location-avatar img-responsive']
                 ],
                 [
-                    'format' => 'raw',
-                    'value' => function($model) {
-                        $info = 
-                        '<div class="locationList"><h3>' . Html::a($model->name, urldecode('index.php?r=location/view&id=' . $model->id)) . ' | <span class="text-muted">' . $model->city . '</span></h1><br>' . 
-                        substr($model->description, 0, 500) .
-                        '</div>';
+                'class' => 'yii\grid\DataColumn', // can be omitted, as it is the default
+                'format' => 'html',
+                'value' => function ($data) {
+
+                        $info = '<h3>' . Html::a($data->name, ['location/view', 'id' => $data->id]) . '</h3><br>' .
+                                $data->city;
+
                         return $info;
-                    },
+                },
+                'contentOptions'=>['class'=>'col-md-4 location-list']
                 ],
-                ['class' => 'yii\grid\ActionColumn'],
+                [
+                'class' => 'yii\grid\DataColumn', // can be omitted, as it is the default
+                'format' => 'html',
+                'value' => function ($data) {
+
+                        if($data->type == 1)
+                        {
+                            $button = Html::a('Boek Nu!', ['location/view', 'id' => $data->id], ['class' => 'btn btn-primary']);
+                        } elseif ($data->type == 0) {
+                            $button = Html::a('Bekijk', ['location/view', 'id' => $data->id], ['class' => 'btn btn-primary']);
+                        }
+                        return $button;
+                },
+                'contentOptions'=>['class'=>'col-md-1 location-list']
+                ],
             ],
-    ]);
-    ?> 
-<?php 
- echo Tabs::widget([
-        'items' => [
-            [
-                'label' => 'Openbaar',
-                'content' => $publicGridView,
-                'active' => true,
-                'options' => ['id' => 'publiclocations'],
+        ]);
+
+        ?>
+
+    <div class="col-md-4">
+        <h2>Zoeken</h2>
+        <div class="well">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php  echo $this->render('_search', ['model' => $searchModel]); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-8">
+    <?php 
+     echo Tabs::widget([
+            'items' => [
+                [
+                    'label' => 'Openbaar',
+                    'content' => $publicGridView,
+                    'active' => true,
+                    'options' => ['id' => 'publiclocations'],
+                ],
+                [
+                    'label' => 'Betaald',
+                    'content' => $paidGridView,
+                    'active' => false,
+                    'options' => ['id' => 'paidlocations'],
+                ],
             ],
-            [
-                'label' => 'Betaald',
-                'content' => $paidGridView,
-                'active' => false,
-                'options' => ['id' => 'paidlocations'],
-            ],
-        ],
-    ]);
- ?>   
+        ]);
+     ?>  
+    </div> 
 </div>

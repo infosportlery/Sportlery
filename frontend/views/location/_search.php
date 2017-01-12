@@ -2,8 +2,11 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use yii\db\Query;
 use kartik\select2\Select2;
+use kartik\form\ActiveForm;
+use app\models\Location;
 
 
 /* @var $this yii\web\View */
@@ -12,32 +15,25 @@ use kartik\select2\Select2;
 ?>
 
 
-    <?php $form = ActiveForm::begin([
-        'action' => ['location/index'],
-        'method' => 'get',
-    ]); ?>
+<?php $form = ActiveForm::begin([
+    'action' => ['location/index'],
+    'method' => 'get',
+]); ?>
 
-  <form class="form-inline">
+<?= $form->field($model, 'name', [
+    'addon' => ['prepend' => ['content'=>'<i class="fa fa-search"></i>']]])
+    ->textInput(['placeholder' => 'Verfijn Zoekresultaat']) ?>
 
-    <!-- Search Form -->
-        <form role="form">
-        
-        <!-- Search Field -->
-            <div class="row">
-                <div class="form-group">
-                    <div class="input-group">
-                        
-                        <?= $form->field($model, 'globalSearch')->textInput()->input('text', ['placeholder' => "Naar welke sport ben je opzoek?"])->label(false); ?>
-                        <span class="input-group-btn">
-                        <?= Html::submitButton('Zoeken', ['class' => 'btn btn-primary']) ?> 
-                        </span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            
-        </form>
+<?= $form->field($model, 'city', ['showLabels'=>false])->widget(Select2::classname(), [
+            'data'=> ArrayHelper::map(Location::find()->all(), 'city', 'city'),
+            'pluginOptions'=>['allowClear'=>true],
+            'options' => ['placeholder'=>'Selecteer een stad..']
+        ]); ?>
 
 
+<div class="form-group">
+    <?= Html::submitButton('Zoeken', ['class' => 'btn btn-primary']) ?>
+</div>
 
-    <?php ActiveForm::end(); ?>
+<?php ActiveForm::end(); ?>
+

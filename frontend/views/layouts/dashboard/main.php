@@ -12,6 +12,14 @@ use frontend\controllers\NotFoundHttpException;
 
 DashboardAsset::register($this);
 
+Modal::begin([
+      'header'=>'<h4>Wijzigen</h4>',
+      'id'=>'modal',
+      'size'=>'modal-md',
+   ]);
+
+  echo "<div id='modalContent'></div>";
+Modal::end();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,10 +47,8 @@ DashboardAsset::register($this);
           <div class="row text-center">
             <img src="<?= Yii::$app->user->identity->avatar ?>" class="avatar img-circle"><br>
 
-            <?= Html::button('Edit', ['value' => Url::to(['user/editAvatar', 'id' => Yii::$app->user->identity->id]), 'class' => 'btn btn-xs btn-default pull-right', 'id' => 'editAvatar']); ?></h3>
-
-
-            Welkom, <b><a href='index.php?r=user/view&id=<?= Yii::$app->user->identity->id?> '><?= Yii::$app->user->identity->username ?> </a></b>
+            Welkom, 
+                    <b><a href='index.php?r=user/view&id=<?= Yii::$app->user->identity->id?> '><?= Yii::$app->user->identity->username ?> </a></b>
             <hr>
           </div>
           <ul class="nav nav-sidebar">
@@ -52,13 +58,14 @@ DashboardAsset::register($this);
             <li><?= Html::a('<i class="fa fa-address-book-o"></i> Sportbuddies', Url::to('index.php?r=user/index')); ?></li>
           </ul>
            <ul class="nav nav-sidebar">
-            <li><?= Html::a('<i class="fa fa-cog"></i> Settings', Url::to(['user/update', 'id' => Yii::$app->user->identity->id])); ?></li>
+            <li><?= Html::a('<i class="fa fa-cog"></i> Instellingen', Url::to(['user/settings', 'id' => Yii::$app->user->identity->id])); ?></li>
           </ul>
           <?php if(Yii::$app->user->can('admin')): ?>
             
             <ul class="nav nav-sidebar">
               <li class="sidebar-header">Admin</li>
-              <li><?= Html::a('<i class="fa fa-plus"></i> Create Location', Url::to('index.php?r=location/create')); ?></li>
+              <li><?= Html::a('<i class="fa fa-plus"></i> Locatie Toevoegen', Url::to('index.php?r=location/create')); ?></li>
+              <li><?= Html::a('<i class="fa fa-plus"></i> Gebruiker Role', Url::to('index.php?r=auth-assignment/create')); ?></li>
             </ul>
 
           <?php endif ?>

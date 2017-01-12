@@ -4,15 +4,6 @@
   use yii\helpers\VarDumper;
   use yii\bootstrap\Modal;
 
-  Modal::begin([
-      'header'=>'<h4>Wijzigen</h4>',
-      'id'=>'modal',
-      'size'=>'modal-md',
-   ]);
-
-  echo "<div id='modalContent'></div>";
-  Modal::end();
-
 ?>
 
     <div class="row">
@@ -34,6 +25,7 @@
                    Email: <?= $identity->email ?><br>
                    Geboortedatum: <?= $identity->birthday ?><br>
                    Geslacht: <?= $identity->gender ?><br>
+                   Geslacht: <?= $identity->id ?><br>
                 </div>
             </div>
         </div>

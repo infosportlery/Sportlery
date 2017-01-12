@@ -6,7 +6,6 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Location;
-use app\models\PaidLocation;
 use yii\data\SqlDataProvider;
 
 /**
@@ -14,7 +13,7 @@ use yii\data\SqlDataProvider;
  */
 class LocationSearch extends Location
 {
-    public $globalSearch;
+
     /**
      * @inheritdoc
      */
@@ -22,7 +21,7 @@ class LocationSearch extends Location
     {
         return [
             [['id', 'type'], 'integer'],
-            [['name', 'street', 'zipcode', 'company_name', 'description', 'category', 'price', 'avatar', 'city', 'globalSearch'], 'safe'],
+            [['name', 'street', 'zipcode', 'company_name', 'description', 'category', 'price', 'avatar', 'city'], 'safe'],
         ];
     }
 
@@ -52,7 +51,6 @@ class LocationSearch extends Location
             'query' => $query,
         ]);
 
-
         $this->load($params);
 
         if (!$this->validate()) {
@@ -61,12 +59,13 @@ class LocationSearch extends Location
             return $dataProvider;
         }
 
-        $query->orFilterWhere(['like', 'street', $this->globalSearch])
-            ->orFilterWhere(['like', 'zipcode', $this->globalSearch])
-            ->orFilterWhere(['like', 'price', $this->globalSearch])
-            ->orFilterWhere(['like', 'category', $this->globalSearch])
-            ->orFilterWhere(['like', 'city', $this->globalSearch]);
+        // grid filtering conditions
+        $query->andFilterWhere([
+            'id' => $this->id,
+        ]);
 
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'city', $this->city]);
 
         return $dataProvider;
     }
@@ -78,7 +77,13 @@ class LocationSearch extends Location
 
         $publicProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'pageSize' => 5,
+            ],
         ]);
+
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'city', $this->city]);
 
         return $publicProvider;
     }
@@ -91,6 +96,9 @@ class LocationSearch extends Location
         $paidProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
+
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'city', $this->city]);
 
         return $paidProvider;
     }
