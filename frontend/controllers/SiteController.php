@@ -16,6 +16,7 @@ use frontend\models\ContactForm;
 use common\models\User;
 use app\models\Location;
 use frontend\models\LocationSearch;
+use frontend\models\UserSearch;
 use yii\helpers\Url;
 use app\components\AuthHandler;
 use yii\db\Query;
@@ -120,6 +121,8 @@ class SiteController extends Controller
       $mailing = new Mailing();
       $searchModel = new LocationSearch();
 
+      $userSearchModel = new UserSearch();
+
       $public = (new Query())
         ->select(['id', 'name', 'description', 'price', 'category', 'city', 'zipcode', 'street', 'avatar'])
         ->from('location')
@@ -139,6 +142,7 @@ class SiteController extends Controller
 
       return $this->render('index', [
           'searchModel' => $searchModel,
+          'userSearchModel' => $userSearchModel,
           'paid' => $paid,
           'public' => $public,
           'mailing' => $mailing,

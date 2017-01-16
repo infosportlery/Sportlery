@@ -15,6 +15,7 @@ use yii\web\IdentityInterface;
  * @property string $password_hash
  * @property string $password_reset_token
  * @property string $email
+ * @property string $city
  * @property string $auth_key
  * @property integer $status
  * @property integer $created_at
@@ -107,11 +108,19 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            [['username', 'firstname', 'lastname', 'email', 'new_password', 'favorite_sport', 'favorite_athlete', 'birthday', 'gender'], 'string'],
+            [['username', 'firstname', 'lastname', 'email', 'new_password', 'favorite_sport',
+                'favorite_athlete', 'birthday', 'gender', 'city'], 'string'],
             [['avatar'], 'string', 'max' => 200],
             ['new_password', 'string', 'min' => 6],
             [['file'], 'file'],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'favorite_sport' => 'Welke sport doe je?',
         ];
     }
 

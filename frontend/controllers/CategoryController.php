@@ -4,7 +4,7 @@ namespace frontend\controllers;
 
 use Yii;
 use app\models\Category;
-use frontend\models\CategorySearch;
+use app\models\CategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -68,6 +68,7 @@ class CategoryController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
+            $this->layout = '/dashboard/main';
             return $this->render('create', [
                 'model' => $model,
             ]);

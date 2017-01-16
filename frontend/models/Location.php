@@ -3,6 +3,9 @@
 namespace app\models;
 
 use Yii;
+use common\models\User;
+
+
 
 /**
  * This is the model class for table "location".
@@ -43,14 +46,14 @@ class Location extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'category_id', 'city', 'street', 'zipcode', 'type'], 'required'],
-            [['description'], 'string'],
-            [['type'], 'integer'],
-            [['name', 'city'], 'string', 'max' => 40],
-            [['price'], 'string', 'max' => 20],
-            [['avatar', 'url'], 'string', 'max' => 255],
-            [['file'], 'file'],
-            [['zipcode'], 'string', 'max' => 7],
+            [['user_id', 'category_id', 'name', 'street', 'zipcode', 'category', 'city', 'type', 'url'], 'required'],
+           [['user_id', 'category_id', 'type'], 'integer'],
+           [['category', 'description'], 'string'],
+           [['name', 'street', 'city'], 'string', 'max' => 40],
+           [['zipcode'], 'string', 'max' => 7],
+           [['avatar'], 'string', 'max' => 200],
+           [['url'], 'string', 'max' => 255],
+           [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
     }
 
@@ -83,8 +86,12 @@ class Location extends \yii\db\ActiveRecord
         }
     }
 
-    public function getCategory()
+    public function getCategoryName()
     {
+        if(!isset($this->category_id))
+        {
+            $this->category_id = 1;
+        }
         return $this->hasOne(Category::className(), ['id' => 'category_id']);
     }
 }

@@ -5,6 +5,8 @@ use yii\helpers\Url;
 use yii\helpers\ArrayHelper;
 use yii\db\Query;
 use app\models\Location;
+use app\models\Category;
+use common\models\User;
 use kartik\form\ActiveForm;
 use kartik\select2\Select2;
 
@@ -24,15 +26,24 @@ use kartik\select2\Select2;
 <div class="row">
 
 	
-		<?= $form->field($model, 'name', [
-		    'addon' => ['prepend' => ['content'=>'<i class="fa fa-search"></i>']]])
-		    ->textInput(['placeholder' => 'Zoek een sportlocatie.'])->label(false) ?>
+		<?= $form->field($model, 'category_id', ['showLabels'=>false])->widget(Select2::classname(), [
+		    'data'=> ArrayHelper::map(Category::find()->all(), 'id', 'name'),
+		    'pluginOptions'=> ['
+		    	allowClear'=>true,
+		    	'width' => '200px',
+		    ],
+		    'options' => ['placeholder'=>'Kies een sport'],
+		    'size' => Select2::LARGE
+		]); ?>
 
 
 		<?= $form->field($model, 'city', ['showLabels'=>false])->widget(Select2::classname(), [
 		    'data'=> ArrayHelper::map(Location::find()->all(), 'city', 'city'),
-		    'pluginOptions'=>['allowClear'=>true],
-		    'options' => ['placeholder'=>'Selecteer een stad..'],
+		    'pluginOptions'=> ['
+		    	allowClear'=>true,
+		    	'width' => '200px',
+		    ],
+		    'options' => ['placeholder'=>'Kies een stad'],
 		    'size' => Select2::LARGE
 		]); ?>
 

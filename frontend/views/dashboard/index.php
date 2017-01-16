@@ -3,7 +3,17 @@
 	use yii\helpers\Url;
   use yii\helpers\VarDumper;
   use yii\bootstrap\Modal;
+  
+  // if(Yii::$app->user->identity->favorite_sport == NULL) {
+  //   Modal::begin([
+  //         'header'=>'<h4>Stap 1: Welke sport(en) doe je?</h4>',
+  //         'id'=>'stepone',
+  //         'size'=>'modal-md',
+  //      ]);
 
+  //     echo $this->renderAjax('/user/_form', ['model' => $model]);
+  //   Modal::end();
+  // }
 ?>
 
     <div class="row">
@@ -25,7 +35,9 @@
                    Email: <?= $identity->email ?><br>
                    Geboortedatum: <?= $identity->birthday ?><br>
                    Geslacht: <?= $identity->gender ?><br>
-                   Geslacht: <?= $identity->id ?><br>
+                   ID: <?= $identity->id ?><br>
+                   City: <?= $identity->city ?><br>
+                   City: <?= $identity->favorite_sport ?><br>
                 </div>
             </div>
         </div>

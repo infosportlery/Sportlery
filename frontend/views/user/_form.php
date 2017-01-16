@@ -2,6 +2,9 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use app\models\Category;
+use yii\helpers\ArrayHelper;
+
 
 /* @var $this yii\web\View */
 /* @var $model common\models\User */
@@ -22,7 +25,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'birthday')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'favorite_sport')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'city')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'favorite_sport')->dropDownList(ArrayHelper::map(Category::find()->all(), 'name', 'name')) ?>
 
     <?= $form->field($model, 'favorite_athlete')->textInput(['maxlength' => true]) ?>
 

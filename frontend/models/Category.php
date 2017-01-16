@@ -3,13 +3,15 @@
 namespace app\models;
 
 use Yii;
-use yii\db\Query;
 
 /**
  * This is the model class for table "category".
  *
  * @property integer $id
- * @property string $title
+ * @property string $name
+ *
+ * @property Location $id0
+ * @property UserCatagory[] $userCatagories
  */
 class Category extends \yii\db\ActiveRecord
 {
@@ -27,8 +29,9 @@ class Category extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title'], 'required'],
-            [['title'], 'string', 'max' => 55],
+            [['name'], 'required'],
+            [['name'], 'string', 'max' => 60],
+            [['id'], 'exist', 'skipOnError' => true, 'targetClass' => Location::className(), 'targetAttribute' => ['id' => 'category_id']],
         ];
     }
 
@@ -38,9 +41,24 @@ class Category extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'title' => 'Title',
+            'id' => 'Sport',
+            'name' => 'Naam',
         ];
     }
 
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getId0()
+    {
+        return $this->hasOne(Location::className(), ['category_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUserCatagories()
+    {
+        return $this->hasMany(UserCatagory::className(), ['catagory_id' => 'id']);
+    }
 }

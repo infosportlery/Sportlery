@@ -19,7 +19,7 @@ class UserSearch extends User
     {
         return [
             [['id', 'status', 'type_id', 'created_at', 'updated_at'], 'integer'],
-            [['username', 'auth_key', 'password_hash', 'password_reset_token', 'email', 'avatar', 'cover', 'favorite_sport', 'firstname', 'lastname', 'favorite_athlete'], 'safe'],
+            [['username', 'auth_key', 'password_hash', 'password_reset_token', 'email', 'avatar', 'cover', 'favorite_sport', 'firstname', 'city', 'lastname', 'favorite_athlete'], 'safe'],
         ];
     }
 
@@ -47,6 +47,9 @@ class UserSearch extends User
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'pageSize' => 5,
+            ],
         ]);
 
         $this->load($params);
@@ -64,6 +67,7 @@ class UserSearch extends User
             'type_id' => $this->type_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'city' => $this->city,
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])
@@ -76,6 +80,7 @@ class UserSearch extends User
             ->andFilterWhere(['like', 'favorite_sport', $this->favorite_sport])
             ->andFilterWhere(['like', 'firstname', $this->firstname])
             ->andFilterWhere(['like', 'lastname', $this->lastname])
+            ->andFilterWhere(['like', 'city', $this->city])
             ->andFilterWhere(['like', 'favorite_athlete', $this->favorite_athlete]);
 
         return $dataProvider;

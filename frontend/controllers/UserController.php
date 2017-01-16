@@ -91,14 +91,18 @@ class UserController extends Controller
 
         if ($model->load(Yii::$app->request->post())) {
     
-            $imageName = self::generateImageName();
+        
+                $imageName = self::generateImageName();
 
-            // get the instance of the uploaded file
-            $model->file = UploadedFile::getInstance($model, 'file');
-            $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+                // get the instance of the uploaded file
+                $model->file = UploadedFile::getInstance($model, 'file');
 
-            // save the path in db
-            $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
+                if(isset($model->file))
+                {
+                    $model->file->saveAs('uploads/' . $imageName . '.' . $model->file->extension);
+                    $model->avatar = 'uploads/' . $imageName . '.' . $model->file->extension;
+                }
+            
 
             $model->save();
 
@@ -195,6 +199,21 @@ class UserController extends Controller
 
         return $avatarName;
     }
+    public function actionStepone($id)
+    {
+        $model = $this->findModel($id);
 
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            return $this->render('stepone', [
+                'categoryModel' => $categoryModel,
+            ]);
+        }
+    }
     
+    public function actionTest()
+    {
+        return 'test';
+    }
 }

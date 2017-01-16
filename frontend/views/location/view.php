@@ -56,8 +56,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <li><b>Postcode</b>: <?= $model->zipcode; ?></li>
                     <li><b>Stad</b>: <?= $model->city; ?></li>
                     <li><b>Prijs</b>: <?= $model->price; ?></li>
-                    <li><b>Prijs</b>: <?= $model->type; ?></li>
-                    <li><b>Category</b>: <?= $model->category_id; ?></li>
+                    <li><b>Category</b>: <?= $model->categoryName->name; ?></li>
                     <hr>
                     <p><b>Beschrijving</b>:<br> <?= $model->description; ?></p>
 

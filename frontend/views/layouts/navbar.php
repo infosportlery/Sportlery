@@ -12,7 +12,7 @@ use yii\bootstrap\NavBar;
     ]);
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Locaties', 'url' => ['/location/index']],
+            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
                 'items' => [
@@ -37,7 +37,7 @@ use yii\bootstrap\NavBar;
     } else {
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Locaties', 'url' => ['/location/index']],
+            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
                 'items' => [

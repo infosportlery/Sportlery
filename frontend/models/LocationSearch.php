@@ -7,6 +7,7 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\models\Location;
 use yii\data\SqlDataProvider;
+use common\models\User;
 
 /**
  * LocationSearch represents the model behind the search form about `app\models\Location`.
@@ -21,7 +22,7 @@ class LocationSearch extends Location
     {
         return [
             [['id', 'type'], 'integer'],
-            [['name', 'street', 'zipcode', 'company_name', 'description', 'category', 'price', 'avatar', 'city'], 'safe'],
+            [['name', 'street', 'zipcode', 'company_name', 'description', 'category_id', 'price', 'avatar', 'city'], 'safe'],
         ];
     }
 
@@ -64,7 +65,7 @@ class LocationSearch extends Location
             'id' => $this->id,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
+        $query->andFilterWhere(['like', 'category_id', $this->category_id])
             ->andFilterWhere(['like', 'city', $this->city]);
 
         return $dataProvider;
@@ -82,8 +83,8 @@ class LocationSearch extends Location
             ],
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'city', $this->city]);
+        $query->andFilterWhere(['like', 'category_id', $this->category_id])
+                ->andFilterWhere(['like', 'city', $this->city]);
 
         return $publicProvider;
     }
@@ -97,7 +98,7 @@ class LocationSearch extends Location
             'query' => $query,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
+        $query->andFilterWhere(['like', 'category_id', $this->category_id])
             ->andFilterWhere(['like', 'city', $this->city]);
 
         return $paidProvider;

@@ -11,6 +11,12 @@ input .addon {
   color: red;
 }
 
+.searchbar {
+  background-color: #eee;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
 .location-list > h3 > a {
   text-decoration: none !important;
   color: #29719B;
@@ -397,6 +403,11 @@ table tr {
   border: none;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.hr-invisible-md {
+  border: none;
+  margin-top: 50px  ;
+  margin-bottom: 50px ;
 }
 .header input, select {
   border: none;

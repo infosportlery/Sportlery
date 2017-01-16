@@ -19,7 +19,7 @@
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
-        <?php echo $this->render('@app/views/location/_globalsearch', array('model'=>$searchModel)); ?>
+        <?php echo $this->render('@app/views/location/_globalsearch', ['model' => $searchModel, 'userModel' => $userSearchModel]); ?>
       </div> <!-- end col -->
     </div>
     <hr class="hr-invisible-sm">

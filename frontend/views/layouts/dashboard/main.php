@@ -23,17 +23,6 @@ Modal::begin([
   echo "<div id='modalContent'></div>";
 Modal::end();
 
-
-
-// Modal::begin([
-//       'header'=>'<h4>Stap 1: </h4>',
-//       'id'=>'stepone',
-//       'size'=>'modal-md',
-//    ]);
-
-//   echo $this->context->stepOne();
-// Modal::end();
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,9 +56,9 @@ Modal::end();
           </div>
           <ul class="nav nav-sidebar">
             <li class="active"><?= Html::a('<i class="fa fa-home"></i> Dashboard', Url::to(['dashboard/index'])); ?></li>
-            <li><?= Html::a('<i class="fa fa-envelope"></i> Berichten', Url::to('index.php?r=site/comingsoon')); ?></li>
-            <li><?= Html::a('<i class="fa fa-soccer-ball-o"></i> Sporten', Url::to('index.php?r=site/comingsoon')); ?></li>
-            <li><?= Html::a('<i class="fa fa-address-book-o"></i> Sportbuddies', Url::to('index.php?r=user/index')); ?></li>
+            <li><?= Html::a('<i class="fa fa-envelope"></i> Berichten', Url::to(['site/comingsoon'])); ?></li>
+            <li><?= Html::a('<i class="fa fa-soccer-ball-o"></i> Sporten', Url::to(['site/comingsoon'])); ?></li>
+            <li><?= Html::a('<i class="fa fa-address-book-o"></i> Sportbuddies', Url::to(['user/index'])); ?></li>
           </ul>
            <ul class="nav nav-sidebar">
             <li><?= Html::a('<i class="fa fa-cog"></i> Instellingen', Url::to(['user/settings', 'id' => Yii::$app->user->identity->id])); ?></li>
@@ -78,8 +67,9 @@ Modal::end();
             
             <ul class="nav nav-sidebar">
               <li class="sidebar-header">Admin</li>
-              <li><?= Html::a('<i class="fa fa-plus"></i> Locatie Toevoegen', Url::to('index.php?r=location/create')); ?></li>
-              <li><?= Html::a('<i class="fa fa-plus"></i> Gebruiker Role', Url::to('index.php?r=auth-assignment/create')); ?></li>
+              <li><?= Html::a('<i class="fa fa-plus"></i> Locatie Toevoegen', Url::to(['location/create'])); ?></li>
+              <li><?= Html::a('<i class="fa fa-plus"></i> Gebruiker Role', Url::to(['auth-assignment/create'])); ?></li>
+              <li><?= Html::a('<i class="fa fa-soccer-ball-o"></i> Sport Toevoegen', Url::to(['category/create'])); ?></li>
             </ul>
 
           <?php endif ?>

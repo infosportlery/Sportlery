@@ -41,11 +41,11 @@ $id = $_GET['id'];
                     <h3 class="panel-title">Persoonlijke Informatie</h3>
                 </div>
                 <div class="panel-body">
-                    <li>Username: <?= $user->username; ?></li>
-                    <li>Firstname: <?= $user->firstname; ?></li>
-                    <li>Lastname: <?= $user->lastname; ?></li>
-                    <li>Fovorite Sport: <?= $user->favorite_sport; ?></li>
-                    <li>Favorite Athlete: <?= $user->favorite_athlete; ?></li>
+                    <li><b>Gebruikersnaam</b>: <?= $user->username; ?></li>
+                    <li><b>Voornaam</b>: <?= $user->firstname; ?></li>
+                    <li><b>Achternaam</b>: <?= $user->lastname; ?></li>
+                    <li><b>Favoriete Sport</b>: <?= $user->favorite_sport; ?></li>
+                    <li><b>Favoriete Atleet</b>: <?= $user->favorite_athlete; ?></li>
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@ $id = $_GET['id'];
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Vriend</h3>
+                    <h3 class="panel-title">Interactie</h3>
                 </div>
                 <div class="panel-body">
                     <p>

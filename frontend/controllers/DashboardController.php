@@ -8,6 +8,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
+use app\models\Category;
 use yii;
 
 class DashboardController extends Controller
@@ -24,10 +25,13 @@ class DashboardController extends Controller
         ];
     }
 
+
+
     public function actionIndex()
     {
 
     $model = new User();
+    $categoryModel = new Category();
 
     if(Yii::$app->user->isGuest)
     {
@@ -47,6 +51,7 @@ class DashboardController extends Controller
         $this->layout = 'dashboard/main';
         return $this->render('index', [
                 'model' => $model,
+                'categoryModel' => $categoryModel,
                 'identity' => $identity,
             ]);
 
@@ -62,9 +67,6 @@ class DashboardController extends Controller
         }
     }
 
-    public function stepOne()
-    {
-        return 1;
-    }
+
 
 }
