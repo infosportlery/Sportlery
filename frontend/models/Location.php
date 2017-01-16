@@ -16,6 +16,7 @@ use Yii;
  * @property string $price
  * @property string $avatar
  * @property string $location
+ * @property string $url
  * @property integer $type
  */
 class Location extends \yii\db\ActiveRecord
@@ -47,7 +48,7 @@ class Location extends \yii\db\ActiveRecord
             [['type'], 'integer'],
             [['name', 'city'], 'string', 'max' => 40],
             [['price'], 'string', 'max' => 20],
-            [['avatar'], 'string', 'max' => 200],
+            [['avatar', 'url'], 'string', 'max' => 255],
             [['file'], 'file'],
             [['zipcode'], 'string', 'max' => 7],
         ];
@@ -60,15 +61,16 @@ class Location extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'street' => 'Street',
-            'zipcode' => 'Zipcode',
-            'category_id' => 'Category',
-            'description' => 'Description',
-            'price' => 'Price',
-            'city' => 'City',
-            'type' => 'Type',
+            'name' => 'Naam',
+            'street' => 'Straat',
+            'zipcode' => 'Postcode',
+            'category_id' => 'Categorie (optioneel)',
+            'description' => 'Beschrijving (optioneel)',
+            'price' => 'Prijs (optioneel)',
+            'city' => 'Stad',
+            'type' => 'Type (optioneel)',
             'file' => 'Avatar',
+            'url' => 'Url (optioneel)',
         ];
     }
 

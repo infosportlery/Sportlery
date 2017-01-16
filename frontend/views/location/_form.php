@@ -32,6 +32,8 @@ use yii\helpers\ArrayHelper;
     
     <?= $form->field($model, 'type')->dropDownList(array(1 => 'Paid', 0 =>'Public')) ?>
 
+    <?= $form->field($model, 'url')->textInput(); ?>
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

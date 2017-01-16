@@ -95,7 +95,19 @@ $this->params['breadcrumbs'][] = $this->title;
                             <p>Dit is een betaalde locatie.</p>
                             <li>Prijs: <?= $model->price ?></li>
                             <hr>
-                            <button class="btn btn-primary">Boek nu!</button>
+                            <?php 
+
+                            if(isset($model->url)) {
+                                echo Html::a('Boek Nu!', $model->url, ['class' => 'btn btn-primary']);
+                            } else {
+                                echo 'Er is geen URL toegevoegd aan deze locatie.<hr>';
+                                if(Yii::$app->user->can('admin'))
+                                {
+                                    echo Html::a('Aanpassen', ['update', 'id' => $model->id], ['class' => 'btn btn-danger']);
+                                }
+                            }
+
+                            ?>
                         <?php endif ?>
                     </p>
                 </div>
