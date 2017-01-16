@@ -10,9 +10,7 @@ BLUE+: #105C89
 input .addon {
   color: red;
 }
-#login-form-inline {
-  
-}
+
 .location-list > h3 > a {
   text-decoration: none !important;
   color: #29719B;

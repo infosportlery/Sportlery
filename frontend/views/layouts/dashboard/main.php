@@ -1,3 +1,4 @@
+
 <?php 
 
 use yii\helpers\Html;
@@ -9,6 +10,7 @@ use yii\bootstrap\Modal;
 use yii\helpers\Url;
 use yii\bootstrap\Alert;
 use frontend\controllers\NotFoundHttpException;
+use frontend\controllers\UserController;
 
 DashboardAsset::register($this);
 
@@ -20,6 +22,18 @@ Modal::begin([
 
   echo "<div id='modalContent'></div>";
 Modal::end();
+
+
+
+// Modal::begin([
+//       'header'=>'<h4>Stap 1: </h4>',
+//       'id'=>'stepone',
+//       'size'=>'modal-md',
+//    ]);
+
+//   echo $this->context->stepOne();
+// Modal::end();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

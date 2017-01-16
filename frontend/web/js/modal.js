@@ -9,4 +9,10 @@ $(function(){
             .find('#modalContent')
             .load($(this).attr('value'))
     });
+
 });
+
+ $(document).ready(function(){
+        $("#stepone").modal('show')
+        .find('#stepOneContent')
+    });

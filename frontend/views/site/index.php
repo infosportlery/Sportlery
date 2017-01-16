@@ -18,7 +18,7 @@
     </div>
     <hr class="hr-invisible-sm">
     <div class="row">
-      <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+      <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
         <?php echo $this->render('@app/views/location/_globalsearch', array('model'=>$searchModel)); ?>
       </div> <!-- end col -->
     </div>

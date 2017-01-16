@@ -25,10 +25,10 @@ use app\models\Location;
     ->textInput(['placeholder' => 'Verfijn Zoekresultaat']) ?>
 
 <?= $form->field($model, 'city', ['showLabels'=>false])->widget(Select2::classname(), [
-            'data'=> ArrayHelper::map(Location::find()->all(), 'city', 'city'),
-            'pluginOptions'=>['allowClear'=>true],
-            'options' => ['placeholder'=>'Selecteer een stad..']
-        ]); ?>
+    'data'=> ArrayHelper::map(Location::find()->all(), 'city', 'city'),
+    'pluginOptions'=>['allowClear'=>true],
+    'options' => ['placeholder'=>'Selecteer een stad..']
+]); ?>
 
 
 <div class="form-group">
