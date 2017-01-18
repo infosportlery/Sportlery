@@ -27,35 +27,35 @@ use app\models\Category;
 		    'data'=> ArrayHelper::map(Category::find()->all(), 'id', 'name'),
 		    'pluginOptions'=>['
 		    	allowClear'=>true,
-		    	'width' => '250px',
+		    	'width' => '180px',
 		    ],
 
 		    'options' => ['placeholder'=>'Selecteer een sport'],
-		    'size' => Select2::MEDIUM
+		    'size' => Select2::SMALL
 		]); ?>
 
 		<?= $form->field($model, 'city', ['showLabels'=>false])->widget(Select2::classname(), [
 		    'data'=> ArrayHelper::map(Location::find()->all(), 'city', 'city'),
 		    'pluginOptions'=>['
 		    	allowClear'=>true,
-		    	'width' => '250px',
+		    	'width' => '180px',
 		    ],
-		    'options' => ['placeholder'=>'Zoek een Sportbuddy op locatie'],
-		    'size' => Select2::MEDIUM
+		    'options' => ['placeholder'=>'Zoek op locatie'],
+		    'size' => Select2::SMALL
 		]); ?>
 
 		<?= $form->field($userModel, 'city', ['showLabels'=>false])->widget(Select2::classname(), [
 		    'data'=> [ArrayHelper::map(User::find()->all(), 'city', 'city')],
 		    'pluginOptions'=>['
 		    	allowClear'=>true,
-		    	'width' => '250px',
+		    	'width' => '180px',
 		    ],
-		    'options' => ['placeholder'=>'Selecteer een sportlocatie'],
-		    'size' => Select2::MEDIUM
+		    'options' => ['placeholder'=>'Zoek een Sportbuddy'],
+		    'size' => Select2::SMALL
 		]); ?>
 
 	
-    <?= Html::submitButton('Zoeken', ['class' => 'btn btn-primary']) ?>
+    <?= Html::submitButton('Zoeken', ['class' => 'btn btn-primary btn-sm']) ?>
 
 
 	</div>

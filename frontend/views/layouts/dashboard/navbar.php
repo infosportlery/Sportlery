@@ -35,16 +35,9 @@ use yii\bootstrap\NavBar;
         'items' => $menuItems,
     ]);
 
-     ?>
-<!--     <span class="language pull-right" style="width:50px;">
-    <a href='/en'> 
-        <?= html::img('@web/images/flags/gb.png'); ?> 
-    </a>
-    <span class="language" style="width:50px;">
-    <a href='/nl'> 
-        <?= html::img('@web/images/flags/nl.png'); ?> 
-    </a> -->
-    <?php
+    echo $this->render('/location/_navbarsearch', ['model' => $this->params['searchModel'], 'userModel' => $this->params['userSearchModel']]);
+
 
     NavBar::end();
+
     ?>

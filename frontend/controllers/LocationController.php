@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use app\models\Location;
 use frontend\models\LocationSearch;
+use common\models\User;
 use common\models\UserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -50,18 +51,14 @@ class LocationController extends Controller
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         $publicProvider = $searchModel->publicSearch(Yii::$app->request->queryParams);
         $paidProvider = $searchModel->paidSearch(Yii::$app->request->queryParams);
-
-        // User Provider
-        $userProvider = $userSearchModel->search(Yii::$app->request->queryParams);
         
         $this->layout = "default";
         return $this->render('index', [
             'searchModel' => $searchModel,
             'userSearchModel' => $userSearchModel,
             'dataProvider' => $dataProvider,
-            'publicProvider' => $publicProvider,
             'paidProvider' => $paidProvider,
-            'userProvider' => $userProvider,
+            'publicProvider' => $publicProvider,
         ]);
     }
 

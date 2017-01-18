@@ -7,10 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
 {
     public static $files = array (
-        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
     );
 
@@ -18,6 +18,7 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         'y' => 
         array (
             'yii\\swiftmailer\\' => 16,
+            'yii\\jui\\' => 8,
             'yii\\httpclient\\' => 15,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
@@ -26,6 +27,7 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
             'yii\\bootstrap\\' => 14,
             'yii\\authclient\\' => 15,
             'yii\\' => 4,
+            'yii2fullcalendar\\' => 17,
         ),
         'r' => 
         array (
@@ -35,10 +37,16 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'n' => 
+        array (
+            'nodge\\eauth\\' => 12,
+        ),
         'k' => 
         array (
+            'kartik\\select2\\' => 15,
             'kartik\\rating\\' => 14,
             'kartik\\grid\\' => 12,
+            'kartik\\form\\' => 12,
             'kartik\\dialog\\' => 14,
             'kartik\\base\\' => 12,
         ),
@@ -92,6 +100,10 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer',
         ),
+        'yii\\jui\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
+        ),
         'yii\\httpclient\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-httpclient',
@@ -124,6 +136,10 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+        'yii2fullcalendar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/philippfrenzel/yii2fullcalendar',
+        ),
         'rmrevin\\yii\\fontawesome\\' => 
         array (
             0 => __DIR__ . '/..' . '/rmrevin/yii2-fontawesome',
@@ -134,6 +150,14 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
+        'nodge\\eauth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nodge/yii2-eauth/src',
+        ),
+        'kartik\\select2\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-select2',
+        ),
         'kartik\\rating\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-rating',
@@ -141,6 +165,10 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         'kartik\\grid\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-grid',
+        ),
+        'kartik\\form\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-activeform',
         ),
         'kartik\\dialog\\' => 
         array (
@@ -236,6 +264,17 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
             ),
         ),
+        'O' => 
+        array (
+            'OAuth\\Unit' => 
+            array (
+                0 => __DIR__ . '/..' . '/lusitanian/oauth/tests',
+            ),
+            'OAuth' => 
+            array (
+                0 => __DIR__ . '/..' . '/lusitanian/oauth/src',
+            ),
+        ),
         'H' => 
         array (
             'HTMLPurifier' => 
@@ -263,7 +302,12 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'LightOpenID' => __DIR__ . '/..' . '/nodge/lightopenid/openid.php',
+        'LightOpenIDProvider' => __DIR__ . '/..' . '/nodge/lightopenid/provider/provider.php',
+        'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
+        'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
+        'PHPUnit\\Framework\\TestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestListener.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',

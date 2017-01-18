@@ -59,7 +59,7 @@ use yii\bootstrap\NavBar;
                         Html::beginForm(['/site/logout'], 'post')
                         . Html::submitButton(
                             'Uitloggen (' . Yii::$app->user->identity->username . ')',
-                            ['class' => 'btn btn-link btn-logout']
+                            ['class' => 'btn btn-link btn-logout-inverse']
                         )
                         . Html::endForm(),
                 ],

@@ -3,7 +3,9 @@
 	use yii\helpers\Url;
   use yii\helpers\VarDumper;
   use yii\bootstrap\Modal;
-  
+  use kartik\form\ActiveForm;
+
+
   // if(Yii::$app->user->identity->favorite_sport == NULL) {
   //   Modal::begin([
   //         'header'=>'<h4>Stap 1: Welke sport(en) doe je?</h4>',
@@ -15,129 +17,119 @@
   //   Modal::end();
   // }
 ?>
-
     <div class="row">
-      <div class="col-md-4">
-      <h1 class="page-header"><i class="fa fa-home"></i> Dashboard</h1>
-      </div>
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-orange">
+            <div class="inner">
+              <h3>135</h3>
+
+              <p>Betaalde Locaties</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-money"></i>
+            </div>
+            <a href="#" class="small-box-footer">
+              Bekijk Locaties <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-orange">
+            <div class="inner">
+              <h3>93</h3>
+
+              <p>Publiekelijke Locaties</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-map-o"></i>
+            </div>
+            <a href="#" class="small-box-footer">
+              Bekijk Locaties <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-blue">
+            <div class="inner">
+              <h3>13</h3>
+
+              <p>Sportlers in Schiedam</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-home"></i>
+            </div>
+            <a href="#" class="small-box-footer">
+              Bekijk Sportlers <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-blue">
+            <div class="inner">
+              <h3>420</h3>
+
+              <p>Groepschats</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-comment"></i>
+            </div>
+            <a href="#" class="small-box-footer">
+              Bekijk Sportlers <i class="fa fa-arrow-circle-right"></i>
+            </a>
+          </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                <h3 class="panel-title">Persoonlijke Informatie 
-                <?= Html::button('Edit', ['value' => Url::to(['user/update', 'id' => Yii::$app->user->identity->id]), 'class' => 'btn btn-xs btn-default pull-right', 'id' => 'editUser']); ?></h3>
-                </div>
-                <div class="panel-body">
-                   Gebruikersnaam: <?= Yii::$app->user->identity->username ?><br>
-                   Voornaam: <?= $identity->firstname ?><br>
-                   Achternaam: <?= $identity->lastname ?><br>
-                   Email: <?= $identity->email ?><br>
-                   Geboortedatum: <?= $identity->birthday ?><br>
-                   Geslacht: <?= $identity->gender ?><br>
-                   ID: <?= $identity->id ?><br>
-                   City: <?= $identity->city ?><br>
-                   City: <?= $identity->favorite_sport ?><br>
-                </div>
-            </div>
+            <h2>Actieve Sporten:</h2>
         </div>
     </div>
     <div class="row">
-      <div class="col-md-4">
-      <h2>Actieve Sporten:</h2>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Tennis
-                      <?= Html::button('Edit', ['value' => Url::to(['user/update', 'id' => Yii::$app->user->identity->id]), 'class' => 'btn btn-xs btn-default pull-right', 'id' => 'editUser']); ?>
-                    </h3>
-                </div>
-                <div class="panel-body">
-                   <li>Level: 7</li>
-                   <li>Sportbuddies: 8</li>
-                   <li>Membership: Fit for Free</li>
-                   <br>
-                </div>
+        <div class="col-md-6">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Sportlocaties</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <!-- /.box-tools -->
             </div>
-        </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Voetbal</h3>
-                </div>
-                <div class="panel-body">
-                   <li>Level: 7</li>
-                   <li>Wedstrijden: 30</li>
-                   <li>Rank: 27th</li>
-                   <li>Sportbuddies: 8</li>
-                   <button class="btn btn-primary btn-block">Daag Uit!</button>
-                </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <?php echo $this->render('/location/publicgridview', ['publicProvider' => $publicProvider, 'searchModel' => $searchModel]);?>  
             </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
         </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Skaten</h3>
-                </div>
-                <div class="panel-body">
-                   <li>Level: 7</li>
-                   <li>Wedstrijden: 30</li>
-                   <li>Rank: 27th</li>
-                   <li>Sportbuddies: 8</li>
-                    <button class="btn btn-primary btn-block">Daag Uit!</button>
-                </div>
+        <!-- /.col -->
+        <div class="col-md-6">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Sportlers</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+              </div>
+              <!-- /.box-tools -->
             </div>
-        </div>
-    </div>
-        <div class="row">
-      <div class="col-md-4">
-      <h2>Interesse In:</h2>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Tennis</h3>
-                </div>
-                <div class="panel-body">
-                   <li>Level: 7</li>
-                   <li>Sportbuddies: 8</li>
-                   <li>Membership: Fit for Free</li>
-                   <button class="btn btn-primary btn-block">Daag Uit!</button>
-                   <br>
-                </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+                <?php echo $this->render('/location/usergridview', ['userProvider' => $userProvider, 'userSearchModel' => $userSearchModel]);?>  
             </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
         </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Voetbal</h3>
-                </div>
-                <div class="panel-body">
-                   <li>Level: 7</li>
-                   <li>Wedstrijden: 30</li>
-                   <li>Rank: 27th</li>
-                   <li>Sportbuddies: 8</li>
-                   <button class="btn btn-primary btn-block">Daag Uit!</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Skaten</h3>
-                </div>
-                <div class="panel-body">
-                   <li>Level: 7</li>
-                   <li>Wedstrijden: 30</li>
-                   <li>Rank: 27th</li>
-                   <li>Sportbuddies: 8</li>
-                   <button class="btn btn-primary btn-block">Daag Uit!</button>
-                </div>
-            </div>
-        </div>
+        <!-- /.col -->
     </div>

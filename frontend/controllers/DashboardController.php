@@ -3,13 +3,22 @@
 namespace frontend\controllers;
 
 use common\models\User;
+use common\models\UserSearch;
+use frontend\models\Location;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
+use frontend\models\LocationSearch;
 use app\models\Category;
 use yii;
+
+// $userSearchModel = new UserSearch();
+// $searchModel = new LocationSearch();
+
+Yii::$app->view->params['searchModel'] = new LocationSearch();
+Yii::$app->view->params['userSearchModel'] = new LocationSearch();
 
 class DashboardController extends Controller
 {
@@ -23,12 +32,18 @@ class DashboardController extends Controller
                 ],
             ],
         ];
+    
     }
-
-
 
     public function actionIndex()
     {
+
+    $searchModel = new LocationSearch();
+    $userSearchModel = new UserSearch();
+    $publicProvider = $searchModel->publicSearch(Yii::$app->request->queryParams);
+
+
+    $userProvider = $userSearchModel->search(Yii::$app->request->queryParams);
 
     $model = new User();
     $categoryModel = new Category();
@@ -53,6 +68,10 @@ class DashboardController extends Controller
                 'model' => $model,
                 'categoryModel' => $categoryModel,
                 'identity' => $identity,
+                'publicProvider' => $publicProvider,
+                'searchModel' => $searchModel,
+                'userProvider' => $userProvider,
+                'userSearchModel' => $userSearchModel,
             ]);
 
         }

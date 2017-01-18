@@ -85,4 +85,27 @@ class UserSearch extends User
 
         return $dataProvider;
     }
+
+    public function frontPageUserSearch()
+    {
+        $query = User::find();
+
+        $userProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [
+                'pageSize' => 2,
+            ],
+        ]);
+
+        $query->andFilterWhere([
+            'id' => $this->id,
+            'status' => $this->status,
+            'type_id' => $this->type_id,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
+            'city' => $this->city,
+        ]);
+
+        return $userProvider;
+    }
 }

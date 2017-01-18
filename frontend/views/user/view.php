@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Location */
 
-$this->title = $user->username;
+$this->title = $model->username;
 $this->params['breadcrumbs'][] = ['label' => 'Locations', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 
@@ -41,11 +41,11 @@ $id = $_GET['id'];
                     <h3 class="panel-title">Persoonlijke Informatie</h3>
                 </div>
                 <div class="panel-body">
-                    <li><b>Gebruikersnaam</b>: <?= $user->username; ?></li>
-                    <li><b>Voornaam</b>: <?= $user->firstname; ?></li>
-                    <li><b>Achternaam</b>: <?= $user->lastname; ?></li>
-                    <li><b>Favoriete Sport</b>: <?= $user->favorite_sport; ?></li>
-                    <li><b>Favoriete Atleet</b>: <?= $user->favorite_athlete; ?></li>
+                    <li><b>Gebruikersnaam</b>: <?= $model->username; ?></li>
+                    <li><b>Voornaam</b>: <?= $model->firstname; ?></li>
+                    <li><b>Achternaam</b>: <?= $model->lastname; ?></li>
+                    <li><b>Favoriete Sport</b>: <?= $model->favorite_sport; ?></li>
+                    <li><b>Favoriete Atleet</b>: <?= $model->favorite_athlete; ?></li>
                 </div>
             </div>
         </div>

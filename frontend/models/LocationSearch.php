@@ -79,7 +79,7 @@ class LocationSearch extends Location
         $publicProvider = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [
-                'pageSize' => 5,
+                'pageSize' => 3,
             ],
         ]);
 
@@ -94,14 +94,52 @@ class LocationSearch extends Location
 
         $query = Location::find()->where(['type' => 1]);
 
-        $paidProvider = new ActiveDataProvider([
+        $publicProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination' => [
+                'pageSize' => 3,
+            ],
         ]);
 
         $query->andFilterWhere(['like', 'category_id', $this->category_id])
-            ->andFilterWhere(['like', 'city', $this->city]);
+                ->andFilterWhere(['like', 'city', $this->city]);
 
-        return $paidProvider;
+        return $publicProvider;
+    }
+
+    public function frontPagePublicSearch()
+    {
+
+        $query = Location::find()->where(['type' => 0]);
+
+        $publicProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [
+                'pageSize' => 2,
+            ],
+        ]);
+
+        $query->andFilterWhere(['like', 'category_id', $this->category_id])
+                ->andFilterWhere(['like', 'city', $this->city]);
+
+        return $publicProvider;
+    }
+
+    public function frontPagePaidSearch()
+    {
+        $query = Location::find()->where(['type' => 1]);
+
+        $publicProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [
+                'pageSize' => 2,
+            ],
+        ]);
+
+        $query->andFilterWhere(['like', 'category_id', $this->category_id])
+                ->andFilterWhere(['like', 'city', $this->city]);
+
+        return $publicProvider;
     }
 
 }

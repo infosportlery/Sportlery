@@ -7,10 +7,29 @@ ORANGE++: #D7440E
 BLUE: #29719B
 BLUE+: #105C89
 -------------------------------------------------- */
+.thumbnail-horizontal {
+   display: inline-block !important;
+}
+
+
 input .addon {
   color: red;
 }
-
+.btn-margin {
+  margin-right: 25px;
+}
+.navbar_search {
+  margin-top: 10px;
+}
+.navbar {
+  height: 50px;
+}
+.btn-link .btn-logout{
+  color: white !important;
+}
+.btn-logout-inverse {
+  color: black !important;
+}
 .searchbar {
   background-color: #eee;
   padding: 10px;
@@ -20,6 +39,7 @@ input .addon {
 .location-list > h3 > a {
   text-decoration: none !important;
   color: #29719B;
+  font-size: 0.8em;
   font-weight: 400;
 }
 .location-avatar img{
@@ -27,7 +47,7 @@ input .addon {
   height: 100px;
 }
 .location-list {
-  border: none;
+  border: none !important;
 }
 .location-list .btn {
   margin-top: 65px;
@@ -38,9 +58,6 @@ input .addon {
 }
 .btn-hidden{
   display: none;
-}
-.btn-logout {
-  color: black !important;
 }
 .breadcrumb {
 
@@ -340,7 +357,7 @@ table tr {
 }
 .header {
   height: 85vh;
-  padding-top: 100px;
+  padding-top: 65px;
   margin-top: -50px;
   margin-bottom: 50px;
   text-align: center;
@@ -403,6 +420,11 @@ table tr {
   border: none;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+.hr-invisible-xs {
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .hr-invisible-md {
   border: none;

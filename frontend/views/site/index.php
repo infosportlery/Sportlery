@@ -5,6 +5,8 @@
   use yii\widgets\ActiveForm;
   use yii\helpers\Url;
 
+  use yii\widgets\ListView;
+
 
 ?>
 <div class="header">
@@ -55,41 +57,24 @@
     <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
       <div class="col-md-4 col-sm-4">
         <img src="images/icons/location.png" height="80px" style="width: 80px;"><br>
-        <h1 class="h1-default text-center"><?= Yii::t('app', 'Locaties'); ?></h1>
+        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Locaties'); ?></strong></h1>
         <p>Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!</p>
         <?= Html::a('Bekijk alle locaties', [Url::to('location/index')], ['class' => 'btn btn-primary']); ?>
       </div>
       <div class="col-md-4 col-sm-4">
         <img src="images/icons/matchmaking.png" height="80px" style="width: 80px;"><br>
-        <h1 class="h1-default text-center"><?= Yii::t('app', 'Matchmaking'); ?></h1>
+        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
         <p>Vind sportbuddies, creëer of participeer in evenementen en vind vervanging voor jouw sporten.</p>
          <?= Html::a('Go and Play!', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-matchmaking']); ?>
       </div>
       <div class="col-md-4 col-sm-4">
         <img src="images/icons/trainer.png" height="80px" style="width: 80px;"><br>
-        <h1 class="h1-default text-center"><?= Yii::t('app', 'Lessen'); ?></h1>
+        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Lessen'); ?></strong></h1>
         <p>Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.</p>
          <?= Html::a('Bekijk alle lessen', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-lessons']); ?>
       </div>
     </div>
   </div> <!-- end row -->
-
-  <hr class="hr-invisible">
-
-  <div class="row text-center">
-    <h3>Wil je één van de eerste Sportler zijn? Laat dan nu je e-mail achter.</h3>
-    <div class="mailing col-md-6 col-md-offset-3">
-            <?php $form = ActiveForm::begin(); ?>
-
-                <?= $form->field($mailing, 'email')->textInput()->input('text', ['placeholder' => "Laat je e-mail adres achter."])->label(false); ?>
-
-                <div class="form-group">
-                    <?= Html::submitButton($mailing->isNewRecord ? 'Verstuur' : 'Update', ['class' => $mailing->isNewRecord ? 'btn btn-default' : 'btn btn-primary']) ?>
-                </div>
-
-            <?php ActiveForm::end(); ?>
-    </div>
-  </div>
 
 <hr class="hr-invisible">
 
@@ -98,115 +83,106 @@
 <!-- Listing Section | Locations
 ************************************************************************ -->
 <div class="container-fluid fullheight darkBg" id="locations">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1>Locaties</h1>
-    </div> <!-- end col -->
-  </div><!-- end row -->
-
-  <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <ul class="nav text-center" role="tablist">
-          <!-- Tab Buttons -->
-
-           <?php for ($i = 0; $i < 3; $i++): ?>
-
-            <button href="#<?= $sport[$i]['type_name'] ?>" class="btn btn-animation btn-tabs" aria-controls="meer" role="tab" data-toggle="tab">
-              <?= $sport[$i]['type_name']; ?>
-            </button>
-
-           <?php endfor ?>
-          
-         
-          <?= Html::a('Meer', ['/location/index'], ['class' => 'btn btn-default btn-animation btn-tabs']); ?> 
-        </ul>
-      </div>
-    </div>
-
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active fade in" id="tennis">
 
         <div class="row">
-          <div class="col-md-6">
-          <h1 class="text-center">Sportclubs</h1>
+            <div class="col-md-6 text-center">
+                <h1><strong>Sportlocaties</strong></h1>
+            </div> <!-- end col -->
+            <div class="col-md-6 text-center">
+                <h1><strong>Matchmaking</strong></h1>
+            </div> <!-- end col -->
+        </div><!-- end row -->
+    
 
-            <?php for ($i = 0; $i < 2; $i++): ?>
+    <div class="col-md-6">
 
-            <div class="list">
-              <div class="row">
-                <div class="col-md-4">
-                  <?php if(file_exists($paid[$i]['avatar'])): ?>
-                    <img class="img-responsive img-avatar-sm" src="<?= $paid[$i]['avatar'] ?>">
-                  <?php else : ?>
-                  <img class="img-responsive img-avatar-sm" src="uploads/default.jpg">
-                  <?php endif ?>
-                </div>
-                <div class="col-md-8">
-                  <?php $url = urldecode('index.php?r=location/paid&id='.$paid[$i]['id']); ?>
-                  <h1><?= Html::a($paid[$i]['company_name'], $url); ?> <span class="text-muted">| <?= $paid[$i]['city']; ?></span></h1>
-                  <p><?= substr($paid[$i]['description'], 0, 250) . "..."; ?></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-8 text-right">
-                  <?= Html::a('Boek Nu', $url, ['class' => 'btn btn-primary']); ?>
-                </div>
-              </div> <!-- end row -->
-            </div> <!-- end list -->
-
-            <?php endfor ?>
-
+        <div class="row">
             <div class="col-md-12 text-center">
-              <i class="fa fa-angle-down btn-fa"></i> <?= Html::a('Meer', Url::to(['/location', 'type'=> 1]));?>
-              <h3><i class="fa fa-plus btn-fa"></i> <?= Html::a('Voeg je sportclub toe', 'http://manage.sportlery.nl'); ?></h3>
+                <h3>Openbare Locaties</h3>
             </div>
-          </div> <!-- end col -->
+        </div>
+        
+        <?= 
+            ListView::widget([
+                'dataProvider' => $publicProvider,
+                'options' => [
+                    'tag' => 'div',
+                    'class' => 'list-wrapper',
+                    'id' => 'list-wrapper',
+                ],
+                'layout' => "{items}",
+                'itemView' => function ($model, $key, $index, $widget) {
+                    return $this->render('_list',['model' => $model]);
+                },
+            ]); 
+        ?>
 
-          <div class="col-md-6">
-          <h1 class="text-center">Openbare Locaties</h1>
-
-          <?php for ($i = 0; $i < 2; $i++): ?>
-
-          <div class="list">
-            <div class="row">
-              <div class="col-md-4">
-                <?php if(file_exists($public[$i]['avatar'])): ?>
-                  <img class="img-responsive img-avatar-sm" src="<?= $public[$i]['avatar'] ?>">
-                <?php else : ?>
-                  <img class="img-responsive img-avatar-sm" src="uploads/default.jpg">
-                <?php endif ?>
-              </div>
-              <div class="col-md-8">
-
-                <?php $url = urldecode('index.php?r=location/view&id='.$public[$i]['id']); ?>
-                <h1><?= Html::a($public[$i]['name'], $url); ?> <span class="text-muted">| <?= $public[$i]['city']; ?></span></h1>
-                <p><?= substr($public[$i]['description'], 0, 250) . "..."; ?></p>
-              </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Sportclubs</h2>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <p>Prijs: <b> <?= $public[$i]['price']; ?></b><br>
-                Category: <?= $public[$i]['category']; ?></p>
-              </div>
-              <div class="col-md-8 text-right">
-                <?= Html::a('Bekijk', $url, ['class' => 'btn btn-primary']); ?>
-              </div>
-            </div> <!-- end row -->
-          </div> <!-- end list -->
+        </div>
+        
+        <?= 
+            ListView::widget([
+                'dataProvider' => $paidProvider,
+                'options' => [
+                    'tag' => 'div',
+                    'class' => 'list-wrapper',
+                    'id' => 'list-wrapper',
+                ],
+                'layout' => "{items}",
+                'itemView' => function ($model, $key, $index, $widget) {
+                    return $this->render('_list',['model' => $model]);
+                },
+            ]); 
+        ?>
 
-          <?php endfor ?>
-          <div class="col-md-12 text-center">
-            <i class="fa fa-angle-down btn-fa"></i> <?= Html::a('Meer', Url::to(['/location', 'type'=> 0]));?>
-            <h3><i class="fa fa-plus btn-fa"></i> <?= Html::a('Voeg een openbare locatie toe', Url::to(['/location/create'])); ?></h3>
-          </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+                <button class="btn btn-primary btn-block btn-xs">Meer</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Sportlers</h2>
+            </div>
+        </div>
+        
+        <?= 
+            ListView::widget([
+                'dataProvider' => $userProvider,
+                'options' => [
+                    'tag' => 'div',
+                    'class' => 'list-wrapper',
+                    'id' => 'list-wrapper',
+                ],
+                'layout' => "{items}",
+                'itemView' => function ($model, $key, $index, $widget) {
+                    return $this->render('_userlist',['model' => $model]);
+                },
+            ]); 
+        ?>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Groepschat</h2>
+            </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-12 text-center">
+        <h1 class="comingsoon">COMING SOON</h1>
+        </div>
+        </div>
+          
 
 
-          </div> <!-- end col -->
-        </div> <!-- end row -->
-      </div> <!-- end tab panel -->
-    </div> <!-- end tab-content -->
+    </div> <!-- end .col -->
 
 </div> <!-- end container-fluid -->
 
@@ -272,18 +248,17 @@
       </div> <!-- end container -->
 </div> <!-- parallaxOne -->
 
-<div class="container" id="lessons">
-<div class="row">
-  <img src="images/lessons.png" class="img-responsive">
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h2 class="featurette-heading">Ben jij een trainer? <h4><span class="text-muted">Creëer je eigen BETA profiel en bied je lessen aan.</span></h2>
+            <?= Html::a('Aanmelden', ['/site/signup'], ['class'=>'btn btn-primary']) ?>
+        </div>
+    </div>
 </div>
-<div class="row text-center">
-  <div class="col-md-12">
-    <h2 class="featurette-heading">Ben jij een trainer? <h4><span class="text-muted">Creëer je eigen BETA profiel en bied je lessen aan.</span></h4>
-    <?= Html::a('Aanmelden', ['/site/signup'], ['class'=>'btn btn-primary']) ?>
-  </div>
-</div>
+
+
 <hr class="hr-invisible">
-</div> <!-- end container-fluid -->
 
 
 <div class="parallaxTwo">
@@ -308,7 +283,22 @@
 
 <div class="container">
 
-  <hr class="hr-invisible">
+  <hr class="hr-invisible-sm">
+
+  <div class="row text-center">
+    <h3>Wil je één van de eerste Sportler zijn? Laat dan nu je e-mail achter.</h3>
+    <div class="mailing col-md-6 col-md-offset-3">
+            <?php $form = ActiveForm::begin(); ?>
+
+                <?= $form->field($mailing, 'email')->textInput()->input('text', ['placeholder' => "Laat je e-mail adres achter."])->label(false); ?>
+
+                <div class="form-group">
+                    <?= Html::submitButton($mailing->isNewRecord ? 'Verstuur' : 'Update', ['class' => $mailing->isNewRecord ? 'btn btn-default' : 'btn btn-primary']) ?>
+                </div>
+
+            <?php ActiveForm::end(); ?>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-md-12 text-center">

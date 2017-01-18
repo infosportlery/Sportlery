@@ -72,6 +72,7 @@ Modal::end();
               <li><?= Html::a('<i class="fa fa-soccer-ball-o"></i> Sport Toevoegen', Url::to(['category/create'])); ?></li>
             </ul>
 
+
           <?php endif ?>
         </div>
       </div>
