@@ -3,16 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=vserver175.axc.nl;dbname=folkewi175_sportlery',
-            'username' => 'folkewi175',
-            'password' => 'n734snt6',
-            'charset' => 'utf8',
-        ],
-        'manage' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=vserver175.axc.nl;dbname=folkewi175_testn',
-            'username' => 'folkewi175',
-            'password' => 'n734snt6',
+            'dsn' => 'mysql:host=eu-cdbr-west-01.cleardb.com;dbname=heroku_d30d59a33a52f49',
+            'username' => 'b0eff0ce14caf8',
+            'password' => '4e4b548d',
             'charset' => 'utf8',
         ],
         'mailer' => [

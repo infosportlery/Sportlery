@@ -77,16 +77,10 @@ class LocationController extends Controller
 
     public function actionPaid($id)
     {
-        $id = $_GET['id'];
-        $paid = Yii::$app->manage->createCommand("SELECT * from `time_gz_time_slot_users` WHERE `id` = $id")->queryAll();
-        $calendars = Yii::$app->manage->createCommand("SELECT * from `time_gz_time_slot_calendars` WHERE `user_id` = $id")->queryAll();
 
 
         $this->layout = "profile";
-        return $this->render('paid', [
-            'paid' => $paid,
-            'calendars' => $calendars,
-        ]);
+        return $this->render('paid');
     }
 
     /**
