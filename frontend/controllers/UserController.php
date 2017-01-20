@@ -10,6 +10,8 @@ use yii\web\UploadedFile;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use frontend\models\LocationSearch;
+
 Yii::$app->view->params['searchModel'] = new LocationSearch();
 Yii::$app->view->params['userSearchModel'] = new LocationSearch();
 
