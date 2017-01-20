@@ -20,7 +20,6 @@ use yii;
 Yii::$app->view->params['searchModel'] = new LocationSearch();
 Yii::$app->view->params['userSearchModel'] = new LocationSearch();
 
-
 class DashboardController extends Controller
 {
     public function behaviors()

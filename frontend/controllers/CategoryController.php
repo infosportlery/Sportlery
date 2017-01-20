@@ -9,6 +9,9 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+Yii::$app->view->params['searchModel'] = new LocationSearch();
+Yii::$app->view->params['userSearchModel'] = new LocationSearch();
+
 /**
  * CategoryController implements the CRUD actions for Category model.
  */
