@@ -81,6 +81,7 @@ class UserSearch extends User
             ->andFilterWhere(['like', 'firstname', $this->firstname])
             ->andFilterWhere(['like', 'lastname', $this->lastname])
             ->andFilterWhere(['like', 'city', $this->city]);
+            
 
         return $dataProvider;
     }
