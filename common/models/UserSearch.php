@@ -19,7 +19,7 @@ class UserSearch extends User
     {
         return [
             [['id', 'status', 'type_id', 'created_at', 'updated_at'], 'integer'],
-            [['username', 'auth_key', 'password_hash', 'password_reset_token', 'email', 'avatar', 'cover', 'favorite_sport', 'firstname', 'city', 'lastname', 'favorite_athlete'], 'safe'],
+            [['username', 'auth_key', 'password_hash', 'password_reset_token', 'email', 'avatar', 'cover', 'favorite_sport', 'firstname', 'city', 'lastname'], 'safe'],
         ];
     }
 
@@ -80,8 +80,7 @@ class UserSearch extends User
             ->andFilterWhere(['like', 'favorite_sport', $this->favorite_sport])
             ->andFilterWhere(['like', 'firstname', $this->firstname])
             ->andFilterWhere(['like', 'lastname', $this->lastname])
-            ->andFilterWhere(['like', 'city', $this->city])
-            ->andFilterWhere(['like', 'favorite_athlete', $this->favorite_athlete]);
+            ->andFilterWhere(['like', 'city', $this->city]);
 
         return $dataProvider;
     }
