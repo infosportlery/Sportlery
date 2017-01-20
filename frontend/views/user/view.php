@@ -45,7 +45,6 @@ $id = $_GET['id'];
                     <li><b>Voornaam</b>: <?= $model->firstname; ?></li>
                     <li><b>Achternaam</b>: <?= $model->lastname; ?></li>
                     <li><b>Favoriete Sport</b>: <?= $model->favorite_sport; ?></li>
-                    <li><b>Favoriete Atleet</b>: <?= $model->favorite_athlete; ?></li>
                 </div>
             </div>
         </div>

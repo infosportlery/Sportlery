@@ -29,8 +29,6 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'favorite_sport')->dropDownList(ArrayHelper::map(Category::find()->all(), 'name', 'name')) ?>
 
-    <?= $form->field($model, 'favorite_athlete')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'gender')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'file')->fileInput(); ?>
