@@ -9,6 +9,11 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use frontend\models\LocationSearch;
+
+Yii::$app->view->params['searchModel'] = new LocationSearch();
+Yii::$app->view->params['userSearchModel'] = new LocationSearch();
+
 /**
  * EventController implements the CRUD actions for Event model.
  */

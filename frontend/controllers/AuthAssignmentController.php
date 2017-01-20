@@ -9,6 +9,11 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
+use frontend\models\LocationSearch;
+
+Yii::$app->view->params['searchModel'] = new LocationSearch();
+Yii::$app->view->params['userSearchModel'] = new LocationSearch();
+
 /**
  * AuthAssignmentController implements the CRUD actions for AuthAssignment model.
  */

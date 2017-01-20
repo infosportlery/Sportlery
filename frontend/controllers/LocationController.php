@@ -15,6 +15,11 @@ use yii\web\UploadedFile;
 use yii\db\Query;
 use yii\helpers\Url;
 
+use frontend\models\LocationSearch;
+
+Yii::$app->view->params['searchModel'] = new LocationSearch();
+Yii::$app->view->params['userSearchModel'] = new LocationSearch();
+
 /**
  * LocationController implements the CRUD actions for Location model.
  */
