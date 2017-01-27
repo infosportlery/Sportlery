@@ -54,10 +54,50 @@ frontend
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
         site/            contains the primary website, first layer used in v.5
+        - First Layer v.5
             index.php
+            overons.php
             sportclub.php
             trainer.php
-            overons.php
+        - Second Layer v.6
+            Contest.php
+        - Third Layer v.7
+            Register.php
+            Login.php
+        dashboard/              contains the primary user panel, third layer used in v.7
+            index.php
+            settings.php
+        sportbuddies/           contains the sportbuddies listing and more, third layer used in v.7
+            _search.php
+            index.php
+        events/                 contains the events system, third layer used in v.7
+            _form.php
+            _search.php
+            create.php
+            index.php
+            update.php
+            view.php
+        location/               contains the primary location display, third layer used in v.7
+            _globalsearch.php
+            _list.php
+            _navbarsearch.php
+            _search.php
+            index.php
+            view.php
+        user/                   contains the userdisplay for each other, third layer used in v.7
+            _form.php
+            _avatar.php
+            _password.php
+            _stepone.php
+            _steptwo.php
+            _stepthree.php
+            _userlocation.php
+            _search.php
+            index.php
+            stepone.php
+            steptwo.php
+            stepthree.php
+            view.php
     widgets/             contains frontend widgets
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
