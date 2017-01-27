@@ -1,24 +1,37 @@
-Yii 2 Advanced Project Template
+Sportlery Project v.5 (Facebook Showcase Release)
 ===============================
+    
+Minimal Viable Product; v.7
+- User Minimal
+    - Login
+    - Register
+    - Account Dashboard
+    - Sportbuddies
+    - User Chat
+    - Event Creation
+    - First Payment method (Ideal)
+- Admin Minimal
+    - Newsletter
+    - Data Checking
+    - Event Creation
+    
+Contest Release; v.6
+    Koppeling met Contest systeem
+    geen grote overhauls, geen db usage
+- Mayor Changes
+    - Design
+    - Koppeling Contest Systeem
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+First Release; v.5
+    Showcase website voor Sportlery.nl
+    Geen Register en Login Alleen display
+ 
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+    
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
-
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
-
-DIRECTORY STRUCTURE
 -------------------
-
+Used Listing (what we use and added ourselves)
 ```
 common
     config/              contains shared configurations
@@ -31,15 +44,6 @@ console
     migrations/          contains database migrations
     models/              contains console-specific model classes
     runtime/             contains files generated during runtime
-backend
-    assets/              contains application assets such as JavaScript and CSS
-    config/              contains backend configurations
-    controllers/         contains Web controller classes
-    models/              contains backend-specific model classes
-    runtime/             contains files generated during runtime
-    tests/               contains tests for backend application    
-    views/               contains view files for the Web application
-    web/                 contains the entry script and Web resources
 frontend
     assets/              contains application assets such as JavaScript and CSS
     config/              contains frontend configurations
@@ -49,6 +53,11 @@ frontend
     tests/               contains tests for frontend application
     views/               contains view files for the Web application
     web/                 contains the entry script and Web resources
+        site/            contains the primary website, first layer used in v.5
+            index.php
+            sportclub.php
+            trainer.php
+            overons.php
     widgets/             contains frontend widgets
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
