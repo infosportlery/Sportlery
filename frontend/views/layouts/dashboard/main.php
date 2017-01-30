@@ -58,7 +58,7 @@ Modal::end();
             <li class="active"><?= Html::a('<i class="fa fa-home"></i> Dashboard', Url::to(['dashboard/index'])); ?></li>
             <li><?= Html::a('<i class="fa fa-envelope"></i> Berichten', Url::to(['site/comingsoon'])); ?></li>
             <li><?= Html::a('<i class="fa fa-soccer-ball-o"></i> Sporten', Url::to(['site/comingsoon'])); ?></li>
-            <li><?= Html::a('<i class="fa fa-address-book-o"></i> Sportbuddies', Url::to(['user/index'])); ?></li>
+            <li><?= Html::a('<i class="fa fa-address-book-o"></i> Sportbuddies', Url::to(['sportbuddies/index'])); ?></li>
           </ul>
            <ul class="nav nav-sidebar">
             <li><?= Html::a('<i class="fa fa-cog"></i> Instellingen', Url::to(['user/settings', 'id' => Yii::$app->user->identity->id])); ?></li>

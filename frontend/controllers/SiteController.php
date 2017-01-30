@@ -265,7 +265,7 @@ class SiteController extends Controller
           if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             return $this->refresh();
         } else {            
-            $this->layout = "default";
+            $this->layout = "main";
             return $this->render('contact', [
                 'model' => $model,
             ]);

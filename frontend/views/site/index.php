@@ -21,7 +21,8 @@
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
-        <?php echo $this->render('@app/views/location/_globalsearch', ['model' => $searchModel, 'userModel' => $userSearchModel]); ?>
+        <?= 'INFORMATIE'; ?>
+        <?php //echo $this->render('@app/views/location/_globalsearch', ['model' => $searchModel, 'userModel' => $userSearchModel]); ?>
       </div> <!-- end col -->
     </div>
     <hr class="hr-invisible-sm">
@@ -33,21 +34,24 @@
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-12 hidden-xs text-center">
-      <h3>Word nu <b>gratis</b> lid van onze community: </h3>
+      <h3>Wilt U meer weten over ons? </h3>
       </div> <!-- end col -->
     </div>
 
     <div class="row">
       <div class="col-md-12 text-center">
-         <?= Html::a('Create BETA account', [Url::to('site/signup')], ['class' => 'btn btn-primary btn-lg']); ?>
+         <button class="btn btn-primary btn-lg" id="btn-index-more">Lees hier meer..</button>
       </div> <!-- end col -->
     </div>
   </div>
+  <div class="row" id="sliderone"></div>
 </div>
 
-<div class="container">
+<hr class="hr-invisible-sm" id="">
+
+<div class="container" >
    
-  <div class="row">
+  <div class="row" >
     <div class="col-md-4 col-md-offset-4 text-center">
       <h1>Wat is Sportlery?</h1>
     </div> <!-- end col -->
@@ -55,211 +59,82 @@
   
   <div class="row text-center">
     <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
-      <div class="col-md-4 col-sm-4">
-        <img src="images/icons/location.png" height="80px" style="width: 80px;"><br>
+      <div class="col-md-4 col-sm-4 infomation-col" >
+        <?= Html::img('@web/images/icons/location.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Locaties'); ?></strong></h1>
         <p>Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!</p>
-        <?= Html::a('Bekijk alle locaties', [Url::to('location/index')], ['class' => 'btn btn-primary']); ?>
+        <hr class="hr-sm">
+        <?= Html::a('Bekijk alle locaties', [Url::to('location/index')], ['class' => 'btn btn-primary information-btn']); ?>
       </div>
-      <div class="col-md-4 col-sm-4">
-        <img src="images/icons/matchmaking.png" height="80px" style="width: 80px;"><br>
+      <div class="col-md-4 col-sm-4 infomation-col" >
+        <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
         <p>Vind sportbuddies, creëer of participeer in evenementen en vind vervanging voor jouw sporten.</p>
-         <?= Html::a('Go and Play!', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-matchmaking']); ?>
+        <hr class="hr-sm">
+         <?= Html::a('Go and Play!', [Url::to('')], ['class' => 'btn btn-primary information-btn', 'id' => 'link-matchmaking']); ?>
       </div>
-      <div class="col-md-4 col-sm-4">
-        <img src="images/icons/trainer.png" height="80px" style="width: 80px;"><br>
+      <div class="col-md-4 col-sm-4 infomation-col" >
+        <?= Html::img('@web/images/icons/trainer.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Lessen'); ?></strong></h1>
         <p>Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.</p>
-         <?= Html::a('Bekijk alle lessen', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-lessons']); ?>
+        <hr class="hr-sm">
+        <?= Html::a('Bekijk alle lessen', [Url::to('')], ['class' => 'btn btn-primary information-btn', 'id' => 'link-lessons']); ?>
       </div>
     </div>
-  </div> <!-- end row -->
 
+    
+    </div> 
+
+<hr class="hr-sm">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <button class="btn btn-primary btn-lg" id="btn-whatis-more">Lees hier meer..</button>
+      </div>
+    </div>
+
+  <div class="row" id="slidertwo"></div>
 <hr class="hr-invisible">
-
 </div> <!-- end container -->
 
 <!-- Listing Section | Locations
 ************************************************************************ -->
-<div class="container-fluid fullheight darkBg" id="locations">
 
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h1><strong>Sportlocaties</strong></h1>
-            </div> <!-- end col -->
-            <div class="col-md-6 text-center">
-                <h1><strong>Matchmaking</strong></h1>
-            </div> <!-- end col -->
-        </div><!-- end row -->
-    
+<div class="container text-center" id="locations">
+  <div class="row">
+    <?= Html::img('@web/images/matchmaking.png', ['class' => 'img-responsive']); ?>
+  </div>
+  <hr class="hr-sm">
+  <div class="row">
+      <button class="btn btn-primary btn-lg" id="btn-locations-more" style="margin-top: 10px;">Lees hier meer..</button>
+  </div>
 
-    <div class="col-md-6">
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Openbare Locaties</h3>
-            </div>
-        </div>
-        
-        <?= 
-            ListView::widget([
-                'dataProvider' => $publicProvider,
-                'options' => [
-                    'tag' => 'div',
-                    'class' => 'list-wrapper',
-                    'id' => 'list-wrapper',
-                ],
-                'layout' => "{items}",
-                'itemView' => function ($model, $key, $index, $widget) {
-                    return $this->render('_list',['model' => $model]);
-                },
-            ]); 
-        ?>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>Sportclubs</h2>
-            </div>
-        </div>
-        
-        <?= 
-            ListView::widget([
-                'dataProvider' => $paidProvider,
-                'options' => [
-                    'tag' => 'div',
-                    'class' => 'list-wrapper',
-                    'id' => 'list-wrapper',
-                ],
-                'layout' => "{items}",
-                'itemView' => function ($model, $key, $index, $widget) {
-                    return $this->render('_list',['model' => $model]);
-                },
-            ]); 
-        ?>
-
-        <div class="row">
-            <div class="col-md-2 col-md-offset-5">
-                <button class="btn btn-primary btn-block btn-xs">Meer</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>Sportlers</h2>
-            </div>
-        </div>
-        
-        <?= 
-            ListView::widget([
-                'dataProvider' => $userProvider,
-                'options' => [
-                    'tag' => 'div',
-                    'class' => 'list-wrapper',
-                    'id' => 'list-wrapper',
-                ],
-                'layout' => "{items}",
-                'itemView' => function ($model, $key, $index, $widget) {
-                    return $this->render('_userlist',['model' => $model]);
-                },
-            ]); 
-        ?>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>Groepschat</h2>
-            </div>
-        </div>
-        
-        <div class="row">
-        <div class="col-md-12 text-center">
-        <h1 class="comingsoon">COMING SOON</h1>
-        </div>
-        </div>
-          
-
-
-    </div> <!-- end .col -->
-
+  <hr class="hr-invisible">
+<div class="row" id="sliderthree"></div>
 </div> <!-- end container-fluid -->
+
 
 <!-- Matchmaking Coming Soon
 ************************************************************************ -->
 <div class="container text-center" id="matchmaking">
   <div class="row">
-    <img src="images/matchmaking.png" class="img-responsive">
+    <?= Html::img('@web/images/matchmaking.png', ['class' => 'img-responsive']); ?>
   </div>
+  <hr class="hr-sm">
   <div class="row">
-    <div class="col-md-12">
-      <h2 class="featurette-heading">Creëer je eigen BETA profiel. <h4><span class="text-muted">Meld je direct aan!</span></h4>
-      <?= Html::a('Aanmelden', ['/site/signup'], ['class'=>'btn btn-primary']) ?>
-    </div>
+      <button class="btn btn-primary btn-lg" id="btn-message-more" style="margin-top: 10px;">Lees hier meer..</button>
   </div>
-  <div class="row">
-    <h2 class="featurette-heading"><span class="text-muted">Beschikbaar over 
-    <?php
-      $year = '2017';
-      $month = '03';
-      $day = '01';
 
-      $current_date = new DateTime(date('Y-m-d'), new DateTimeZone('Europe/Amsterdam'));
-      $end_date = new DateTime("$year-$month-$day", new DateTimeZone('Europe/Amsterdam'));
-      $interval = $current_date->diff($end_date);
-      echo $interval->format('%a day(s)');
-    ?>.</span></h2>
-  </div>
   <hr class="hr-invisible">
+<div class="row" id="sliderfour"></div>
 </div> <!-- end container-fluid -->
 
 <!-- Parallax One
 ************************************************************************ -->
-<div class="parallaxOne">
-      <div class="container">
-      <hr class="hr-invisible-sm">
-      <h2 class="featurette-heading"><b>Verdien punten en win de contest!</b></h2>
-      <hr class="hr-invisible-sm">
-        <div class="row">
-          <div class="col-md-3">
-            <h3 class="featurette-heading">Creëer Account <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div>
-          <div class="col-md-3">
-          <h3 class="featurette-heading">Nodig vrienden uit <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div>
-          <div class="col-md-3">
-          <h3 class="featurette-heading">Deel op Facebook <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div>
-          <div class="col-md-3">
-          <h3 class="featurette-heading">Deel op Instagram <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div> <!-- end col -->
-        </div> <!-- end row -->
-        <hr class="hr-invisible-sm">
-        <div class="row">
-          <div class="col-md-12">
-            <?= Html::a('Klik hier voor meer informatie.', ['/site/contest'], ['class'=>'btn btn-primary']) ?>
-          </div>
-        </div>
-      </div> <!-- end container -->
-</div> <!-- parallaxOne -->
 
-<div class="container">
-    <div class="row text-center">
-        <div class="col-md-12">
-            <h2 class="featurette-heading">Ben jij een trainer? <h4><span class="text-muted">Creëer je eigen BETA profiel en bied je lessen aan.</span></h2>
-            <?= Html::a('Aanmelden', ['/site/signup'], ['class'=>'btn btn-primary']) ?>
-        </div>
-    </div>
-</div>
+
 
 
 <hr class="hr-invisible">
-
 
 <div class="parallaxTwo">
   <div class="container-fluid">

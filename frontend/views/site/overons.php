@@ -67,7 +67,7 @@
         <div class="col-md-3 col-md-offset-1 block-default text-center">
           <?= html::img('@web/images/benjamin.jpg', ['class' => 'img-circle avatar']); ?>
           <h1>Benjamin</h1>
-          <span class="lead">Front-/Backend Developer</span>
+          <span class="lead">Lead Application Developer</span>
           <p>Hij is een all-round programmeur die vele verschillende progammeertalen spreekt. Met zijn goede planningen en krachtige uitleg zorgt hij ervoor dat iedereen weet wat er wanneer en waarom moet gebeuren. In zijn vrije tijd is hij te vinden in het zwembad, waar hij alle stress van zich af kan zwemmen.</p>
           <a href="https://www.linkedin.com/in/benjaminkalle?authType=NAME_SEARCH&authToken=vQl6&locale=nl_NL&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A344220258%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1476173596423%2Ctas%3Abenjamin%20kalle" class="btn btn-social-icon btn-linkedin">
                 <span class="fa fa-linkedin"></span>
@@ -89,7 +89,7 @@
         <div class="col-md-3 block-default text-center">
           <?= html::img('@web/images/jesse.png', ['class' => 'img-circle avatar']); ?>
           <h1>Jesse</h1>
-          <span class="lead">Stagiar</span>
+          <span class="lead">Web Development Stagiar</span>
           <p>Hij is op dit moment 2e jaars student Media Development en trotse stagiair bij Sportlery. In zn vrije tijd is hij vaak websites aan het ontwerpen voor zowel zichzelf als anderen. Daarnaast houdt hij erg veel van muziek en speelt regelmatig op de gitaar. Een hardwerkende jongen die naar een perfect resultaat streeft.</p>
           <a href="https://www.linkedin.com/in/jesse-berkhof-0a3a5163" class="btn btn-social-icon btn-linkedin">
                 <span class="fa fa-linkedin"></span>

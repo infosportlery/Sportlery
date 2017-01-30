@@ -44,7 +44,6 @@ SportclubsAsset::register($this);
             <h1>Bereik meer!</h1>
             <p class="lead">Op Sportlery is een groot publiek aan diverse sporters. Velen van hen willen nieuwe sporten leren of simpelweg beter worden. Door jouw lessen aan te bieden op Sportlery kan je veel meer mensen bereiken en vergroot je de bezetting van je lessen.</p>
             <button class="btn btn-default" id="btn-trainer">Lees meer</button>
-            <?= Html::a('Registreer nu', ['site/signup'], ['class' => 'btn btn-default']) ?>
           </div>
         </div>
     </div>

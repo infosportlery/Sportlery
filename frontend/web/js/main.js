@@ -43,6 +43,38 @@ $(document).ready(function (){
 });
 
 $(document).ready(function (){
+    $("#btn-index-more").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#sliderone").offset().top
+        }, 1800);
+    });
+});
+
+$(document).ready(function (){
+    $("#btn-whatis-more").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#slidertwo").offset().top
+        }, 1800);
+    });
+});
+
+$(document).ready(function (){
+    $("#btn-locations-more").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#sliderthree").offset().top
+        }, 1800);
+    });
+});
+
+$(document).ready(function (){
+    $("#btn-message-more").click(function (){
+        $('html, body').animate({
+            scrollTop: $("#sliderfour").offset().top
+        }, 1800);
+    });
+});
+
+$(document).ready(function (){
     $("#btn-sportclub").click(function (){
         $('html, body').animate({
             scrollTop: $("#sportclubinfo").offset().top

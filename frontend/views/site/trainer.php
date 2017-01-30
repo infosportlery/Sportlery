@@ -7,7 +7,7 @@ use yii\helpers\Html;
 <div class="container scrollPadding" id="trainerinfo">
   <div class="row">
       <div class="col-xs-4 hidden-xs">
-        <img class="mockup img-responsive" height="800" src="images/ipad met profiel sportclub.png">
+        <?= Html::img('@web/images/imac_demo.png', ['class' => 'mockup img-responsive', 'height' => '800']); ?>
       </div> <!-- end col -->
       <div class="col-md-7">
         <h2 class="featurette-heading">Persoonlijk Profiel. <br><span class="text-muted">Laat de sporter je makkelijk vinden.</span></h2>
@@ -25,7 +25,7 @@ use yii\helpers\Html;
       </p>
     </div> <!-- end col -->
     <div class="col-xs-4 hidden-xs">
-      <img class="mockup img-responsive" height="800" src="images/imac_demo.png">
+    <?= Html::img('@web/images/imac_demo.png', ['class' => 'mockup img-responsive', 'height' => '800']); ?>
     </div> <!-- end col -->
   </div> <!-- end row -->
 </div> <!-- end container -->
@@ -52,6 +52,5 @@ use yii\helpers\Html;
   </div>
   <hr class="hr-invisible">
   <h1>Maak nu je gratis beta account aan! Wees één van de eerste leraren op jouw sportgebied en help mensen nieuwe sporten ontdekken. </h1>
-  <?= Html::a('Aanmelden', ['site/signup'], ['class' => 'btn btn-primary']) ?>
 </div> <!-- end container -->
 <hr class="hr-invisible">

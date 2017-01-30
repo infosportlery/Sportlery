@@ -13,7 +13,7 @@ use yii\helpers\Html;
       </p>
     </div> <!-- end col -->
     <div class="col-xs-4 hidden-xs">
-      <img class="mockup img-responsive" height="800" src="images/imac_demo.png">
+      <?= Html::img('@web/images/imac_demo.png', ['class' => 'mockup img-responsive', 'height' => '800']); ?>
     </div> <!-- end col -->
   </div> <!-- end row -->
 </div> <!-- end container -->
@@ -40,7 +40,6 @@ use yii\helpers\Html;
   </div>
   <hr class="hr-invisible">
     <div class="row">
-      <a href="http://manage.sportlery.nl" class="btn btn-primary">Meld je direct aan!</a>
     </div>
 </div> <!-- end container -->
 <hr class="hr-invisible">

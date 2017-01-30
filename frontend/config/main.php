@@ -75,11 +75,17 @@ return [
             //'baseUrl'=> '/',
             // baseUrl for live version 
             'baseUrl'=> $baseUrl,
-            'enablePrettyUrl' => false,
+            'enablePrettyUrl' => true,
             'rules' => [
+                  '/' => 'site/index',
+                  'sportclub' => 'site/sportclub',
+                  'trainer' => 'site/trainer',
+                  'team' => 'site/team',
+                  'contact' => 'site/contact',
                   '<controller:\w+>/<id:\d+>' => '<controller>/view',
                   '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                   '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+
 
             ],
         ],

@@ -14,6 +14,11 @@ use frontend\models\LocationSearch;
 Yii::$app->view->params['searchModel'] = new LocationSearch();
 Yii::$app->view->params['userSearchModel'] = new LocationSearch();
 
+
+$userInfo = new User();
+Yii::$app->view->params['userData'] = $userInfo->getUserData();
+
+
 /**
  * CategoryController implements the CRUD actions for Category model.
  */

@@ -10,7 +10,13 @@ BLUE+: #105C89
 .thumbnail-horizontal {
    display: inline-block !important;
 }
+.infomation-col p {
+  min-height: 70px;
+}
 
+.information-btn {
+  margin-bottom: 10px;
+}
 
 input .addon {
   color: red;
@@ -463,6 +469,9 @@ table tr {
 .navbar-brand {
   color: white !important;
 }
+.navbar-design {
+  background-color: #F46835; 
+}
 
 /* Featurettes
 ------------------------- */
@@ -854,3 +863,5 @@ select.form-control {
   .header3 h1 {font-size: 4em;}
   .header4 h1 {font-size: 4em;}
 }
+
+

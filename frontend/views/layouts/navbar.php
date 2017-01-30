@@ -11,8 +11,8 @@ use yii\bootstrap\NavBar;
         ],
     ]);
         $menuItems = [
-            ['label' => 'Thuis', 'url' => ['/site/index']],
-            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
+            ['label' => 'Home', 'url' => ['/site/index']],
+            //['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
                 'items' => [
@@ -32,12 +32,12 @@ use yii\bootstrap\NavBar;
 
 
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-        $menuItems[] = ['label' => 'Aanmelden', 'url' => ['/site/signup']];
+        //$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        //$menuItems[] = ['label' => 'Aanmelden', 'url' => ['/site/signup']];
     } else {
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
+            //['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
                 'items' => [
@@ -52,22 +52,22 @@ use yii\bootstrap\NavBar;
                      ['label' => 'Contact', 'url' => ['/site/contact']],
                 ],
             ],
-            [
-                'label' => Yii::$app->user->identity->username,
-                'items' => [
-                     ['label' => 'Dashboard', 'url' => ['/dashboard/index']],
-                        Html::beginForm(['/site/logout'], 'post')
-                        . Html::submitButton(
-                            'Uitloggen (' . Yii::$app->user->identity->username . ')',
-                            ['class' => 'btn btn-link btn-logout-inverse']
-                        )
-                        . Html::endForm(),
-                ],
-            ],
+            // [
+            //     'label' => Yii::$app->user->identity->username,
+            //     'items' => [
+            //          ['label' => 'Dashboard', 'url' => ['/dashboard/index']],
+            //             Html::beginForm(['/site/logout'], 'post')
+            //             . Html::submitButton(
+            //                 'Uitloggen (' . Yii::$app->user->identity->username . ')',
+            //                 ['class' => 'btn btn-link btn-logout-inverse']
+            //             )
+            //             . Html::endForm(),
+            //     ],
+            // ],
         ];
     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-right navbar-design'],
         'items' => $menuItems,
     ]);
 
