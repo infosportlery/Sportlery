@@ -11,7 +11,7 @@ use yii\bootstrap\NavBar;
         ],
     ]);
         $menuItems = [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Thuis', 'url' => ['/site/index']],
             ['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
