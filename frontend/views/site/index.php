@@ -64,14 +64,14 @@
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Locaties'); ?></strong></h1>
         <p>Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!</p>
         <hr class="hr-sm">
-        <?= Html::a('Bekijk alle locaties', [Url::to('location/index')], ['class' => 'btn btn-primary information-btn']); ?>
+        <?= Html::a('Bekijk alle locaties', ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
       </div>
       <div class="col-md-4 col-sm-4 infomation-col" >
         <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
         <p>Vind sportbuddies, creëer of participeer in evenementen en vind vervanging voor jouw sporten.</p>
         <hr class="hr-sm">
-         <?= Html::a('Go and Play!', [Url::to('')], ['class' => 'btn btn-primary information-btn', 'id' => 'link-matchmaking']); ?>
+         <?= Html::a('Go and Play!', [Url::to('')], ['class' => 'btn btn-primary information-btn', 'id' => 'btn-locations-more']); ?>
       </div>
       <div class="col-md-4 col-sm-4 infomation-col" >
         <?= Html::img('@web/images/icons/trainer.png', ['width' => '80']); ?>
@@ -81,16 +81,7 @@
         <?= Html::a('Bekijk alle lessen', [Url::to('')], ['class' => 'btn btn-primary information-btn', 'id' => 'link-lessons']); ?>
       </div>
     </div>
-
-    
-    </div> 
-
-<hr class="hr-sm">
-    <div class="row text-center">
-      <div class="col-md-12">
-        <button class="btn btn-primary btn-lg" id="btn-whatis-more">Lees hier meer..</button>
-      </div>
-    </div>
+  </div> 
 
   <div class="row" id="slidertwo"></div>
 <hr class="hr-invisible">
