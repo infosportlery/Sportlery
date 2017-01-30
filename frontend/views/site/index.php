@@ -64,7 +64,7 @@
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Locaties'); ?></strong></h1>
         <p>Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!</p>
         <hr class="hr-sm">
-        <?= Html::a('Bekijk alle locaties', ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
+        <?= Html::a('Bekijk alle locaties', [Url::to('')], ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
       </div>
       <div class="col-md-4 col-sm-4 infomation-col" >
         <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
