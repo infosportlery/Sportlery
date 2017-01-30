@@ -73,13 +73,7 @@
         <hr class="hr-sm">
          <?= Html::button('Go and Play!', ['class' => 'btn btn-primary information-btn', 'id' => 'btn-locations-more']); ?>
       </div>
-      <div class="col-md-4 col-sm-4 infomation-col" >
-        <?= Html::img('@web/images/icons/trainer.png', ['width' => '80']); ?>
-        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Lessen'); ?></strong></h1>
-        <p>Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.</p>
-        <hr class="hr-sm">
-        <?= Html::button('Bekijk alle lessen', ['class' => 'btn btn-primary information-btn', 'id' => 'link-lessons']); ?>
-      </div>
+      
     </div>
   </div> 
 
