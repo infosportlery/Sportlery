@@ -274,6 +274,22 @@ table tr {
   background-size: cover;
   color: white;
 }
+
+.parallaxLoc {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #EEEEEE;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
 .parallaxOne .text-muted {
   color: white;
   text-shadow: 1px 1px 1px #000;
@@ -340,6 +356,13 @@ table tr {
   background: #F46835;
   color: white;
   text-align: center;
+}
+
+.sm-header-1 {
+  background-image: url('../images/contact_img_v1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .language {
   margin-top: 13px;
@@ -475,9 +498,30 @@ table tr {
 
 .vertical-rule {
   border-left:1px solid #e6e6e6;
-  height:500px;
+  min-height: 500px;
+  height:100%;
 }
 
+.vertical-rule-about {
+  border:1px solid #e6e6e6;
+
+  background-color: #E85823;
+}
+
+.vertical-rule-about-right {
+  border-right:1px solid #e6e6e6;
+}
+
+.about-liner {
+  height: 97.5px;
+  border-right: 1px solid #e6e6e6; 
+}
+
+.btn-view {
+  width: 38px;
+  height: 34px;
+  border: 1px solid transparent !important;
+}
 
 /* Featurettes
 ------------------------- */
@@ -518,7 +562,7 @@ table tr {
   background: #F46835;
   padding: 10px;
   color: white;
-  min-height: 600px;
+
 }
 .block-default-out {
   background: #E85823;
@@ -527,6 +571,24 @@ table tr {
   color: white;
 }
 
+.peopleList {
+  background-color: #F46835;
+}
+
+.person-field {
+  background: #F46835;
+  border-bottom: 1px solid #E85823;
+  border-top: 1px solid #E85823;
+  height: 100px;
+}
+
+.col-links-team {
+  padding-top: 10px; 
+}
+
+.btn-read-acc {
+  margin-top: 10px;
+}
 /* Grid Visibility
 ------------------------- */
 
@@ -799,6 +861,11 @@ ul {
 .list-md h1 .text-muted {
   font-size: 14px;
 }
+
+.loc-head {
+  color: black;
+}
+
 /* 
 /* Forms
 /* -------------------------------------------------------------------------- */
@@ -845,6 +912,25 @@ select.form-control {
 #locations {padding-top: 50px;}
 #matchmaking {padding-top: 50px;}
 #lessons {padding-top: 50px;}
+
+/*
+/* Images without mob
+/* -------------------------------------------------------------------------- */
+
+.img-mm-type {
+  background-image: url('../images/mm_nl.png'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+
+.img-loc-type {
+  background-image: url('../images/loc_nl.png'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 530px;
+}
+
 /* 
 /* Responsive
 /* -------------------------------------------------------------------------- */
@@ -875,6 +961,47 @@ select.form-control {
   .vertical-rule {
     display: none;
   }
+ 
+ /* Mobile Images */ 
+  .img-mm-type {
+    background-image: url('../images/mm_nl_mob.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+  }
+
+  .img-loc-type {
+    background-image: url('../images/loc_nl_mob.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+  }
+
 }
 
+/*
+/* Animations
+/* -------------------------------------------------------------------------- */
+
+#index-slideup-obj {
+  visibility: hidden;
+}
+
+#index-slideup-obj-2 {
+  visibility: hidden;
+}
+
+#index-slideup-obj-3 {
+  visibility: hidden;
+}
+
+#index-mm-fadeIn {
+  visibility: hidden;
+}
+
+#index-loc-slideUp {
+  visibility: hidden;
+}
 

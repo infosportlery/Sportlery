@@ -41,8 +41,67 @@
       </div>
 
     <hr class="hr-invisible">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1 people-col">
+          <div class="peopleList" >
+            <div class="person-field" id="person-1">
+              <div class="col-md-8 col-sm-8 person-field">
+                <h2>Floris</h2>
+                <span class="lead">Founder</span>
+              </div>
+              <div class="col-md-4 col-sm-4 col-links-team">
+                <a href="https://www.linkedin.com/in/floris-hage-79694361?authType=OUT_OF_NETWORK&authToken=a7Xk&locale=nl_NL&srchid=2265426511476173398613&srchindex=10&srchtotal=55&trk=cofc_people_res_name&trkInfo=VSRPsearchId%3A2265426511476173398613%2CVSRPtargetId%3A220305570%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Afalse%2CauthType%3AOUT_OF_NETWORK" class="btn btn-social-icon btn-linkedin">
+                  <span class="fa fa-linkedin"></span>
+                </a>
+                <?= Html::button('<span class="fa fa-eye"></span>', ['class' => 'btn btn-social-icon btn-linkedin btn-read-acc', 'id' => 'view-info-p1']); ?>
+              </div>
+            </div>
+            <div class="person-field" id="person-2">
+              <div class="col-md-8">
+                <h2>Folkert</h2>
+                <span class="lead">Co-Founder</span>
+              </div>
+              <div class="col-md-4 col-sm-4 col-links-team">
+                <a href="https://www.linkedin.com/in/folkert-burghout-8a5a2757?authType=NAME_SEARCH&authToken=y2nD&locale=nl_NL&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A202604093%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1476173531057%2Ctas%3Afolkert" class="btn btn-social-icon btn-linkedin">
+                  <span class="fa fa-linkedin"></span>
+                </a>
+                <?= Html::button('<span class="fa fa-eye"></span>', ['class' => 'btn btn-social-icon btn-linkedin btn-read-acc', 'id' => 'view-info-p2']); ?>
+              </div>
+            </div>
+            <div class="person-field" id="person-3">
+              <div class="col-md-8 col-sm-8 ">
+                <h2>Benjamin</h2>
+                <span class="lead">Lead Developer</span>
+              </div>
+              <div class="col-md-4 col-sm-4 col-links-team">
+                <a href="https://www.linkedin.com/in/benjaminkalle?authType=NAME_SEARCH&authToken=vQl6&locale=nl_NL&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A344220258%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1476173596423%2Ctas%3Abenjamin%20kalle" class="btn btn-social-icon btn-linkedin">
+                  <span class="fa fa-linkedin"></span>
+                </a>
+                <?= Html::button('<span class="fa fa-eye"></span>', ['class' => 'btn btn-social-icon btn-linkedin btn-read-acc', 'id' => 'view-info-p3']); ?>
+              </div>
+            </div>
+            <div class="person-field" id="person-3">
+              <div class="col-md-8 col-sm-8">
+                <h2>Jesse</h2>
+                <span class="lead">Stagiar Developer</span>
+              </div>
+              <div class="col-md-4 col-sm-4 col-links-team">
+                <a href="https://www.linkedin.com/in/benjaminkalle?authType=NAME_SEARCH&authToken=vQl6&locale=nl_NL&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A344220258%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1476173596423%2Ctas%3Abenjamin%20kalle" class="btn btn-social-icon btn-linkedin">
+                  <span class="fa fa-linkedin"></span>
+                </a> 
+                <?= Html::button('<span class="fa fa-eye"></span>', ['class' => 'btn btn-social-icon btn-linkedin btn-read-acc', 'id' => 'view-info-p4']); ?>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End Userlist Col -->
+        <div class="col-md-7 col-sm-7 col-md-offset-1 col-sm-offset-1">
+          <div class="default-information">
+            This is a lot of info
+          </div>
+        </div> <!-- End Userinfomation Col -->
 
-
+      </div>
+ 
       <div class="row">
         <div class="col-md-4 col-md-offset-1 block-default text-center">
           <?= html::img('@web/images/floris.jpg', ['class' => 'img-circle avatar']); ?>

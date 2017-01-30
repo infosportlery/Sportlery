@@ -5,7 +5,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Contact';
 ?>
-    <div class="sm-header">
+    <div class="sm-header sm-header-1">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

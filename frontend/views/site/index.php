@@ -59,21 +59,27 @@
   
   <div class="row text-center">
     <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
-      <div class="col-md-4 col-sm-4 infomation-col" >
+      <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj">
         <?= Html::img('@web/images/icons/location.png', ['width' => '80']); ?>
-        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Locaties'); ?></strong></h1>
+        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sportlocaties'); ?></strong></h1>
         <p>Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!</p>
         <hr class="hr-sm">
         <?= Html::button('Bekijk alle locaties', ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
       </div>
-      <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4 infomation-col" >
+      <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-2">
         <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
         <p>Vind sportbuddies, creëer of participeer in evenementen en vind vervanging voor jouw sporten.</p>
         <hr class="hr-sm">
          <?= Html::button('Go and Play!', ['class' => 'btn btn-primary information-btn', 'id' => 'btn-locations-more']); ?>
       </div>
-      
+      <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-3" >
+        <?= Html::img('@web/images/icons/trainer.png', ['width' => '80']); ?>
+        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Lessen'); ?></strong></h1>
+        <p>Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.</p>
+        <hr class="hr-sm">
+        <?= Html::button('Bekijk alle lessen', ['class' => 'btn btn-primary information-btn', 'id' => 'link-lessons']); ?>
+      </div>
     </div>
   </div> 
 
@@ -81,30 +87,48 @@
 <hr class="hr-invisible">
 </div> <!-- end container -->
 
+
+<!-- Matchmaking Coming Soon
+************************************************************************ -->
+<div class="container text-center" >
+  <div class="row" id="index-mm-fadeIn">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Matchmaking</h1>  
+      </div>
+      <div class="col-md-12">
+        <div class="img-responsive img-mm-type"></div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="hr-invisible">
+<div class="row" id="sliderfour"></div>
+</div> <!-- end container-fluid -->
+
+
 <!-- Listing Section | Locations
 ************************************************************************ -->
-
+<div class="parallaxLoc">
 <div class="container text-center" id="locations">
-  <div class="row">
-    <?= Html::img('@web/images/matchmaking.png', ['class' => 'img-responsive']); ?>
+
+  <div class="row" id="index-loc-slideUp">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="loc-head">Sportlocaties</h1>  
+      </div>
+      <div class="col-md-12">
+        <div class="img-responsive img-loc-type"></div>
+      </div>
+    </div>
   </div>
 
 
   <hr class="hr-invisible">
 <div class="row" id="sliderthree"></div>
 </div> <!-- end container-fluid -->
+</div>
 
-
-<!-- Matchmaking Coming Soon
-************************************************************************ -->
-<div class="container text-center" id="matchmaking">
-  <div class="row">
-    <?= Html::img('@web/images/matchmaking.png', ['class' => 'img-responsive']); ?>
-  </div>
-
-  <hr class="hr-invisible">
-<div class="row" id="sliderfour"></div>
-</div> <!-- end container-fluid -->
 
 <!-- Parallax One
 ************************************************************************ -->
