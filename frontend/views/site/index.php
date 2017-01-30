@@ -66,7 +66,7 @@
         <hr class="hr-sm">
         <?= Html::button('Bekijk alle locaties', ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
       </div>
-      <div class="col-md-4 col-sm-4 infomation-col" >
+      <div class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4 infomation-col" >
         <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
         <p>Vind sportbuddies, creëer of participeer in evenementen en vind vervanging voor jouw sporten.</p>
