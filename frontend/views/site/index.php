@@ -94,10 +94,7 @@
   <div class="row">
     <?= Html::img('@web/images/matchmaking.png', ['class' => 'img-responsive']); ?>
   </div>
-  <hr class="hr-sm">
-  <div class="row">
-      <button class="btn btn-primary btn-lg" id="btn-locations-more" style="margin-top: 10px;">Lees hier meer..</button>
-  </div>
+
 
   <hr class="hr-invisible">
 <div class="row" id="sliderthree"></div>
@@ -109,10 +106,6 @@
 <div class="container text-center" id="matchmaking">
   <div class="row">
     <?= Html::img('@web/images/matchmaking.png', ['class' => 'img-responsive']); ?>
-  </div>
-  <hr class="hr-sm">
-  <div class="row">
-      <button class="btn btn-primary btn-lg" id="btn-message-more" style="margin-top: 10px;">Lees hier meer..</button>
   </div>
 
   <hr class="hr-invisible">
