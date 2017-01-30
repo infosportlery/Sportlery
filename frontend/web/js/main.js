@@ -86,6 +86,8 @@ $(window).scroll(function() {
     });
 });
 
+
+
 $(window).scroll(function() {
     $('#index-loc-slideUp').each(function(){
     var imagePos = $(this).offset().top;

@@ -580,6 +580,7 @@ table tr {
   border-bottom: 1px solid #E85823;
   border-top: 1px solid #E85823;
   height: 100px;
+  color: white;
 }
 
 .col-links-team {
@@ -589,6 +590,19 @@ table tr {
 .btn-read-acc {
   margin-top: 10px;
 }
+
+.person-info-design {
+  border-right: 1px solid #EEEEEE; 
+}
+
+.default-information {
+  background-color: #F46835;
+  color: white;
+  padding: 20px;
+}
+
+
+
 /* Grid Visibility
 ------------------------- */
 
