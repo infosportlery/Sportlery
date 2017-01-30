@@ -24,7 +24,7 @@
 
 <div class="container-fluid">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
+        <div class="col-md-4 col-md-offset-2 text-right">
         <h1 class=""><?= Yii::t('app', 'Over Sportlery'); ?></h1>
           <p>Sportlery is een platform waar sporters elkaar kunnen vinden, samen wedstrijden en evenementen organiseren, en heel gemakkelijk een sportlocatie kunnen boeken.</p>
           <p>Het idee voor Sportlery is ontstaan door het gevoel dat we heel graag vaker wilden sporten, maar dat niemand kon of dat er geen mogelijke sportlocatie beschikbaar was.</p>
@@ -32,6 +32,12 @@
           <p>Sportlery maakt het mogelijk dat jij een mede sportbuddy kan vinden bij jou in de buurt, met dezelfde interesses en hetzelfde niveau. Samen bepaal je wanneer jullie je sport willen beoefenen. Ook kun je zelf wedstrijden en toernooien creëeren met meerdere sporters.</p>
           <p>Daarnaast faciliteert Sportlery alle sportlocaties bij jou in de buurt. Zowel betaald als publiekelijk en binnenhallen als buitenvelden worden aangeboden.</p>
           <p>Zin om een nieuwe sport te ontdekken? Ga een surfworkshop volgen of een beginnersles Krav Maga, het kan allemaal!</p>
+        </div>
+        <div class="col-md-1">
+          <div style="border-left:1px solid #e6e6e6;height:100%"></div>
+        </div>
+        <div class="col-md-4 text-center">
+          Image
         </div>
       </div>
 
