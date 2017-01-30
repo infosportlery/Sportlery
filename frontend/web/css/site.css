@@ -473,6 +473,12 @@ table tr {
   background-color: #F46835; 
 }
 
+.vertical-rule {
+  border-left:1px solid #e6e6e6;
+  height:500px;
+}
+
+
 /* Featurettes
 ------------------------- */
 
@@ -862,6 +868,13 @@ select.form-control {
   .header2 h1 {font-size: 4em;}
   .header3 h1 {font-size: 4em;}
   .header4 h1 {font-size: 4em;}
+}
+
+
+@media screen and (max-width: 765px) {
+  .vertical-rule {
+    display: none;
+  }
 }
 
 
