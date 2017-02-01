@@ -7,7 +7,7 @@ return [
 	'Want to know more about Sportlery?' => 'Wil je meer weten over Sportlery?',
 	'Explore!' => 'Ontdek het hier!'
 	'What is Sportlery?' => 'Wat is Sportlery?',
-	'Sport Locations' => 'Sport Locaties'
+	'Sport Locations' => 'Sport Locaties',
 	'Choose your favourite sport and find a sports facility in your neighbourhood. Book your slot and enjoy!' => 'Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!',
 	'Check all locations' => 'Bekijk alle locaties',
 	'Find sportbuddies, create or participate in events and find substitute players for your team.' => 'Vind sportbuddies, creëer of participeer in evenementen en vind invallers voor jouw team.',
@@ -69,7 +69,7 @@ return [
 
 	//Trainers
 
-	'Personal Profile' => 'Persoonlijk Profiel.',
+	'Personal Profile.' => 'Persoonlijk Profiel.',
 	'Let sportsmen find you in an easy way.' => 'Laat de sporter je makkelijk vinden.',
 	'Place yourself on the map with Sportlery and stand out with your profile. With an appealing profile you will attract more people to your classes.' => 'Zet jezelf goed op de kaart en val op met je profiel. Met het aangename profiel zullen sporters jou makkelijk kunnen benaderen en een les boeken.',
 	'With the straightforward tool you easily manage your sport classes. You decide where, when and for which price you offer your services. At the same time, you stay in direct contact, to assure that everything runs smoothly.' => 'Met de eenvoudige tool beheer je jouw sportlessen optimaal. Bepaal zelf waar, wanneer en voor welke prijs de les aangeboden wordt. Tegelijkertijd blijf je in direct contact met de sporters, zodat alles vlekkeloos verloopt!',
