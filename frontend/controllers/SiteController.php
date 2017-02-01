@@ -407,6 +407,10 @@ class SiteController extends Controller
             Yii::$app->getResponse()->getCookies()->add($cookie);
         }
     }
+
+    public function actionChangel() {
+      return $this->redirect(['site/index']);
+    }
 }
 
 ?>

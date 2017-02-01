@@ -11,7 +11,7 @@ use yii\bootstrap\NavBar;
         ],
     ]);
         $menuItems = [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Home', 'url' => ['/']],
             //['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
@@ -72,7 +72,7 @@ use yii\bootstrap\NavBar;
     ]);
         
         foreach(Yii::$app->params['languages'] as $key => $language) {
-            echo '<span class="language" id="'.$key.'">'. Html::a(Html::img("@web/images/flags/".$key.".png"), ['/', 'language' => $key]) .' |</span>';
+            echo '<span class="language" id="'.$key.'">'. Html::a(Html::img("@web/images/flags/".$key.".png"), ['site/changel', 'language' => $key]) .' |</span>';
         }
 
     NavBar::end();

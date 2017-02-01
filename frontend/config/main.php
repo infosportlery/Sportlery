@@ -78,7 +78,7 @@ return [
             'enablePrettyUrl' => true,
             'languages' => ['en-US', 'en', 'nl'],
             'rules' => [
-                  '/' => 'site/index',
+                  'home' => 'site/index',
                   'sportclub' => 'site/sportclub',
                   'trainer' => 'site/trainer',
                   'team' => 'site/team',
