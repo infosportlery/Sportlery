@@ -14,12 +14,12 @@
                 <div class="row">
                   <div class="col-md-8 text-center">
                     <div class="col-md-4">
-                      <p>Ik ben van een sportclub en ik bied een locatie aan.</p>
-                      <?= Html::a('Sportclub', ['sportclub'], ['class'=>'btn btn-default']) ?>    
+                      <p><?= Yii::t('Ik ben van een sportclub en ik bied een locatie aan.'); ?></p>
+                      <?= Html::a(Yii::t('Sportclub'), ['sportclub'], ['class'=>'btn btn-default']) ?>    
                     </div>
                     <div class="col-md-4">
-                      <p>Ik ben een trainer en ik geef sportlessen en/of workshops.</p>
-                      <?= Html::a('Trainer', ['trainer'], ['class'=>'btn btn-default']) ?>    
+                      <p><?= Yii::t('Ik ben een trainer en ik geef sportlessen en/of workshops.')</p>
+                      <?= Html::a(Yii::t('Trainer'), ['trainer'], ['class'=>'btn btn-default']) ?>    
                     </div>
                   </div>
                 </div>

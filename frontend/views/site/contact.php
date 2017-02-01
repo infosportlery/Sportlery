@@ -50,20 +50,8 @@ $this->title = 'Contact';
             </div>
             <div class="col-md-5 col-md-offset-1 text-center">
                 <i class="fa fa-envelope fa-5x"></i>
-                <h3>Heb je vragen of suggesties?</h3>
+                <h3><?= Yii::t('Heb je vragen of suggesties?') ?></h3>
                 <hr class="hr-sm">
-                <!-- <div class="row contact-information">
-                    <div class="col-md-4 text-left">
-                        <i class="fa fa-home fa-2x"></i>
-                        <p class="">blablas</p>
-                    </div>
-                    <div class="col-md-2">
-                        <i class="fa fa-chevron-right"></i>
-                    </div>
-                    <div class="col-md-6 text-left">
-                        <i class="fa fa-home fa-2x"></i>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

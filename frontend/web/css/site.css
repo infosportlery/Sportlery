@@ -911,17 +911,35 @@ select.form-control {
 /* -------------------------------------------------------------------------- */
 
 .img-mm-type {
-  background-image: url('../images/mm_nl.png'); 
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   min-height: 500px;
 }
 
+#img-mm-nl {
+  background-image: url('../images/mm_nl.png'); 
+
+}
+
+#img-mm-en {
+  background-image: url('../images/mm_en.png'); 
+
+}
+
 .img-loc-type {
-  background-image: url('../images/loc_nl.png'); 
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   min-height: 530px;
+}
+
+#img-loc-nl {
+  background-image: url('../images/loc_nl.png'); 
+}
+
+#img-loc-en {
+  background-image: url('../images/loc_en.png'); 
 }
 
 /* 
