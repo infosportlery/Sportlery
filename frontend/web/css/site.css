@@ -322,7 +322,7 @@ table tr {
   margin-top: 100px;
 }
 .thin {
-	font-weight: 300;
+  font-weight: 300;
 }
 .scrollPadding {
   padding-top: 50px;
@@ -397,7 +397,7 @@ table tr {
   background-size: cover;
   color: white;
 }
-.header h1 {font-family: 'Graduate', sans-serif;}
+.header h1 {font-family: 'Graduate', sans-serif; font-size: 4em;}
 .brand {
   height: 25px;
 }
@@ -558,6 +558,8 @@ table tr {
   height: 150px;
   width: 150px;
 }
+
+
 .block-default {
   background: #F46835;
   padding: 10px;
@@ -571,35 +573,12 @@ table tr {
   color: white;
 }
 
-.peopleList {
-  background-color: #F46835;
-}
 
-.person-field {
-  background: #F46835;
-  border-bottom: 1px solid #E85823;
-  border-top: 1px solid #E85823;
-  height: 100px;
-  color: white;
-}
 
-.col-links-team {
-  padding-top: 10px; 
-}
 
-.btn-read-acc {
-  margin-top: 10px;
-}
 
-.person-info-design {
-  border-right: 1px solid #EEEEEE; 
-}
 
-.default-information {
-  background-color: #F46835;
-  color: white;
-  padding: 20px;
-}
+
 
 
 
@@ -963,11 +942,11 @@ select.form-control {
     margin-top: 100px;
   }
 
-  .header h1 {font-size: 4em;}
-  .header1 h1 {font-size: 4em;}
-  .header2 h1 {font-size: 4em;}
-  .header3 h1 {font-size: 4em;}
-  .header4 h1 {font-size: 4em;}
+  .header h1 {font-size: 3.5em;}
+  .header1 h1 {font-size: 3.5em;}
+  .header2 h1 {font-size: 3.5em;}
+  .header3 h1 {font-size: 3.5em;}
+  .header4 h1 {font-size: 3.5em;}
 }
 
 

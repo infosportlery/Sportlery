@@ -52,6 +52,7 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         ),
         'c' => 
         array (
+            'codemix\\localeurls\\' => 19,
             'cebe\\markdown\\' => 14,
         ),
         'W' => 
@@ -177,6 +178,10 @@ class ComposerStaticIniteb443fdc2d75ee00280bcf73373941c8
         'kartik\\base\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-krajee-base',
+        ),
+        'codemix\\localeurls\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codemix/yii2-localeurls',
         ),
         'cebe\\markdown\\' => 
         array (

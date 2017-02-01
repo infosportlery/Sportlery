@@ -68,7 +68,7 @@ return [
         ],
         
         'urlManager' => [
-            'class' => 'yii\web\UrlManager',
+            'class' => 'codemix\localeurls\UrlManager',
             // Hide index.php
             'showScriptName' => false,
             // Use pretty URLs
@@ -76,6 +76,7 @@ return [
             // baseUrl for live version 
             'baseUrl'=> $baseUrl,
             'enablePrettyUrl' => true,
+            'languages' => ['en-US', 'en', 'nl'],
             'rules' => [
                   '/' => 'site/index',
                   'sportclub' => 'site/sportclub',
@@ -109,13 +110,26 @@ return [
         ],
         'i18n' => [
             'translations' => [
-                'eauth' => [
+                // 'eauth' => [
+                //     'class' => 'yii\i18n\PhpMessageSource',
+                //     'basePath' => '@eauth/messages',
+                // ],
+                'app' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@eauth/messages',
+                    'sourceLanguage' => 'en-US',
+                    'fileMap' => [
+                        'app' => 'app.php',
+                        'app/error' => 'error.php',
+                    ],
                 ],
             ],
         ],
         
     ],
+
+    'as beforeRequest'=>[
+        'class' => 'frontend\components\ChangeLanguageSetting',
+    ],
+
     'params' => $params,
 ];

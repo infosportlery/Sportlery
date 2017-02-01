@@ -70,17 +70,10 @@ use yii\bootstrap\NavBar;
         'options' => ['class' => 'navbar-nav navbar-right navbar-design'],
         'items' => $menuItems,
     ]);
-
-     ?>
-<!--     <span class="language pull-right" style="width:50px;">
-    <a href='/en'> 
-        <?= html::img('@web/images/flags/gb.png'); ?> 
-    </a>
-    <span class="language" style="width:50px;">
-    <a href='/nl'> 
-        <?= html::img('@web/images/flags/nl.png'); ?> 
-    </a> -->
-    <?php
+        
+        foreach(Yii::$app->params['languages'] as $key => $language) {
+            echo '<span class="language" id="'.$key.'">'. Html::a(Html::img("@web/images/flags/".$key.".png"), ['/', 'language' => $key]) .' |</span>';
+        }
 
     NavBar::end();
     ?>

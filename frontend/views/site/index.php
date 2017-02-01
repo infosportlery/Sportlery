@@ -15,6 +15,7 @@
       <div class="col-md-12">
         <h1 class="thin">sportlery</h1>
         <p class="lead thin">TOGETHER WE SPORT</p>
+        <p class="lead thin"><?= Yii::t('app', 'I am Testing this information');?></p>
         <br>
       </div>
     </div>
