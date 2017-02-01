@@ -41,9 +41,9 @@ SportclubsAsset::register($this);
       <div class="container">
         <div class="row text-left">
           <div class="col-md-6">
-            <h1>Bereik meer!</h1>
-            <p class="lead">Op Sportlery is een groot publiek aan diverse sporters. Velen van hen willen nieuwe sporten leren of simpelweg beter worden. Door jouw lessen aan te bieden op Sportlery kan je veel meer mensen bereiken en vergroot je de bezetting van je lessen.</p>
-            <button class="btn btn-default" id="btn-trainer">Lees meer</button>
+            <h1><?= Yii::t('app','Extend your reach!'); ?></h1>
+            <p class="lead"><?= Yii::t('app', 'Sportlery has large and diverse community. Most of them want to discover new sports or simply improve their skills. By offering your classes, you can attract more people and increase the occupancy of your classes!'); ?></p>
+            <button class="btn btn-default" id="btn-trainer"><?= Yii::t('app', 'Read more..'); ?></button>
           </div>
         </div>
     </div>

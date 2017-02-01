@@ -281,13 +281,41 @@ table tr {
     margin-top: -50px;
     margin-bottom: 50px;
     text-align: center;
-    background-color: #EEEEEE;
+    background-color: #FFF;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 
+}
+
+.parallaxMm {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #EEEEEE;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.parallaxLes {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #EEEEEE;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url('../images/lessen.png'); 
 }
 
 .parallaxOne .text-muted {
@@ -564,6 +592,7 @@ table tr {
   background: #F46835;
   padding: 10px;
   color: white;
+  min-height: 530px;
 
 }
 .block-default-out {
@@ -573,10 +602,11 @@ table tr {
   color: white;
 }
 
-
-
-
-
+.linkedin-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
 
 
 
@@ -942,6 +972,13 @@ select.form-control {
   background-image: url('../images/loc_en.png'); 
 }
 
+.img-les-type {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 530px;
+}
+
 /* 
 /* Responsive
 /* -------------------------------------------------------------------------- */
@@ -975,19 +1012,39 @@ select.form-control {
  
  /* Mobile Images */ 
   .img-mm-type {
-    background-image: url('../images/mm_nl_mob.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    min-height: 650px;
+  }
+#img-mm-nl {
+  background-image: url('../images/mm_nl_mob.png'); 
+
+}
+
+#img-mm-en {
+  background-image: url('../images/mm_nl_mob.png'); 
+
+}
+
+  .img-loc-type {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     min-height: 650px;
   }
 
-  .img-loc-type {
-    background-image: url('../images/loc_nl_mob.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 650px;
+  #img-loc-nl {
+    background-image: url('../images/loc_nl_mob.png'); 
+  }
+
+  #img-loc-en {
+    background-image: url('../images/loc_nl_mob.png'); 
+  }
+
+  .parallaxLes {
+
+    background-image: url('../images/lessen_mob.png'); 
   }
 
 }

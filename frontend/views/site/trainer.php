@@ -3,25 +3,28 @@
 use yii\helpers\Html;
 
  ?>
-
 <div class="container scrollPadding" id="trainerinfo">
   <div class="row">
       <div class="col-xs-4 hidden-xs">
         <?= Html::img('@web/images/imac_demo.png', ['class' => 'mockup img-responsive', 'height' => '800']); ?>
       </div> <!-- end col -->
       <div class="col-md-7">
-        <h2 class="featurette-heading">Persoonlijk Profiel. <br><span class="text-muted">Laat de sporter je makkelijk vinden.</span></h2>
+        <h2 class="featurette-heading">
+<?= Yii::t('app', 'Personal Profile.'); ?><br><span class="text-muted">
+<?= Yii::t('app', 'Let sportsmen find you in an easy way.'); ?></span></h2>
         <p class="lead">
-          Zet jezelf goed op de kaart en val op met je profiel. Met het aangename profiel zullen sporters jou makkelijk kunnen benaderen en een les boeken.
+<?= Yii::t('app', 'Place yourself on the map with Sportlery and stand out with your profile. With an appealing profile you will attract more people to your classes.'); ?>
         </p>
       </div> <!-- end col -->
   </div> <!-- end row -->
   <hr class="hr-invisible">
   <div class="row">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Simpel Beheer. <br><span class="text-muted">Geavanceerd en overzichtelijk dashboard.</span></h2>
+      <h2 class="featurette-heading">
+<?= Yii::t('app', 'Convenient Management'); ?><br><span class="text-muted">
+<?= Yii::t('app', 'Advanced and clear dashboard'); ?></span></h2>
       <p class="lead">
-        Met de eenvoudige tool beheer je jouw sportlessen optimaal. Bepaal zelf waar, wanneer en voor welke prijs de les aangeboden wordt. Tegelijkertijd blijf je in direct contact met de sporters, zodat alles vlekkeloos verloopt!
+<?= Yii::t('app', 'With the straightforward tool you easily manage your sport classes. You decide where, when and for which price you offer your services. At the same time, you stay in direct contact, to assure that everything runs smoothly.'); ?>
       </p>
     </div> <!-- end col -->
     <div class="col-xs-4 hidden-xs">
@@ -36,21 +39,24 @@ use yii\helpers\Html;
   <div class="row">
     <div class="col-md-4">
       <i class="fa fa-dashboard fa-5x"></i>
-      <h3 class="featurette-heading-col">Vereenvoudigd Boekingsproces</h3>
-      <p>Dit overzichtelijke platform is voor zowel nieuwe als huidige klanten een makkelijkere manier om online en 24/7 uw lesssen te boeken. </p>
+      <h3 class="featurette-heading-col"><?= Yii::t('app', 'Simplyfied Bookingprocess'); ?></h3>
+
+      <p><?= Yii::t('app', 'With this neat platform, new as well as current customers will be able to easily book your sport classes online and 24/7'); ?></p>
     </div>
     <div class="col-md-4">
       <i class="fa fa-comments fa-5x"></i> 
-      <h3 class="featurette-heading-col">Marketing & Naamsbekendheid</h3>
-      <p>Door uw lessen op in kaart te brengen via Sportlery vergroot u in een klap het aantal sporters dat u bereikt. Word op deze manier dé sporttrainer in uw omgeveing!</p>
+      <h3 class="featurette-heading-col"><?= Yii::t('app', 'Marketing & Brand Awareness'); ?></h3>
+      <p>
+<?= Yii::t('app', 'By placing yourself on the map with Sportlery, you instantly increase your reach regarding the number of sports enthusiast who hear about you. Become the #1 trainer in your neighbourhood!'); ?></p>
     </div>
     <div class="col-md-4">
       <i class="fa fa-line-chart fa-5x"></i>
-      <h3 class="featurette-heading-col">Stijgende Inkomsten</h3>
-      <p>Op Sportlery bereikt u meer sporters waardoor meer lessen geboekt zullen worden. Dit is een slimme manier om uw inkomsten te vergroten!</p>
+      <h3 class="featurette-heading-col"><?= Yii::t('app', 'Revenue Increase'); ?></h3>
+      <p>
+<?= Yii::t('app', 'With Sportlery, you reach more sport enthusiast which will result in more bookings. This is a smart and easy way to increase your income.!'); ?></p>
     </div>
   </div>
   <hr class="hr-invisible">
-  <h1>Maak nu je gratis beta account aan! Wees één van de eerste leraren op jouw sportgebied en help mensen nieuwe sporten ontdekken. </h1>
+
 </div> <!-- end container -->
 <hr class="hr-invisible">
