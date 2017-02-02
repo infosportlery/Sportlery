@@ -141,7 +141,11 @@
 
 <!-- Parallax One
 ************************************************************************ -->
-<div class="parallaxLes">
+<?php if(Yii::$app->language == 'nl') {
+  echo '<div class="parallaxLesNl">';
+} else {
+  echo '<div class="parallaxLes">';  
+} ?>
 <div class="container text-center" id="locations">
 
   <div class="row" id="index-loc">

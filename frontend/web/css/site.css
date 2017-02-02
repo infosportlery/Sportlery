@@ -249,15 +249,15 @@ table tr {
   background-color: black;
 }
 .footer-logo {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 .graphic {
   background: url('../images/footer.png') bottom no-repeat;
-  min-height: 250px;
+  min-height: 290px;
   width: 100%;
-  margin-bottom: -30px;
-  background-size: contain;
+  margin-bottom: -50px;
+  background-size: cover;
 }
 .col-md-text {
   padding: 50px;
@@ -317,6 +317,20 @@ table tr {
     background-size: cover;
     color: white;
     background-image: url('../images/lessen.png'); 
+}
+
+.parallaxLesNl {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #EEEEEE;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url('../images/lessen_nl.png'); 
 }
 
 .parallaxOne .text-muted {
