@@ -5,7 +5,7 @@ return [
 
 	'Search for your sport, find a sportsbuddy, book your sportlocation and play!' => 'Zoek jouw sport, vind een Sportbuddy, boek een sportlocatie en speel!',
 	'Want to know more about Sportlery?' => 'Wil je meer weten over Sportlery?',
-	'Explore!' => 'Ontdek het hier!'
+	'Explore!' => 'Ontdek het hier!',
 	'What is Sportlery?' => 'Wat is Sportlery?',
 	'Sport Locations' => 'Sport Locaties',
 	'Choose your favourite sport and find a sports facility in your neighbourhood. Book your slot and enjoy!' => 'Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!',
@@ -89,6 +89,7 @@ return [
 	//Other
 
  	'Read more..' => 'lees meer..',
+ 	'Any questions or suggestions' => 'Heb je vragen of suggesties?'
 
 ];
 
