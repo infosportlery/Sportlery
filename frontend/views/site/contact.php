@@ -50,7 +50,7 @@ $this->title = 'Contact';
             </div>
             <div class="col-md-5 col-md-offset-1 text-center">
                 <i class="fa fa-envelope fa-5x"></i>
-                <h3><?= Yii::t('app', 'Heb je vragen of suggesties?') ?></h3>
+                <h3><?= Yii::t('app', 'Any questions or suggestions?') ?></h3>
                 <hr class="hr-sm">
             </div>
         </div>
