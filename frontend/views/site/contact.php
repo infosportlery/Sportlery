@@ -5,7 +5,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Contact';
 ?>
-    <div class="sm-header">
+    <div class="sm-header sm-header-1">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -43,14 +43,15 @@ $this->title = 'Contact';
                     <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
 
                     <div class="form-group pull-right">
-                        <?= Html::submitButton(Yii::t('app', 'Verstuur'), ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+                        <?= Html::submitButton(Yii::t('app', 'Send'), ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                     </div>
 
                 <?php ActiveForm::end(); ?>
             </div>
             <div class="col-md-5 col-md-offset-1 text-center">
                 <i class="fa fa-envelope fa-5x"></i>
-                <h3>Heb je vragen of suggesties?</h3>
+                <h3><?= Yii::t('app', 'Any questions or suggestions?') ?></h3>
+                <hr class="hr-sm">
             </div>
         </div>
     </div>

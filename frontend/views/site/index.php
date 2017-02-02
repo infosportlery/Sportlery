@@ -13,7 +13,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="thin">sportlery</h1>
+        <h1 class="thin">Sportlery</h1>
         <p class="lead thin">TOGETHER WE SPORT</p>
         <br>
       </div>
@@ -21,258 +21,165 @@
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2">
-        <?php echo $this->render('@app/views/location/_globalsearch', ['model' => $searchModel, 'userModel' => $userSearchModel]); ?>
+        <?php //echo $this->render('@app/views/location/_globalsearch', ['model' => $searchModel, 'userModel' => $userSearchModel]); ?>
       </div> <!-- end col -->
     </div>
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-12 hidden-xs text-center">
-      <h3><b>Zoek jouw sport, vind een Sportbuddy, boek een sportlocatie en speel!</b></h3>
+      <h3><b><?= Yii::t('app', 'Search for your sport, find a sportsbuddy, book your sport location and play!'); ?></b></h3>
       </div> <!-- end col -->
     </div>
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-12 hidden-xs text-center">
-      <h3>Word nu <b>gratis</b> lid van onze community: </h3>
+      <h3><?= Yii::t('app', 'Want to know more about Sportlery?'); ?></h3>
       </div> <!-- end col -->
     </div>
 
     <div class="row">
       <div class="col-md-12 text-center">
-         <?= Html::a('Create BETA account', [Url::to('site/signup')], ['class' => 'btn btn-primary btn-lg']); ?>
+         <button class="btn btn-primary btn-lg" id="btn-index-more"><?= Yii::t('app', 'Explore!'); ?></button>
       </div> <!-- end col -->
     </div>
   </div>
+  <div class="row" id="sliderone"></div>
 </div>
 
-<div class="container">
+<hr class="hr-invisible-sm" id="">
+
+<div class="container" >
    
-  <div class="row">
+  <div class="row" >
     <div class="col-md-4 col-md-offset-4 text-center">
-      <h1>Wat is Sportlery?</h1>
+      <h1><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
     </div> <!-- end col -->
   </div> <!-- end row -->
   
   <div class="row text-center">
     <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
-      <div class="col-md-4 col-sm-4">
-        <img src="images/icons/location.png" height="80px" style="width: 80px;"><br>
-        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Locaties'); ?></strong></h1>
-        <p>Kies je sport en zoek een locatie bij jou in de buurt. Boek een plek en sporten maar!</p>
-        <?= Html::a('Bekijk alle locaties', [Url::to('location/index')], ['class' => 'btn btn-primary']); ?>
+      <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj">
+        <?= Html::img('@web/images/icons/location.png', ['width' => '80']); ?>
+        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sport Locations'); ?></strong></h1>
+        <p><?= Yii::t('app', 'Choose your favourite sport and find a sports facility in your neighbourhood. Book your slot and enjoy!'); ?></p>
+        <hr class="hr-sm">
+        <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-locations-more']); ?>
       </div>
-      <div class="col-md-4 col-sm-4">
-        <img src="images/icons/matchmaking.png" height="80px" style="width: 80px;"><br>
+      <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-2">
+        <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
-        <p>Vind sportbuddies, creëer of participeer in evenementen en vind vervanging voor jouw sporten.</p>
-         <?= Html::a('Go and Play!', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-matchmaking']); ?>
+        <p><?= Yii::t('app', 'Find sportbuddies, create or participate in events and find substitute players for your team.') ?></p>
+        <hr class="hr-sm">
+         <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
       </div>
-      <div class="col-md-4 col-sm-4">
-        <img src="images/icons/trainer.png" height="80px" style="width: 80px;"><br>
-        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Lessen'); ?></strong></h1>
-        <p>Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.</p>
-         <?= Html::a('Bekijk alle lessen', [Url::to('')], ['class' => 'btn btn-primary', 'id' => 'link-lessons']); ?>
+      <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-3" >
+        <?= Html::img('@web/images/icons/trainer.png', ['width' => '80']); ?>
+        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sport Classes'); ?></strong></h1>
+        <p><?= Yii::t('app', 'Discover and try-out new sports! A clear overviewof all classes and workshops that are being offered in your neighbourhood.'); ?></p>
+        <hr class="hr-sm">
+        <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-message-more']); ?>
       </div>
     </div>
-  </div> <!-- end row -->
+  </div> 
 
+  <div class="row" id="slidertwo"></div>
 <hr class="hr-invisible">
-
 </div> <!-- end container -->
 
-<!-- Listing Section | Locations
-************************************************************************ -->
-<div class="container-fluid fullheight darkBg" id="locations">
-
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <h1><strong>Sportlocaties</strong></h1>
-            </div> <!-- end col -->
-            <div class="col-md-6 text-center">
-                <h1><strong>Matchmaking</strong></h1>
-            </div> <!-- end col -->
-        </div><!-- end row -->
-    
-
-    <div class="col-md-6">
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Openbare Locaties</h3>
-            </div>
-        </div>
-        
-        <?= 
-            ListView::widget([
-                'dataProvider' => $publicProvider,
-                'options' => [
-                    'tag' => 'div',
-                    'class' => 'list-wrapper',
-                    'id' => 'list-wrapper',
-                ],
-                'layout' => "{items}",
-                'itemView' => function ($model, $key, $index, $widget) {
-                    return $this->render('_list',['model' => $model]);
-                },
-            ]); 
-        ?>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>Sportclubs</h2>
-            </div>
-        </div>
-        
-        <?= 
-            ListView::widget([
-                'dataProvider' => $paidProvider,
-                'options' => [
-                    'tag' => 'div',
-                    'class' => 'list-wrapper',
-                    'id' => 'list-wrapper',
-                ],
-                'layout' => "{items}",
-                'itemView' => function ($model, $key, $index, $widget) {
-                    return $this->render('_list',['model' => $model]);
-                },
-            ]); 
-        ?>
-
-        <div class="row">
-            <div class="col-md-2 col-md-offset-5">
-                <button class="btn btn-primary btn-block btn-xs">Meer</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>Sportlers</h2>
-            </div>
-        </div>
-        
-        <?= 
-            ListView::widget([
-                'dataProvider' => $userProvider,
-                'options' => [
-                    'tag' => 'div',
-                    'class' => 'list-wrapper',
-                    'id' => 'list-wrapper',
-                ],
-                'layout' => "{items}",
-                'itemView' => function ($model, $key, $index, $widget) {
-                    return $this->render('_userlist',['model' => $model]);
-                },
-            ]); 
-        ?>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2>Groepschat</h2>
-            </div>
-        </div>
-        
-        <div class="row">
-        <div class="col-md-12 text-center">
-        <h1 class="comingsoon">COMING SOON</h1>
-        </div>
-        </div>
-          
-
-
-    </div> <!-- end .col -->
-
-</div> <!-- end container-fluid -->
 
 <!-- Matchmaking Coming Soon
 ************************************************************************ -->
-<div class="container text-center" id="matchmaking">
-  <div class="row">
-    <img src="images/matchmaking.png" class="img-responsive">
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <h2 class="featurette-heading">Creëer je eigen BETA profiel. <h4><span class="text-muted">Meld je direct aan!</span></h4>
-      <?= Html::a('Aanmelden', ['/site/signup'], ['class'=>'btn btn-primary']) ?>
+<div class="parallaxMm">
+<div class="container text-center" >
+  <div class="row" id="index-mm">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 style="color: black;">Matchmaking</h1>  
+      </div>
+      <div class="col-md-12">
+        <?php if(Yii::$app->language == 'nl'){
+          echo '<div class="img-responsive img-mm-type" id="img-mm-nl"></div>';
+        } else {
+          echo '<div class="img-responsive img-mm-type" id="img-mm-en"></div>';
+        }?>
+        
+      </div>
     </div>
   </div>
-  <div class="row">
-    <h2 class="featurette-heading"><span class="text-muted">Beschikbaar over 
-    <?php
-      $year = '2017';
-      $month = '03';
-      $day = '01';
 
-      $current_date = new DateTime(date('Y-m-d'), new DateTimeZone('Europe/Amsterdam'));
-      $end_date = new DateTime("$year-$month-$day", new DateTimeZone('Europe/Amsterdam'));
-      $interval = $current_date->diff($end_date);
-      echo $interval->format('%a day(s)');
-    ?>.</span></h2>
-  </div>
   <hr class="hr-invisible">
+<div class="row" id="sliderthree"></div>
 </div> <!-- end container-fluid -->
+</div>
 
-<!-- Parallax One
+<!-- Listing Section | Locations
 ************************************************************************ -->
-<div class="parallaxOne">
-      <div class="container">
-      <hr class="hr-invisible-sm">
-      <h2 class="featurette-heading"><b>Verdien punten en win de contest!</b></h2>
-      <hr class="hr-invisible-sm">
-        <div class="row">
-          <div class="col-md-3">
-            <h3 class="featurette-heading">Creëer Account <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div>
-          <div class="col-md-3">
-          <h3 class="featurette-heading">Nodig vrienden uit <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div>
-          <div class="col-md-3">
-          <h3 class="featurette-heading">Deel op Facebook <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div>
-          <div class="col-md-3">
-          <h3 class="featurette-heading">Deel op Instagram <h4><span class="text-muted"><i class="fa fa-plus"></i> 20 points</span></h4>
-            
-          </div> <!-- end col -->
-        </div> <!-- end row -->
-        <hr class="hr-invisible-sm">
-        <div class="row">
-          <div class="col-md-12">
-            <?= Html::a('Klik hier voor meer informatie.', ['/site/contest'], ['class'=>'btn btn-primary']) ?>
-          </div>
-        </div>
-      </div> <!-- end container -->
-</div> <!-- parallaxOne -->
+<div class="parallaxLoc">
+<div class="container text-center" id="locations">
 
-<div class="container">
-    <div class="row text-center">
-        <div class="col-md-12">
-            <h2 class="featurette-heading">Ben jij een trainer? <h4><span class="text-muted">Creëer je eigen BETA profiel en bied je lessen aan.</span></h2>
-            <?= Html::a('Aanmelden', ['/site/signup'], ['class'=>'btn btn-primary']) ?>
-        </div>
+  <div class="row" id="index-loc">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="loc-head"><?= Yii::t('app', 'Sport Locations'); ?></h1>  
+      </div>
+      <div class="col-md-12">
+      <?php if(Yii::$app->language == 'nl'){
+          echo '<div class="img-responsive img-loc-type" id="img-loc-nl"></div>';
+        } else {
+          echo '<div class="img-responsive img-loc-type" id="img-loc-en"></div>';
+        }?>
+      </div>
     </div>
+  </div>
+
+
+  <hr class="hr-invisible">
+<div class="row" id="sliderfour"></div>
+</div> <!-- end container-fluid -->
 </div>
 
 
-<hr class="hr-invisible">
+<!-- Parallax One
+************************************************************************ -->
+<?php if(Yii::$app->language == 'nl') {
+  echo '<div class="parallaxLesNl">';
+} else {
+  echo '<div class="parallaxLes">';  
+} ?>
+<div class="container text-center" id="locations">
 
+  <div class="row" id="index-loc">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="loc-head"></h1>  
+      </div>
+      <div class="col-md-12">
+        <div class="img-responsive img-les-type" id="img-les"></div>';
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="hr-invisible">
+</div> <!-- end container-fluid -->
+</div>
+
+
+
+<hr class="hr-invisible">
 
 <div class="parallaxTwo">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 col-md-offset-3 text-center">
-        <h2 class="featurette-heading">Partners</h2>
-        <p>Heb jij een een sportlocatie die geboekt kan worden of bied jij lessen aan? <br> Deel je aanbod op ons platform en bereik meer sporters. Bekijk alle voordelen.</p>
+        <h2 class="featurette-heading"><?= Yii::t('app', 'Partners');?></h2>
+        <p><?= Yii::t('app', 'Are you in charge of a sport location which can be booked or do you offer sport classes?');?> <br> <?= Yii::t('app', 'Share your service on our platform and reach more sports enthusiasts. For benefits click below.'); ?></p>
       </div> <!-- end col -->
     </div>
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-xs-6 col-md-4 col-md-offset-2">
-        <?= Html::a('Sportclubs', ['site/sportclub'], ['class' => 'btn btn-default']); ?>
+        <?= Html::a(Yii::t('app', 'Sportclubs'), ['site/sportclub'], ['class' => 'btn btn-default']); ?>
       </div>
       <div class="col-xs-6 col-md-4">
         <?= Html::a('Trainer', ['site/trainer'], ['class' => 'btn btn-default']); ?>
@@ -286,36 +193,41 @@
   <hr class="hr-invisible-sm">
 
   <div class="row text-center">
-    <h3>Wil je één van de eerste Sportler zijn? Laat dan nu je e-mail achter.</h3>
+    <h3><?= Yii::t('app', 'Do you want to become one of the first Sportlers? Fill in your e-mail address below:'); ?></h3>
     <div class="mailing col-md-6 col-md-offset-3">
-            <?php $form = ActiveForm::begin(); ?>
 
-                <?= $form->field($mailing, 'email')->textInput()->input('text', ['placeholder' => "Laat je e-mail adres achter."])->label(false); ?>
-
-                <div class="form-group">
-                    <?= Html::submitButton($mailing->isNewRecord ? 'Verstuur' : 'Update', ['class' => $mailing->isNewRecord ? 'btn btn-default' : 'btn btn-primary']) ?>
-                </div>
-
-            <?php ActiveForm::end(); ?>
+            <!-- Begin MailChimp Signup Form -->
+              <form action="//sportlery.us14.list-manage.com/subscribe/post?u=f843bd1e558ff3e6d333044de&amp;id=8efe7ac3d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                  <div class="form-group">
+                    <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="<?= Yii::t('app', 'Fill in your e-mail address');?>" required>    
+                  </div>
+                
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f843bd1e558ff3e6d333044de_8efe7ac3d6" tabindex="-1" value=""></div>
+                  <div class="form-group"><input type="submit" value="<?= Yii::t('app', 'Send')?>" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default"></div>
+                  </div>
+              </form>
+            <!--End mc_embed_signup-->
     </div>
   </div>
-
+          <hr class="hr-invisible-sm">
   <div class="row">
     <div class="col-md-12 text-center">
-      <h3>"Sporten was nog nooit zo gemakkelijk. Sportlery maakt sporten laagdrempelig"</h3>
+      <h3>"<?= Yii::t('app', 'Doing sports has never been so easy! Sportlery crosses all barriers between sports enthusiasts and their favourite sport'); ?>"</h3>
     </div>
   </div>
 
   <div class="row text-center">
     <div class="col-md-10 col-md-offset-1">
       <div class="col-md-4">
-        <h2 class="h-orange">Flexibel <h4><span class="text-muted">Geen vaste abbonementskosten.</span></h4>
+        <h2 class="h-orange"><?= Yii::t('app', 'Flexible'); ?> <h4><span class="text-muted"><?= Yii::t('app', 'No fixed contracts'); ?></span></h4>
       </div>
       <div class="col-md-4">
-        <h2 class="h-orange">Variatie <h4><span class="text-muted">Ontdek meer sporten en doe mee aan evenementen.</span></h4>
+        <h2 class="h-orange"><?= Yii::t('app', 'Variation'); ?> <h4><span class="text-muted"><?= Yii::t('app', 'Discover more sports and join events'); ?></span></h4>
       </div>
       <div class="col-md-4">
-        <h2 class="h-orange">Motivatie <h4><span class="text-muted">Er zijn meerdere mensen om je heen die graag sporten, sport samen!</span></h4>
+        <h2 class="h-orange"><?= Yii::t('app', 'Motivation'); ?> <h4><span class="text-muted"><?= Yii::t('app', 'There are more people out there who enjoy sports, do it together!'); ?></span></h4>
       </div>
     </div>
   </div> <!-- end row -->

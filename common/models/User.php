@@ -306,4 +306,13 @@ class User extends ActiveRecord implements IdentityInterface
 
         $model->save();
     }
+
+     public function getUserData()
+    {
+        $user = User::find()
+          ->where(['id' => Yii::$app->user->identity->id])
+          ->one();
+
+        return $user;
+    }
 }

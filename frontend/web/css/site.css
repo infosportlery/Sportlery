@@ -10,7 +10,13 @@ BLUE+: #105C89
 .thumbnail-horizontal {
    display: inline-block !important;
 }
+.infomation-col p {
+  min-height: 70px;
+}
 
+.information-btn {
+  margin-bottom: 10px;
+}
 
 input .addon {
   color: red;
@@ -242,15 +248,17 @@ table tr {
   position: absolute;
   background-color: black;
 }
+
 .footer-logo {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 .graphic {
   background: url('../images/footer.png') bottom no-repeat;
-  min-height: 250px;
-  margin-bottom: -100px;
-  background-size: contain;
+  min-height: 290px;
+  width: 100%;
+  margin-bottom: -50px;
+  background-size: cover;
 }
 .col-md-text {
   padding: 50px;
@@ -268,6 +276,64 @@ table tr {
   background-size: cover;
   color: white;
 }
+
+.parallaxLoc {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #FFF;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+.parallaxMm {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #EEEEEE;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.parallaxLes {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #EEEEEE;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url('../images/lessen.png'); 
+}
+
+.parallaxLesNl {
+      min-height: 310px;
+    padding-top: 25px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    background-color: #EEEEEE;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url('../images/lessen_nl.png'); 
+}
+
 .parallaxOne .text-muted {
   color: white;
   text-shadow: 1px 1px 1px #000;
@@ -300,7 +366,7 @@ table tr {
   margin-top: 100px;
 }
 .thin {
-	font-weight: 300;
+  font-weight: 300;
 }
 .scrollPadding {
   padding-top: 50px;
@@ -335,6 +401,13 @@ table tr {
   color: white;
   text-align: center;
 }
+
+.sm-header-1 {
+  background-image: url('../images/contact_img_v1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .language {
   margin-top: 13px;
   margin-left: 4px;
@@ -368,12 +441,25 @@ table tr {
   background-size: cover;
   color: white;
 }
-.header h1 {font-family: 'Graduate', sans-serif;}
+.header h1 {font-family: 'Graduate', sans-serif; font-size: 4em;}
 .brand {
   height: 25px;
 }
 
+#contact-side-img {
+  height: 100%;
+  background-image: url('../images/after_match_about.png');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  color: white;
+}
 
+.about-text-style {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+}
 
 .header2 {
   height: 100vh;
@@ -463,6 +549,36 @@ table tr {
 .navbar-brand {
   color: white !important;
 }
+.navbar-design {
+  background-color: #F46835; 
+}
+
+.vertical-rule {
+  border-left:1px solid #e6e6e6;
+  min-height: 500px;
+  height:100%;
+}
+
+.vertical-rule-about {
+  border:1px solid #e6e6e6;
+
+  background-color: #E85823;
+}
+
+.vertical-rule-about-right {
+  border-right:1px solid #e6e6e6;
+}
+
+.about-liner {
+  height: 97.5px;
+  border-right: 1px solid #e6e6e6; 
+}
+
+.btn-view {
+  width: 38px;
+  height: 34px;
+  border: 1px solid transparent !important;
+}
 
 /* Featurettes
 ------------------------- */
@@ -499,11 +615,14 @@ table tr {
   height: 150px;
   width: 150px;
 }
+
+
 .block-default {
   background: #F46835;
   padding: 10px;
   color: white;
-  min-height: 600px;
+  min-height: 530px;
+
 }
 .block-default-out {
   background: #E85823;
@@ -511,6 +630,16 @@ table tr {
   padding: 10px;
   color: white;
 }
+
+.linkedin-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+
+
+
+
 
 /* Grid Visibility
 ------------------------- */
@@ -784,6 +913,11 @@ ul {
 .list-md h1 .text-muted {
   font-size: 14px;
 }
+
+.loc-head {
+  color: black;
+}
+
 /* 
 /* Forms
 /* -------------------------------------------------------------------------- */
@@ -830,6 +964,50 @@ select.form-control {
 #locations {padding-top: 50px;}
 #matchmaking {padding-top: 50px;}
 #lessons {padding-top: 50px;}
+
+/*
+/* Images without mob
+/* -------------------------------------------------------------------------- */
+
+.img-mm-type {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 500px;
+}
+
+#img-mm-nl {
+  background-image: url('../images/mm_nl.png'); 
+
+}
+
+#img-mm-en {
+  background-image: url('../images/mm_en.png'); 
+
+}
+
+.img-loc-type {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 530px;
+}
+
+#img-loc-nl {
+  background-image: url('../images/loc_nl.png'); 
+}
+
+#img-loc-en {
+  background-image: url('../images/loc_en.png'); 
+}
+
+.img-les-type {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 530px;
+}
+
 /* 
 /* Responsive
 /* -------------------------------------------------------------------------- */
@@ -848,9 +1026,79 @@ select.form-control {
     margin-top: 100px;
   }
 
-  .header h1 {font-size: 4em;}
-  .header1 h1 {font-size: 4em;}
-  .header2 h1 {font-size: 4em;}
-  .header3 h1 {font-size: 4em;}
-  .header4 h1 {font-size: 4em;}
+  .header h1 {font-size: 3.5em;}
+  .header1 h1 {font-size: 3.5em;}
+  .header2 h1 {font-size: 3.5em;}
+  .header3 h1 {font-size: 3.5em;}
+  .header4 h1 {font-size: 3.5em;}
 }
+
+
+@media screen and (max-width: 765px) {
+  .vertical-rule {
+    display: none;
+  }
+ 
+ /* Mobile Images */ 
+  .img-mm-type {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 650px;
+  }
+#img-mm-nl {
+  background-image: url('../images/mm_nl_mob.png'); 
+
+}
+
+#img-mm-en {
+  background-image: url('../images/mm_nl_mob.png'); 
+
+}
+
+  .img-loc-type {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 650px;
+  }
+
+  #img-loc-nl {
+    background-image: url('../images/loc_nl_mob.png'); 
+  }
+
+  #img-loc-en {
+    background-image: url('../images/loc_nl_mob.png'); 
+  }
+
+  .parallaxLes {
+
+    background-image: url('../images/lessen_mob.png'); 
+  }
+
+}
+
+/*
+/* Animations
+/* -------------------------------------------------------------------------- */
+
+#index-slideup-obj {
+  visibility: hidden;
+}
+
+#index-slideup-obj-2 {
+  visibility: hidden;
+}
+
+#index-slideup-obj-3 {
+  visibility: hidden;
+}
+
+#index-mm-fadeIn {
+  visibility: hidden;
+}
+
+#index-loc-slideUp {
+  visibility: hidden;
+}
+

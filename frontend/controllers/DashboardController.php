@@ -20,6 +20,9 @@ use yii;
 Yii::$app->view->params['searchModel'] = new LocationSearch();
 Yii::$app->view->params['userSearchModel'] = new LocationSearch();
 
+$userInfo = new User();
+Yii::$app->view->params['userData'] = $userInfo->getUserData();
+
 class DashboardController extends Controller
 {
     public function behaviors()
@@ -38,6 +41,7 @@ class DashboardController extends Controller
     public function actionIndex()
     {
 
+    $userInfo = new User();
     $searchModel = new LocationSearch();
     $userSearchModel = new UserSearch();
     $publicProvider = $searchModel->publicSearch(Yii::$app->request->queryParams);
@@ -52,6 +56,35 @@ class DashboardController extends Controller
     {
         return $this->goHome();
     } else {
+
+        //////////////////////////
+        // 3 STEP TUTORIAL
+        //////////////////////////
+
+        // get loggedin user sport
+        $sport = Yii::$app->user->identity->favorite_sport;
+        $city = Yii::$app->user->identity->city;
+        $wantingsport = Yii::$app->user->identity->wanting_sport;
+
+
+        // $user = User::find()
+        //   ->where(['id' => Yii::$app->user->identity->id])
+        //   ->one();
+
+        // check if empty (NULL)
+        if(empty($userInfo->getUserData()->favorite_sport))
+        {
+            // if empty: redirect to user/action for automatic modal
+            return $this->redirect(['/user/stepone', 'id' => Yii::$app->user->identity->id]);
+        }
+        if(empty($userInfo->getUserData()->city)) {
+
+            return $this->redirect(['/user/steptwo', 'id' => Yii::$app->user->identity->id]);
+        }
+        if(empty($userInfo->getUserData()->wanting_sport)) {
+
+            return $this->redirect(['/user/stepthree', 'id' => Yii::$app->user->identity->id]);
+        }
 
         $identity = Yii::$app->getUser()->getIdentity();
 

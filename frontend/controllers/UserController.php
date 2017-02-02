@@ -15,6 +15,9 @@ use frontend\models\LocationSearch;
 Yii::$app->view->params['searchModel'] = new LocationSearch();
 Yii::$app->view->params['userSearchModel'] = new LocationSearch();
 
+
+$userInfo = new User();
+Yii::$app->view->params['userData'] = $userInfo->getUserData();
 /**
  * UserController implements the CRUD actions for User model.
  */

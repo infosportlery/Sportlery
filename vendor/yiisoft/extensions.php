@@ -157,4 +157,13 @@ return array (
       '@kartik/form' => $vendorDir . '/kartik-v/yii2-widget-activeform',
     ),
   ),
+  'codemix/yii2-localeurls' => 
+  array (
+    'name' => 'codemix/yii2-localeurls',
+    'version' => '1.4.6.0',
+    'alias' => 
+    array (
+      '@codemix/localeurls' => $vendorDir . '/codemix/yii2-localeurls',
+    ),
+  ),
 );

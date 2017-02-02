@@ -11,8 +11,8 @@ use yii\bootstrap\NavBar;
         ],
     ]);
         $menuItems = [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
+            ['label' => 'Home', 'url' => ['/']],
+            //['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
                 'items' => [
@@ -21,7 +21,7 @@ use yii\bootstrap\NavBar;
                 ],
             ],
             [
-                'label' => 'Over Ons',
+                'label' => Yii::t('app', 'About Us'),
                 'items' => [
                      ['label' => 'Team Sportlery', 'url' => ['/site/team']],
                      ['label' => 'Contact', 'url' => ['/site/contact']],
@@ -32,12 +32,12 @@ use yii\bootstrap\NavBar;
 
 
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-        $menuItems[] = ['label' => 'Aanmelden', 'url' => ['/site/signup']];
+        //$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        //$menuItems[] = ['label' => 'Aanmelden', 'url' => ['/site/signup']];
     } else {
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
+            //['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
                 'items' => [
@@ -46,41 +46,34 @@ use yii\bootstrap\NavBar;
                 ],
             ],
             [
-                'label' => 'Over Ons',
+                'label' => Yii::t('app', 'About Us'),
                 'items' => [
                      ['label' => 'Team Sportlery', 'url' => ['/site/team']],
                      ['label' => 'Contact', 'url' => ['/site/contact']],
                 ],
             ],
-            [
-                'label' => Yii::$app->user->identity->username,
-                'items' => [
-                     ['label' => 'Dashboard', 'url' => ['/dashboard/index']],
-                        Html::beginForm(['/site/logout'], 'post')
-                        . Html::submitButton(
-                            'Uitloggen (' . Yii::$app->user->identity->username . ')',
-                            ['class' => 'btn btn-link btn-logout-inverse']
-                        )
-                        . Html::endForm(),
-                ],
-            ],
+            // [
+            //     'label' => Yii::$app->user->identity->username,
+            //     'items' => [
+            //          ['label' => 'Dashboard', 'url' => ['/dashboard/index']],
+            //             Html::beginForm(['/site/logout'], 'post')
+            //             . Html::submitButton(
+            //                 'Uitloggen (' . Yii::$app->user->identity->username . ')',
+            //                 ['class' => 'btn btn-link btn-logout-inverse']
+            //             )
+            //             . Html::endForm(),
+            //     ],
+            // ],
         ];
     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-right navbar-design'],
         'items' => $menuItems,
     ]);
-
-     ?>
-<!--     <span class="language pull-right" style="width:50px;">
-    <a href='/en'> 
-        <?= html::img('@web/images/flags/gb.png'); ?> 
-    </a>
-    <span class="language" style="width:50px;">
-    <a href='/nl'> 
-        <?= html::img('@web/images/flags/nl.png'); ?> 
-    </a> -->
-    <?php
+        
+        foreach(Yii::$app->params['languages'] as $key => $language) {
+            echo '<span class="language" id="'.$key.'">'. Html::a(Html::img("@web/images/flags/".$key.".png"), ['site/changel', 'language' => $key]) .' |</span>';
+        }
 
     NavBar::end();
     ?>
