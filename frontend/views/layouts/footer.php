@@ -16,16 +16,16 @@ use yii\helpers\Html;
         </p>  
     </div>
     <div class="col-md-4">
-        <p class="text-muted text-center">Copyright Sportlery 2016</p>  
+        <p class="text-muted text-center">Copyright Sportlery &copy; <?= date("Y");?></p>  
     </div>
     <div class="col-md-4 text-center">
-        <a href="https://twitter.com/sportlery" class="btn btn-social-icon btn-twitter">
+        <a href="https://twitter.com/sportlery" target="_blank" class="btn btn-social-icon btn-twitter">
             <span class="fa fa-twitter"></span>
         </a>
-        <a href="https://www.facebook.com/sportlery" class="btn btn-social-icon btn-facebook">
+        <a href="https://www.facebook.com/sportlery" target="_blank" class="btn btn-social-icon btn-facebook">
             <span class="fa fa-facebook"></span>
         </a>
-        <a href="https://instagram.com/sportlerynl" class="btn btn-social-icon btn-instagram">
+        <a href="https://instagram.com/sportlerynl" target="_blank" class="btn btn-social-icon btn-instagram">
             <span class="fa fa-instagram"></span>
         </a>
     </div>

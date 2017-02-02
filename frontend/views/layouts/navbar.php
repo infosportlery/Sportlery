@@ -21,7 +21,7 @@ use yii\bootstrap\NavBar;
                 ],
             ],
             [
-                'label' => 'Over Ons',
+                'label' => Yii::t('app', 'About Us'),
                 'items' => [
                      ['label' => 'Team Sportlery', 'url' => ['/site/team']],
                      ['label' => 'Contact', 'url' => ['/site/contact']],
@@ -46,7 +46,7 @@ use yii\bootstrap\NavBar;
                 ],
             ],
             [
-                'label' => 'Over Ons',
+                'label' => Yii::t('app', 'About Us'),
                 'items' => [
                      ['label' => 'Team Sportlery', 'url' => ['/site/team']],
                      ['label' => 'Contact', 'url' => ['/site/contact']],

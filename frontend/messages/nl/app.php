@@ -3,7 +3,7 @@ return [
 
 	// List of Translations for Index
 
-	'Search for your sport, find a sportsbuddy, book your sportlocation and play!' => 'Zoek jouw sport, vind een Sportbuddy, boek een sportlocatie en speel!',
+	'Search for your sport, find a sportsbuddy, book your sport location and play!' => 'Zoek jouw sport, vind een Sportbuddy, boek een sportlocatie en speel!',
 	'Want to know more about Sportlery?' => 'Wil je meer weten over Sportlery?',
 	'Explore!' => 'Ontdek het hier!',
 	'What is Sportlery?' => 'Wat is Sportlery?',
@@ -26,6 +26,7 @@ return [
 	'Discover more sports and join events' => 'Ontdek meer sporten en doe mee aan evenementen.',
 	'Motivation' => 'Motivatie',
 	'There are more people out there who enjoy sports, do it together!' => 'Er zijn meerdere mensen om je heen die graag sporten, sport samen!',
+	'About Us' => 'Over Ons',
 
 
 	// Over Ons
@@ -88,7 +89,7 @@ return [
 
 	//Other
 
- 	'Read more..' => 'lees meer..',
+ 	'Read more!' => 'lees meer!',
  	'Any questions or suggestions' => 'Heb je vragen of suggesties?'
 
 ];

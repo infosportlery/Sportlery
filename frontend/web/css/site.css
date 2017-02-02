@@ -249,13 +249,14 @@ table tr {
   background-color: black;
 }
 .footer-logo {
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
 }
 .graphic {
   background: url('../images/footer.png') bottom no-repeat;
   min-height: 250px;
-  margin-bottom: -100px;
+  width: 100%;
+  margin-bottom: -30px;
   background-size: contain;
 }
 .col-md-text {

@@ -41,7 +41,7 @@ SportclubsAsset::register($this);
               <div class="col-md-6">
                 <h1><?= Yii::t('app','Extend your reach!'); ?></h1>
                 <p class="lead"><?= Yii::t('app', 'Sportlery has large and diverse community. All of them want to practice their favourite sport, but don&apos;t always know where to go. By offering your sport location, you can attract more people and increase your occupancy!'); ?></p>
-                <button class="btn btn-default" id="btn-sportclub"><?= Yii::t('app','Read more..'); ?></button>
+                <button class="btn btn-default" id="btn-sportclub"><?= Yii::t('app','Read more!'); ?></button>
               </div>
             </div>
         </div>

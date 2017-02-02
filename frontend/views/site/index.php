@@ -27,7 +27,7 @@
     <hr class="hr-invisible-sm">
     <div class="row">
       <div class="col-md-12 hidden-xs text-center">
-      <h3><b><?= Yii::t('app', 'Search for your sport, find a sportsbuddy, book your sportlocation and play!'); ?></b></h3>
+      <h3><b><?= Yii::t('app', 'Search for your sport, find a sportsbuddy, book your sport location and play!'); ?></b></h3>
       </div> <!-- end col -->
     </div>
     <hr class="hr-invisible-sm">
@@ -63,21 +63,21 @@
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sport Locations'); ?></strong></h1>
         <p><?= Yii::t('app', 'Choose your favourite sport and find a sports facility in your neighbourhood. Book your slot and enjoy!'); ?></p>
         <hr class="hr-sm">
-        <?= Html::button(Yii::t('app', 'Check all locations'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-locations-more']); ?>
+        <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-locations-more']); ?>
       </div>
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-2">
         <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
         <p><?= Yii::t('app', 'Find sportbuddies, create or participate in events and find substitute players for your team.') ?></p>
         <hr class="hr-sm">
-         <?= Html::button(Yii::t('app', 'Go and Play!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
+         <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
       </div>
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-3" >
         <?= Html::img('@web/images/icons/trainer.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sport Classes'); ?></strong></h1>
         <p><?= Yii::t('app', 'Discover and try-out new sports! A clear overviewof all classes and workshops that are being offered in your neighbourhood.'); ?></p>
         <hr class="hr-sm">
-        <?= Html::button(Yii::t('app', 'Check all classes'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-message-more']); ?>
+        <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-message-more']); ?>
       </div>
     </div>
   </div> 
@@ -120,7 +120,7 @@
   <div class="row" id="index-loc">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="loc-head"><?= Yii::t('app', 'Sportlocaties'); ?></h1>  
+        <h1 class="loc-head"><?= Yii::t('app', 'Sport Locations'); ?></h1>  
       </div>
       <div class="col-md-12">
       <?php if(Yii::$app->language == 'nl'){
