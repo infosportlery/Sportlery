@@ -23,22 +23,23 @@
 </div>
 <div class="container-fluid">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
+        <div class="col-md-6 col-md-offset-1 text-left about-text-style">
         <h1 class=""><?= Yii::t('app', 'About Sportlery'); ?></h1>
-          <p><?= Yii::t('app', 'Sportlery is an online platform where sports enthusiasts can meet, to play and organise games together, and easily book a sport location.');?></p>
-          <p><?= Yii::t('app', 'The first the idea for Sportlery crossed our mindss, was during the summerbreak of 2016, when we felt like we wanted to go out and sport, but no one was available and we could not find the right location.'); ?></p>
-          <p><?= Yii::t('app', 'So we decided that there should be a solution for this, and we created Sportlery!'); ?></p>
-          <p><?= Yii::t('app', 'Sportlery creates the opportunity of finding another sports enthusiast around you, with the same intrest and level in sports as you do. Together you decide where and when you practice your sport. You could also create your own sporting event'); ?></p>
-          <p><?= Yii::t('app', 'Furthermore, Sporlery facilitates all kinds of sportlocation in your neighbourhood. As well commercial sportclubs as public fields, indoor or outdoor, we got it all.'); ?></p>
+          <p><?= Yii::t('app', 'Sportlery is an online platform where sports enthusiasts can meet, to play and organise games together, and easily book a sport location.');?><?= Yii::t('app', 'The first the idea for Sportlery crossed our mindss, was during the summerbreak of 2016, when we felt like we wanted to go out and sport, but no one was available and we could not find the right location.'); ?><?= Yii::t('app', 'So we decided that there should be a solution for this, and we created Sportlery!'); ?></p>
+          <p><br></p>
+          <p></p>
+          <p><?= Yii::t('app', 'Sportlery creates the opportunity of finding another sports enthusiast around you, with the same intrest and level in sports as you do. Together you decide where and when you practice your sport. You could also create your own sporting event'); ?><?= Yii::t('app', 'Furthermore, Sporlery facilitates all kinds of sportlocation in your neighbourhood. As well commercial sportclubs as public fields, indoor or outdoor, we got it all.'); ?></p>
+          <p><br></p>
           <p><?= Yii::t('app', 'Do you feel like discovering a new sport? Take a surfworkshop or book your first Krav Maga class, whatever suits you best!'); ?></p>
         </div>
+        <div class="col-md-4" id="contact-side-img"></div>
       </div>
 
     <hr class="hr-invisible">
 
 
       <div class="row">
-        <div class="col-md-4 col-md-offset-1 block-default text-center">
+        <div class="col-md-3 col-md-offset-2 block-default text-center">
           <?= html::img('@web/images/floris.jpg', ['class' => 'img-circle avatar']); ?>
           <h1>Floris</h1>
           <span class="lead"><?= Yii::t('app', 'Co-founder / Managing Director'); ?></span>
@@ -51,7 +52,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-md-offset-2 block-default text-center">
+        <div class="col-md-3 col-md-offset-2 block-default text-center">
           <?= html::img('@web/images/folkert.jpg', ['class' => 'img-circle avatar']); ?>
           <h1>Folkert</h1>
           <span class="lead"><?= Yii::t('app', 'Co-founder / Creative Director'); ?></span>
@@ -68,7 +69,7 @@
       <hr class="hr-invisible">
 
       <div class="row">
-        <div class="col-md-4 col-md-offset-1 block-default text-center">
+        <div class="col-md-3 col-md-offset-2 block-default text-center">
           <?= html::img('@web/images/benjamin.jpg', ['class' => 'img-circle avatar']); ?>
           <h1>Benjamin</h1>
           <span class="lead"><?= Yii::t('app', 'Co-founder / Application Developer'); ?></span>
@@ -81,7 +82,7 @@
           
         </div>
 
-        <div class="col-md-4 col-md-offset-2 block-default text-center">
+        <div class="col-md-3 col-md-offset-2 block-default text-center">
           <h1><?= Yii::t('app', 'Want to join our team?');?></h1>
           <span class="lead"><?= Yii::t('app', 'Contact us!'); ?></span>
           <br>

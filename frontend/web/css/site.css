@@ -248,6 +248,7 @@ table tr {
   position: absolute;
   background-color: black;
 }
+
 .footer-logo {
   height: 60px;
   width: 60px;
@@ -445,7 +446,20 @@ table tr {
   height: 25px;
 }
 
+#contact-side-img {
+  height: 100%;
+  background-image: url('../images/after_match_about.png');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  color: white;
+}
 
+.about-text-style {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+}
 
 .header2 {
   height: 100vh;
