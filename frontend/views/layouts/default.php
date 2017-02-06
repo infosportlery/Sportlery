@@ -23,7 +23,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="vendor/twbs/bootstrap/docs/favicon.ico">
+    <link rel="icon" href="@web/images/favicon.ico">
     <?= Html::csrfMetaTags() ?>
     <title>Sportlery</title>
 
