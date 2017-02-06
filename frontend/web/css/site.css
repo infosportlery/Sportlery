@@ -1001,7 +1001,7 @@ select.form-control {
   background-image: url('../images/loc_en.png'); 
 }
 
-.img-les-type {
+.parallaxLessNl {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1082,7 +1082,7 @@ select.form-control {
   }
 
   .
-  #img-less-type {
+  .parallaxLessNl {
 
     background-image: url('../images/lessen_mob.png'); 
   }
