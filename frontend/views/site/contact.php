@@ -34,13 +34,13 @@ $this->title = 'Contact';
             <div class="col-md-6">
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                    <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
+                    <?= $form->field($model, Yii::t('app', 'name'))->textInput(['autofocus' => true]) ?>
 
-                    <?= $form->field($model, 'email') ?>
+                    <?= $form->field($model, Yii::t('app', 'email')) ?>
 
-                    <?= $form->field($model, 'subject') ?>
+                    <?= $form->field($model, Yii::t('app', 'subject')) ?>
 
-                    <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
+                    <?= $form->field($model, Yii::t('app', 'body'))->textarea(['rows' => 6]) ?>
 
                     <div class="form-group pull-right">
                         <?= Html::submitButton(Yii::t('app', 'Send'), ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
