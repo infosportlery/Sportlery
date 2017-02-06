@@ -440,6 +440,7 @@ table tr {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  position: relative;
 }
 .header h1 {font-family: 'Graduate', sans-serif; font-size: 4em;}
 .brand {
