@@ -22,7 +22,7 @@ SportclubsAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="@web/images/favicon.ico">
+    <?= $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/ico', 'href' => 'images/favicon.ico']);?>
     <?= Html::csrfMetaTags() ?>
     <title>Sportlery</title>
 
