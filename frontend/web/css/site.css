@@ -1081,10 +1081,12 @@ select.form-control {
     background-image: url('../images/loc_en_mob.png'); 
   }
 
-  .parallaxLes {
+  .
+  #img-less-type {
 
     background-image: url('../images/lessen_mob.png'); 
   }
+   
   .header2 {
     background-image: url('../images/about_verhaal_mob_2.png'); 
     background-size: contain;
