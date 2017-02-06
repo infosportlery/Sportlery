@@ -106,6 +106,7 @@ input[type=text]:focus{
 
 #sliderone {
    position: absolute;
+   bottom: 0;
 }
 
 #map_canvas {
