@@ -90,7 +90,11 @@ return [
 	//Other
 
  	'Read more!' => 'lees meer!',
- 	'Any questions or suggestions' => 'Heb je vragen of suggesties?'
+ 	'Any questions or suggestions?' => 'Heb je vragen of suggesties?',
+	'name' => 'Naam',
+	'email' => 'Email',
+	'subject' => 'Onderwerp',
+	'Body' => 'Bericht',
 
 ];
 
