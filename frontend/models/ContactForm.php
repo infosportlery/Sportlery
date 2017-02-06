@@ -39,6 +39,10 @@ class ContactForm extends Model
     {
         return [
             'verifyCode' => 'Verification Code',
+            'name' => Yii::t('app', 'name'),
+            'email' => Yii::t('app', 'email'),
+            'subject' => Yii::t('app', 'subject'),
+            'body' => Yii::t('app', 'body'),
         ];
     }
 
@@ -51,7 +55,7 @@ class ContactForm extends Model
     public function sendEmail($email)
     {
         return Yii::$app->mailer->compose()
-            ->setTo('hello@jesseberkhof.nl')
+            ->setTo('info@sportlery.nl')
             ->setFrom([$this->email => $this->name])
             ->setSubject($this->subject)
             ->setTextBody($this->body)
