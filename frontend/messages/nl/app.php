@@ -91,10 +91,6 @@ return [
 
  	'Read more!' => 'lees meer!',
  	'Any questions or suggestions?' => 'Heb je vragen of suggesties?',
-	'name' => 'Naam',
-	'subject' => 'Onderwerp',
-	'body' => 'Bericht',
-	'email' => 'Email',
 ];
 
 ?>
