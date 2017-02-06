@@ -258,7 +258,7 @@ table tr {
   min-height: 290px;
   width: 100%;
   margin-bottom: -50px;
-  background-size: cover;
+  background-size: contain;
 }
 .col-md-text {
   padding: 50px;
@@ -467,7 +467,7 @@ table tr {
   margin-top: -50px;
   margin-bottom: 50px;
   text-align: center;
-  background-image: url('../images/overons.png');
+  background-image: url('../images/about_verhaal_2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1011,7 +1011,7 @@ select.form-control {
 /* 
 /* Responsive
 /* -------------------------------------------------------------------------- */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1024px) {
   body {
     padding-bottom: 120px;
   }
@@ -1024,6 +1024,16 @@ select.form-control {
     position: absolute;
     background-color: black;
     margin-top: 100px;
+  }
+
+  .graphic {
+    margin-bottom: -91px;
+    background-size: contain;
+  }
+
+  .header2 {
+    height: 70vh;
+    background-image: url('../images/about_verhaal_ipad_2.png');
   }
 
   .header h1 {font-size: 3.5em;}
@@ -1052,7 +1062,7 @@ select.form-control {
 }
 
 #img-mm-en {
-  background-image: url('../images/mm_nl_mob.png'); 
+  background-image: url('../images/mm_en_mob.png'); 
 
 }
 
@@ -1068,15 +1078,23 @@ select.form-control {
   }
 
   #img-loc-en {
-    background-image: url('../images/loc_nl_mob.png'); 
+    background-image: url('../images/loc_en_mob.png'); 
   }
 
   .parallaxLes {
 
     background-image: url('../images/lessen_mob.png'); 
   }
+  .header2 {
+    background-image: url('../images/about_verhaal_mob_2.png'); 
+    background-size: contain;
+  }
+
 
 }
+
+@media screen and (max-width: 360px) {
+} 
 
 /*
 /* Animations
