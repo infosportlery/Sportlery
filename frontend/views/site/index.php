@@ -188,11 +188,11 @@
   </div> <!-- end container -->
 </div> <!-- end parallaxTwo -->
 
-<div class="parallax3" style="background-color: rgb(244, 104, 53);">
+<div class="parallax3" style="background-color: rgb(244, 104, 53);padding: 25px 0 25px 0px;">
 	<div class="container" style="background-color: rgb(244, 104, 53);">
 		  <div class="row text-center">
-	    <h3 style="color: white;"><?= Yii::t('app', 'Do you want to become one of the first Sportlers? Fill in your e-mail address below:'); ?></h3>
-	    <div class="mailing col-md-6 col-md-offset-3">
+	    <h3 style="color: white;"><b><?= Yii::t('app', 'Do you want to become one of the first Sportlers? Fill in your e-mail address below:'); ?></b></h3>
+	    <div class="mailing col-md-12">
 
 	         <?php if(Yii::$app->language == 'nl'){?>
 	          <!--Zoho  Web-Optin Form Starts Here-->
@@ -248,11 +248,11 @@
 	                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	                    <tbody>
 	                      <tr>
-	                        <td align="left" valign="top">
+	                        <td align="center" valign="top">
 	                          <div style="padding-left:10px; padding-right:10px;padding-bottom:10px; padding-top:10px;">
-	                            <input changetype="CONTACT_EMAIL" name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="text" id="CONTACT_EMAIL" style=" height: 32px; line-height: 20px; margin: 0px -4px 0px 0px; padding: 0px 7px 0px 6px; border: 1px solid rgb(235, 235, 235); vertical-align: middle; color: rgb(85, 85, 85); width: 70%; text-align: center; background-color: rgb(255,255,255);" placeholder="Laat hier je e-mail adres achter." class="placeholder">
+	                            <input changetype="CONTACT_EMAIL" name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="text" id="CONTACT_EMAIL" style=" height: 44px; line-height: 20px; margin: 0px -4px 0px 0px; padding: 0px 7px 0px 6px; border: 1px solid rgb(235, 235, 235); vertical-align: middle; color: rgb(85, 85, 85); width: 60%; text-align: center; font-size: 22px; background-color: rgb(255,255,255);" placeholder="Laat hier je e-mail adres achter." class="placeholder">
 	                            <span style="display:none" id="dt_CONTACT_EMAIL">1,true,6,E-mail contactpersoon,2</span>
-	                            <input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: #29719B; height: 34px; border: 1px solid #29719B; line-height: 34px; margin: 0px; color: rgb(255, 255, 255); vertical-align: middle; width: 25%; cursor: pointer; padding: 0px 12px;" value="Aanmelden">
+	                            <input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: #29719B; height: 44px; border: 1px solid #29719B; line-height: 34px; margin: 0px; color: rgb(255, 255, 255); vertical-align: middle; width: 25%; cursor: pointer; padding: 5px 12px; font-size: 20px;" value="Aanmelden">
 	                          </div>
 	                        </td>
 	                      </tr>
@@ -338,11 +338,11 @@
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 								<tbody>
 									<tr>
-										<td align="left" valign="top">
+										<td align="center" valign="top">
 											<div style="padding-left:10px; padding-right:10px;padding-bottom:10px; padding-top:10px;">
-												<input changetype="CONTACT_EMAIL" name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="text" id="CONTACT_EMAIL" style=" height: 32px; line-height: 20px; margin: 0px -4px 0px 0px; padding: 0px 7px 0px 6px; border: 1px solid rgb(235, 235, 235); vertical-align: middle; color: rgb(85, 85, 85); width: 70%; text-align: center; background-color: rgb(255, 255, 255);" placeholder="Please enter your E-mail address" class="placeholder">
+												<input changetype="CONTACT_EMAIL" name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="text" id="CONTACT_EMAIL" style=" height: 44px; line-height: 20px; margin: 0px -4px 0px 0px; padding: 0px 7px 0px 6px; border: 1px solid rgb(235, 235, 235); vertical-align: middle; color: rgb(85, 85, 85); width: 60%; text-align: center; background-color: rgb(255, 255, 255); font-size:22px;" placeholder="Please enter your E-mail address" class="placeholder">
 												<span style="display:none" id="dt_CONTACT_EMAIL">1,true,6,E-mail contactpersoon,2</span>
-												<input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: #29719B; height: 34px; line-height: 34px; margin: 0px; color: rgb(255, 255, 255); vertical-align: middle; border: 1px solid #29719B; width: 25%; cursor: pointer;  padding: 0px 12px;" value="Subscribe">
+												<input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: #29719B; height: 44px; line-height: 34px; margin: 0px; color: rgb(255, 255, 255); vertical-align: middle; border: 1px solid #29719B; width: 25%; cursor: pointer;  padding: 5px 12px;" value="Subscribe">
 											</div>
 										</td>
 									</tr>
