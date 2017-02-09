@@ -342,7 +342,7 @@
 											<div style="padding-left:10px; padding-right:10px;padding-bottom:10px; padding-top:10px;">
 												<input changetype="CONTACT_EMAIL" name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="text" id="CONTACT_EMAIL" style=" height: 44px; line-height: 20px; margin: 0px -4px 0px 0px; padding: 0px 7px 0px 6px; border: 1px solid rgb(235, 235, 235); vertical-align: middle; color: rgb(85, 85, 85); width: 60%; text-align: center; background-color: rgb(255, 255, 255); font-size:22px;" placeholder="Please enter your E-mail address" class="placeholder">
 												<span style="display:none" id="dt_CONTACT_EMAIL">1,true,6,E-mail contactpersoon,2</span>
-												<input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: #29719B; height: 44px; line-height: 34px; margin: 0px; color: rgb(255, 255, 255); vertical-align: middle; border: 1px solid #29719B; width: 25%; cursor: pointer;  padding: 5px 12px;" value="Subscribe">
+												<input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: #29719B; height: 44px; line-height: 34px; margin: 0px; color: rgb(255, 255, 255); vertical-align: middle; border: 1px solid #29719B; width: 25%; cursor: pointer;  padding: 5px 12px; font-size: 22px;" value="Subscribe">
 											</div>
 										</td>
 									</tr>
