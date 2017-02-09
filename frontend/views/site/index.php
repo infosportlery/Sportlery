@@ -188,11 +188,8 @@
   </div> <!-- end container -->
 </div> <!-- end parallaxTwo -->
 
-<div class="container">
-
-  <hr class="hr-invisible-sm">
-
-  <div class="row text-center">
+<div class="container" style="background-color: rgb(244, 104, 53);">
+	  <div class="row text-center">
     <h3><?= Yii::t('app', 'Do you want to become one of the first Sportlers? Fill in your e-mail address below:'); ?></h3>
     <div class="mailing col-md-6 col-md-offset-3">
 
@@ -318,7 +315,7 @@
 			<meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 			<div id="customForm">
 				<div style="overflow: hidden; margin: 0px auto; background-color: rgb(255, 255, 255); padding: 0px; border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255); border-radius: 1px; width: 100%;" name="SIGNUP_BODY" id="SIGNUP_PAGE">
-					<div style="text-align: left; font-weight: bold; color: rgb(136, 136, 136); padding: 10px; font-family: Arial; font-size: 14px;" id="SIGNUP_HEADING" name="SIGNUP_HEADING" changeid="SIGNUP_MSG" changetype="SIGNUP_HEADER"></div>
+					<div style="text-align: left; font-weight: bold; color: rgb(136, 136, 136); padding: 10px; font-family: Arial;" id="SIGNUP_HEADING" name="SIGNUP_HEADING" changeid="SIGNUP_MSG" changetype="SIGNUP_HEADER"></div>
 					<div style="position:relative;top: 30px;">
 						<div id="Zc_SignupSuccess" style="display:none;position:absolute;margin-left:4%;width:90%;background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154);  margin-top: 10px;margin-bottom:10px; ">
 							<table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -328,7 +325,7 @@
 											<img class="successicon" src="https://campaigns.zoho.com/images/challangeiconenable.jpg" align="absmiddle">
 										</td>
 										<td>
-											<span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; font-size: 14px;">&nbsp;&nbsp;Thank you for Signing Up</span>
+											<span id="signupSuccessMsg" style="color: rgb(73, 140, 132); font-family: sans-serif; ">&nbsp;&nbsp;Thank you for Signing Up</span>
 										</td>
 									</tr>
 								</tbody>
@@ -342,9 +339,9 @@
 								<tr>
 									<td align="left" valign="top">
 										<div style="padding-left:10px; padding-right:10px;padding-bottom:10px; padding-top:10px;">
-											<input changetype="CONTACT_EMAIL" name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="text" id="CONTACT_EMAIL" style="border-radius: 4px 0pt 0pt 4px; height: 32px; line-height: 20px; margin: 0px -4px 0px 0px; padding: 0px 7px 0px 6px; border: 1px solid rgb(235, 235, 235); vertical-align: middle; color: rgb(85, 85, 85); width: 70%; text-align: center; background-color: rgb(255, 255, 255); font-size: 12px;" placeholder="Please enter your E-mail address" class="placeholder">
+											<input changetype="CONTACT_EMAIL" name="CONTACT_EMAIL" changeitem="SIGNUP_FORM_FIELD" type="text" id="CONTACT_EMAIL" style="border-radius: 4px 0pt 0pt 4px; height: 32px; line-height: 20px; margin: 0px -4px 0px 0px; padding: 0px 7px 0px 6px; border: 1px solid rgb(235, 235, 235); vertical-align: middle; color: rgb(85, 85, 85); width: 70%; text-align: center; background-color: rgb(255, 255, 255);" placeholder="Please enter your E-mail address" class="placeholder">
 											<span style="display:none" id="dt_CONTACT_EMAIL">1,true,6,E-mail contactpersoon,2</span>
-											<input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: rgb(244, 104, 53); height: 34px; line-height: 34px; margin: 0px; border: 1px solid rgb(167, 167, 167); color: rgb(255, 255, 255); vertical-align: middle; width: 25%; cursor: pointer; font-size: 12px; border-radius: 0px 4px 4px 0px; padding: 0px 12px;" value="Subscribe">
+											<input name="SIGNUP_SUBMIT_BUTTON" id="zcWebOptin" type="button" style="-webkit-appearance: none; background-color: rgb(244, 104, 53); height: 34px; line-height: 34px; margin: 0px; border: 1px solid rgb(167, 167, 167); color: rgb(255, 255, 255); vertical-align: middle; width: 25%; cursor: pointer; border-radius: 0px 4px 4px 0px; padding: 0px 12px;" value="Subscribe">
 										</div>
 									</td>
 								</tr>
@@ -379,6 +376,13 @@
         <?php } ?>
     </div>
   </div>
+</div>
+
+<div class="container">
+
+  <hr class="hr-invisible-sm">
+
+
           <hr class="hr-invisible-sm">
   <div class="row">
     <div class="col-md-12 text-center">
