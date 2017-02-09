@@ -315,7 +315,7 @@
 				<title>Sportlery</title>
 				<meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 				<div id="customForm">
-					<div style="overflow: hidden; margin: 0px auto; padding: 0px; border-width: 1px; border-style: solid; border-color: rgb(255, 255, 255); border-radius: 1px; width: 100%;" name="SIGNUP_BODY" id="SIGNUP_PAGE">
+					<div style="overflow: hidden; margin: 0px auto; padding: 0px; border-width: 1px; border-style: solid; border-radius: 1px; width: 100%;" name="SIGNUP_BODY" id="SIGNUP_PAGE">
 						<div style="text-align: left; font-weight: bold; color: rgb(136, 136, 136); padding: 10px; font-family: Arial;" id="SIGNUP_HEADING" name="SIGNUP_HEADING" changeid="SIGNUP_MSG" changetype="SIGNUP_HEADER"></div>
 						<div style="position:relative;top: 30px;">
 							<div id="Zc_SignupSuccess" style="display:none;position:absolute;margin-left:4%;width:90%;background-color: white; padding: 3px; border: 3px solid rgb(194, 225, 154);  margin-top: 10px;margin-bottom:10px; ">
