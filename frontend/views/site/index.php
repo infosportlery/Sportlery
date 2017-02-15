@@ -75,7 +75,7 @@
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-3" >
         <?= Html::img('@web/images/icons/trainer.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sport Classes'); ?></strong></h1>
-        <p><?= Yii::t('app', 'Discover and try-out new sports! A clear overviewof all classes and workshops that are being offered in your neighbourhood.'); ?></p>
+        <p><?= Yii::t('app', 'Discover and try-out new sports! A clear overview of all classes and workshops that are being offered in your neighbourhood.'); ?></p>
         <hr class="hr-sm">
         <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-message-more']); ?>
       </div>
