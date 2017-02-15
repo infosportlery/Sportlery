@@ -21,6 +21,10 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta property="og:title" content="Sportlery - Together we sport! -" />
+    <meta property="og:type" content="Main Page" />
+    <meta property="og:image" content="http://www.sportlery.nl/images/logo.jpg" />
+    <meta property="og:url" content="http://www.sportlery.nl/" />
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <?= $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/ico', 'href' => 'images/favicon.ico']);?>
     <?= Html::csrfMetaTags() ?>
