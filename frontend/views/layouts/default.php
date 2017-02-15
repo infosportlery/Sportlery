@@ -23,6 +23,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta property="og:image" content="http://www.sportlery.nl/images/logo.png">
     <?= $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/ico', 'href' => 'images/favicon.ico']);?>
     <?= Html::csrfMetaTags() ?>
     <title>Sportlery</title>
