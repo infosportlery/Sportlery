@@ -464,6 +464,7 @@ table tr {
 .about-text-style {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1em;
+  text-align: justify;
 }
 
 .header2 {
