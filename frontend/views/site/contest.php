@@ -1,1 +1,1 @@
-Hello SS
+<queue-community widget-height='1000px'></queue-community>

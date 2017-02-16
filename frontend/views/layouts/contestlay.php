@@ -30,6 +30,13 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title>Sportlery</title>
 
+    <script type="text/javascript" src="https://cdn.queueat.com/assets/sdk/v3/queue.js" defer></script>
+    <script type="text/javascript">
+       document.addEventListener('DOMContentLoaded', function(event) {
+         window.queue = new Queue('b2f3e086-f433-11e6-9852-06867b48a32e'); 
+       });
+    </script>
+
     <?php $this->head() ?>
 
   </head>
