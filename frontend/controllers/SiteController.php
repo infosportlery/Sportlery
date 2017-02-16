@@ -180,7 +180,7 @@ class SiteController extends Controller
     {
       $this->layout = "contestlay";
 
-      return $this->redirect(['site/contest']);
+      return $this->render('contest');
     }
 
     public function actionComingsoon()
