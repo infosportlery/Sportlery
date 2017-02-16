@@ -411,6 +411,14 @@ class SiteController extends Controller
     public function actionChangel() {
       return $this->redirect(['site/index']);
     }
+
+
+    public function actionContest() {
+
+      $this->layout = "contestlay";
+
+      return $this->redirect(['site/contest']);
+    }
 }
 
 ?>
