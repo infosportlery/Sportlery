@@ -37,6 +37,7 @@
       </div> <!-- end col -->
     </div>
 
+
     <div class="row">
       <div class="col-md-12 text-center">
          <button class="btn btn-primary btn-lg" id="btn-index-more"><?= Yii::t('app', 'Explore!'); ?></button>
@@ -47,6 +48,19 @@
 </div>
 
 <hr class="hr-invisible-sm" id="">
+
+<div class="container">
+  <queue-greeting-bar></queue-greeting-bar>
+  <queue-exit-popup></queue-exit-popup>
+  <div class="row">
+    <queue-signup type="horizontal"></queue-signup>
+  </div>
+
+  <div class="row">
+    <queue-socialproof></queue-socialproof>
+  </div>
+
+</div>
 
 <div class="container" >
    
