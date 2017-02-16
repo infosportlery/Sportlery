@@ -178,8 +178,6 @@ class SiteController extends Controller
 
     public function actionContest()
     {
-      $this->layout = "contestlay";
-
       return $this->render('contest');
     }
 
