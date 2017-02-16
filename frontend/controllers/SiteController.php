@@ -178,8 +178,9 @@ class SiteController extends Controller
 
     public function actionContest()
     {
-      $this->layout = 'default';
-      return $this->render('contest');
+      $this->layout = "contestlay";
+
+      return $this->redirect(['site/contest']);
     }
 
     public function actionComingsoon()
@@ -412,13 +413,6 @@ class SiteController extends Controller
       return $this->redirect(['site/index']);
     }
 
-
-    public function actionContest() {
-
-      $this->layout = "contestlay";
-
-      return $this->redirect(['site/contest']);
-    }
 }
 
 ?>
