@@ -32,12 +32,10 @@ AppAsset::register($this);
 
     <?php $this->head() ?>
 
-    <script type="text/javascript" src="https://cdn.queueat.com/assets/sdk/v3/queue.js" defer></script>
-    <script type="text/javascript">
-       document.addEventListener('DOMContentLoaded', function(event) {
-         window.queue = new Queue('b2f3e086-f433-11e6-9852-06867b48a32e'); 
-       });
-    </script>
+
+    <link href="https://campaigns.zoho.com/css/ui.theme.css" rel="stylesheet" type="text/css" />
+    <link href="https://campaigns.zoho.com/css/ui.datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="https://campaigns.zoho.com/css/ui.core.css" rel="stylesheet" type="text/css" />
 
 
   </head>

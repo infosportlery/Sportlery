@@ -217,31 +217,7 @@
 
 	         <?php if(Yii::$app->language == 'nl'){?>
                 <!--Zoho  Web-Optin Form Starts Here-->
-                <link href="https://campaigns.zoho.com/css/ui.theme.css" rel="stylesheet" type="text/css" />
-                <link href="https://campaigns.zoho.com/css/ui.datepicker.css" rel="stylesheet" type="text/css" />
-                <link href="https://campaigns.zoho.com/css/ui.core.css" rel="stylesheet" type="text/css" />
-                <script type="text/javascript" src="https://campaigns.zoho.com/js/jquery-1.11.0.min.js"></script>
-                <script type='text/javascript' src='https://campaigns.zoho.com/js/jquery-migrate-1.2.1.min.js'></script>
-                <script type="text/javascript" src='https://campaigns.zoho.com/js/ui.datepicker.js'  charset="utf-8"></script>
-                <script type="text/javascript" src="https://campaigns.zoho.com/js/jquery.form.js"></script>
-                <script type="text/javascript" src="https://campaigns.zoho.com/js/optin_min.js"></script>
-                <script type="text/javascript">
-                var $ZC = jQuery.noConflict();
-                var trackingText='ZCFORMVIEW';
-                $ZC(document).ready( function($) {
-                $ZC("#zc_trackCode").val(trackingText);
-                $ZC("#fieldBorder").val($ZC("[changeItem='SIGNUP_FORM_FIELD']").css("border-color"));
-                _setOptin(false,function(th){
-                /*Before submit, if you want to trigger your event, "include your code here"*/
-                });
 
-                /*Load Captcha For this*/ 
-                loadCaptcha('https://campaigns.zoho.com/campaigns/CaptchaVerify.zc?mode=generate');
-
-                /*Tracking Enabled*/ 
-                trackSignupEvent(trackingText);
-                });
-                </script>
 
                 <title>Sportlery</title>
                 <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
@@ -307,32 +283,6 @@
                 <!--Zoho  Web-Optin Form Ends Here-->
 	        <?php } else { ?>
                 <!--Zoho  Web-Optin Form Starts Here-->
-                <link href="https://campaigns.zoho.com/css/ui.theme.css" rel="stylesheet" type="text/css" />
-                <link href="https://campaigns.zoho.com/css/ui.datepicker.css" rel="stylesheet" type="text/css" />
-                <link href="https://campaigns.zoho.com/css/ui.core.css" rel="stylesheet" type="text/css" />
-                <script type="text/javascript" src="https://campaigns.zoho.com/js/jquery-1.11.0.min.js"></script>
-                <script type='text/javascript' src='https://campaigns.zoho.com/js/jquery-migrate-1.2.1.min.js'></script>
-                <script type="text/javascript" src='https://campaigns.zoho.com/js/ui.datepicker.js'  charset="utf-8"></script>
-                <script type="text/javascript" src="https://campaigns.zoho.com/js/jquery.form.js"></script>
-                <script type="text/javascript" src="https://campaigns.zoho.com/js/optin_min.js"></script>
-                <script type="text/javascript">
-                var $ZC = jQuery.noConflict();
-                var trackingText='ZCFORMVIEW';
-                $ZC(document).ready( function($) {
-                $ZC("#zc_trackCode").val(trackingText);
-                $ZC("#fieldBorder").val($ZC("[changeItem='SIGNUP_FORM_FIELD']").css("border-color"));
-                _setOptin(false,function(th){
-                /*Before submit, if you want to trigger your event, "include your code here"*/
-                });
-
-                /*Load Captcha For this*/ 
-                loadCaptcha('https://campaigns.zoho.com/campaigns/CaptchaVerify.zc?mode=generate');
-
-                /*Tracking Enabled*/ 
-                trackSignupEvent(trackingText);
-                });
-                </script>
-
                 <title>Sportlery</title>
                 <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
                 <div id="customForm">
