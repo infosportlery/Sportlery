@@ -57,7 +57,9 @@
   </div>
 
   <div class="row">
-    <queue-socialproof></queue-socialproof>
+    <div class="col-md-4 col-md-offset-1">
+      <queue-socialproof></queue-socialproof>
+    </div>
   </div>
 
 </div>
