@@ -57,10 +57,12 @@
   </div>
 
   <div class="row">
-    <div class="col-md-7 col-md-offset-1">
+    <div class="col-md-7 col-md-offset-1 col-sm-12">
+      <h4><?= Yii::t('app', 'What is our community saying?'); ?></h4>
       <queue-socialproof></queue-socialproof>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-8 col-sm-offset-2">
+      <h4><?= Yii::t('app', 'Side Content')?></h4>
       Other Content
     </div>
   </div>
