@@ -91,6 +91,8 @@ return [
 
  	'Read more!' => 'lees meer!',
  	'Any questions or suggestions?' => 'Heb je vragen of suggesties?',
+
+ 	'eauth' => 'eauth',
 ];
 
 ?>
