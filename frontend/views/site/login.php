@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             
             <hr>
 
-            <?php echo \nodge\eauth\Widget::widget(['action' => 'site/login']); ?>
+            <?php //echo \nodge\eauth\Widget::widget(['action' => 'site/login']); ?>
 
             <br>
 
