@@ -32,12 +32,12 @@ use yii\bootstrap\NavBar;
 
 
     if (Yii::$app->user->isGuest) {
-        //$menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-        //$menuItems[] = ['label' => 'Aanmelden', 'url' => ['/site/signup']];
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => 'Aanmelden', 'url' => ['/site/signup']];
     } else {
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],
-            //['label' => 'Sportlocaties', 'url' => ['/location/index']],
+            ['label' => 'Sportlocaties', 'url' => ['/location/index']],
             [
                 'label' => 'Partners',
                 'items' => [
