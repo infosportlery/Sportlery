@@ -7,7 +7,7 @@ use yii\helpers\Url;
   <div class="thumbnail">
     <div class="media">
         <div class="media-left">
-            <?php echo Html::img($model->avatarurl); ?>
+            <?php echo Html::img($model->avatarurl, ['width' => '150', 'height' => '150']); ?>
         </div>
         <div class="media-body">
           <h4 class="media-heading"><?= $model->name ?></h4>
