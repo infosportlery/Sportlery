@@ -77,7 +77,6 @@ return [
             'baseUrl'=> $baseUrl,
             'enablePrettyUrl' => true,
             'languages' => ['en-US', 'en', 'nl'],
-            'sourceLanguage'=>'en',
             'rules' => [
                   'home' => 'site/index',
                   'sportclub' => 'site/sportclub',
