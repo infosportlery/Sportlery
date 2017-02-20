@@ -48,27 +48,6 @@
 
 <hr class="hr-invisible-sm" id="">
 
-<div class="container">
-  <queue-greeting-bar></queue-greeting-bar>
-  <queue-exit-popup></queue-exit-popup>
-  <div class="row">
-    <queue-signup type="horizontal"></queue-signup>
-  </div>
-
-  <div class="row">
-    <div class="col-md-7 col-md-offset-1 col-sm-12">
-      <h4><?= Yii::t('app', 'What is our community saying?'); ?></h4>
-      <queue-socialproof></queue-socialproof>
-    </div>
-    <div class="col-md-4 col-sm-12">
-      <h4><?= Yii::t('app', 'Side Content')?></h4>
-      Other Content
-    </div>
-  </div>
-
-  <div class="row" id="sliderone"></div>
-</div>
-
 <div class="container" >
    
   <div class="row" >
