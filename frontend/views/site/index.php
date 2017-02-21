@@ -215,7 +215,7 @@
   <div class="row" id="sliderone"></div>
 </div>
 
-<hr class="hr-invisible-sm" id="">
+<hr class="hr-invisible" id="">
 
 <div class="container">
    
