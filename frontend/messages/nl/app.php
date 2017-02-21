@@ -3,6 +3,10 @@ return [
 
 	// List of Translations for Index
 
+	'Soon the online contest will begin!' => 'Binnenkort begint de online contest!',
+	'Leave your email behind and get your first points!' => 'Laat je email achter en verdien je eerste punten',
+
+
 	'Search for your sport, find a sportsbuddy, book your sport location and play!' => 'Zoek jouw sport, vind een Sportbuddy, boek een sport locatie en speel!',
 	'Want to know more about Sportlery?' => 'Wil je meer weten over Sportlery?',
 	'Explore!' => 'Ontdek het hier!',
