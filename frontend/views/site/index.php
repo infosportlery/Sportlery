@@ -229,6 +229,7 @@
   </div>
 
 
+    <hr class="hr-invisible-sm">
   <div class="row text-center">
     <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj">
