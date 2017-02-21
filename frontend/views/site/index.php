@@ -26,7 +26,6 @@
       </div> <!-- end col -->
     </div>
     <hr class="hr-invisible-sm">
-  <div class="container">
       <div class="row text-center">
       <h3 style="color: white;"><b><?= Yii::t('app', 'Leave your email behind and get your first points!'); ?></b></h3>
       <div class="mailing col-md-12">
@@ -213,7 +212,6 @@
                 <!--Zoho  Web-Optin Form Ends Here-->
           <?php } ?>
       </div>
-    </div>
 
       <!-- End input for Win PRE-CONTEST -->
 
@@ -368,12 +366,12 @@
 </div> <!-- end parallaxTwo -->
 
 <div class="parallax3" style="background-color: rgb(244, 104, 53);padding: 25px 0 25px 0px;">
-	<div class="container" style="background-color: rgb(244, 104, 53);">
-		  <div class="row text-center">
-	    <h3 style="color: white;"><b><?= Yii::t('app', 'Do you want to become one of the first Sportlers? Fill in your e-mail address below:'); ?></b></h3>
-	    <div class="mailing col-md-12">
+  <div class="container" style="background-color: rgb(244, 104, 53);">
+      <div class="row text-center">
+      <h3 style="color: white;"><b><?= Yii::t('app', 'Do you want to become one of the first Sportlers? Fill in your e-mail address below:'); ?></b></h3>
+      <div class="mailing col-md-12">
 
-	         <?php if(Yii::$app->language == 'nl'){?>
+           <?php if(Yii::$app->language == 'nl'){?>
                 <!--Zoho  Web-Optin Form Starts Here-->
                 <link href="https://campaigns.zoho.com/css/ui.theme.css" rel="stylesheet" type="text/css" />
                 <link href="https://campaigns.zoho.com/css/ui.datepicker.css" rel="stylesheet" type="text/css" />
@@ -463,7 +461,7 @@
                 </div>
 
                 <!--Zoho  Web-Optin Form Ends Here-->
-	        <?php } else { ?>
+          <?php } else { ?>
                 <!--Zoho  Web-Optin Form Starts Here-->
                 <link href="https://campaigns.zoho.com/css/ui.theme.css" rel="stylesheet" type="text/css" />
                 <link href="https://campaigns.zoho.com/css/ui.datepicker.css" rel="stylesheet" type="text/css" />
@@ -553,10 +551,10 @@
                 </div>
 
                 <!--Zoho  Web-Optin Form Ends Here-->
-	        <?php } ?>
-	    </div>
-	  </div>
-	</div>
+          <?php } ?>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="container">
 
