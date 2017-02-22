@@ -213,7 +213,6 @@
   <div class="row" id="sliderone"></div>
 </div>
 <div class="sub-header text-center">
-  <hr>
   <div class="row index-contest-signup">
     <h3 style="color: white;"><b><?= Yii::t('app', 'Join now and win a GoPro!'); ?></b></h3>
     <queue-signup type="horizontal"></queue-signup>

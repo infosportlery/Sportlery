@@ -11,10 +11,10 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-7 col-md-offset-1 col-sm-12">
+		<div class="col-md-8 col-sm-12">
 			<queue-community widget-height='1000px'></queue-community>		
 		</div>
-		<div class="col-md-4 col-sm-12">
+		<div class="col-md-3 col-sm-12">
 	      <h3><b><?= Yii::t('app', 'PRIJZEN')?><b></h3>
 	      <p><?= Yii::t('app', 'Door actief mee te doen zul je niet alleen punten scoren en stijgen op de ranglijst, maar maak je ook kans op fantastische prijzen!') ?></p>
 	      <h4><b><?= Yii::t('app', 'THE LUCKY WINNER')?></b></h4>
