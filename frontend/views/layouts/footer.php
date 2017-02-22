@@ -30,6 +30,33 @@ use yii\helpers\Html;
         </a>
     </div>
 
+<script type='text/javascript' src='https://campaigns.zoho.com/js/jquery-migrate-1.2.1.min.js'></script>
+<script type="text/javascript" src='https://campaigns.zoho.com/js/ui.datepicker.js'  charset="utf-8"></script>
+<script type="text/javascript" src="https://campaigns.zoho.com/js/jquery.form.js"></script>
+<script type="text/javascript" src="https://campaigns.zoho.com/js/optin_min.js"></script>
+<script type="text/javascript">
+    var $ZC = jQuery.noConflict();
+    var trackingText='ZCFORMVIEW';
+    $ZC(document).ready( function($) {
+        $ZC("#zc_trackCode").val(trackingText);
+            $ZC("#fieldBorder").val($ZC("[changeItem='SIGNUP_FORM_FIELD']").css("border-color"));
+            _setOptin(false,function(th){
+            /*Before submit, if you want to trigger your event, "include your code here"*/
+            });
 
+        /*Load Captcha For this*/ 
+        loadCaptcha('https://campaigns.zoho.com/campaigns/CaptchaVerify.zc?mode=generate');
+
+        /*Tracking Enabled*/ 
+        trackSignupEvent(trackingText);
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.queueat.com/assets/sdk/v3/queue.js" defer></script>
+<script type="text/javascript">
+   document.addEventListener('DOMContentLoaded', function(event) {
+     window.queue = new Queue('b2f3e086-f433-11e6-9852-06867b48a32e'); 
+   });
+</script>
 
 </footer>
