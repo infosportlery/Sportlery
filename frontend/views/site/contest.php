@@ -11,7 +11,10 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-8 col-sm-12">
+		<h2><b><?= Yii::t('app', 'THE ULTIMATE SPORT COMMUNITY') ?></b></h2>
+	</div>
+	<div class="row">
+		<div class="col-md-7 col-md-offset-1 col-sm-12">
 			<queue-community widget-height='1000px'></queue-community>		
 		</div>
 		<div class="col-md-3 col-sm-12">

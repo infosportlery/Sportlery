@@ -241,7 +241,7 @@
       <h4><?= Yii::t('app', 'What is our community saying?'); ?></h4>
       <queue-socialproof></queue-socialproof>
     </div>
-    <div class="col-md-4 col-sm-12">
+    <div class="col-md-3 col-sm-12">
       <h4><?= Yii::t('app', 'Side Content')?></h4>
       Other Content
     </div>
