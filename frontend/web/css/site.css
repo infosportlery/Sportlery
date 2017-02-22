@@ -1132,3 +1132,12 @@ select.form-control {
   visibility: hidden;
 }
 
+/* Contest CSS */
+
+.index-contest-signup {
+  background-color: #212121; 
+}
+
+.q-button {
+  background-color: #F46835;
+}
