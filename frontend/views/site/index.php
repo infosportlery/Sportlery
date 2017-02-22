@@ -252,7 +252,7 @@
 
 <div class="container" >
   <div class="row text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe>
+      <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe>
   </div>  
   <hr class="hr-invisible">
   <div class="row text-center">
