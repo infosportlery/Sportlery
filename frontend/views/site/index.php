@@ -12,7 +12,7 @@
 <div class="header">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 text-center">
         <h1 class="thin">Sportlery</h1>
         <p class="lead thin">TOGETHER WE SPORT</p>
         <br>
