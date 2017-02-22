@@ -213,8 +213,9 @@
   <div class="row" id="sliderone"></div>
 </div>
 <div class="sub-header text-center">
+  <hr>
   <div class="row index-contest-signup">
-    <h3 style="color: white;"><b><?= Yii::t('app', 'Leave your email behind and get your first points!'); ?></b></h3>
+    <h3 style="color: white;"><b><?= Yii::t('app', 'Join now and win a GoPro!'); ?></b></h3>
     <queue-signup type="horizontal"></queue-signup>
   </div>
 </div>
@@ -254,6 +255,7 @@
   <div class="row text-center">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/AhaOANjgfpY" frameborder="0" allowfullscreen></iframe>
   </div>  
+  <hr class="hr-invisible">
   <div class="row text-center">
     <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj">
