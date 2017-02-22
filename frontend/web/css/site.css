@@ -272,7 +272,6 @@ table tr {
   min-height: 310px;
   padding-top: 25px;
   margin-top: -50px;
-  margin-bottom: 50px;
   text-align: center;
   background-image: url('../images/header4.jpg');
   background-attachment: fixed;
@@ -1138,6 +1137,6 @@ select.form-control {
   background-color: #212121; 
 }
 
-.q-button {
+.q-widget.q-new-email-signups.q-signup-buttons.q-button {
   background-color: #F46835;
 }
