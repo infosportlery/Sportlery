@@ -225,9 +225,7 @@
       <h1><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
     </div> <!-- end col -->
   </div> <!-- end row -->
-  <div class="row text-center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/AhaOANjgfpY" frameborder="0" allowfullscreen></iframe>
-  </div>
+
 
 </div>
 <hr class="hr-invisible-sm" id="">
@@ -252,13 +250,9 @@
 </div>
 
 <div class="container" >
-   
-  <div class="row" >
-    <div class="col-md-4 col-md-offset-4 text-center">
-      <h1><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
-    </div> <!-- end col -->
-  </div> <!-- end row -->
-  
+  <div class="row text-center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AhaOANjgfpY" frameborder="0" allowfullscreen></iframe>
+  </div>  
   <div class="row text-center">
     <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj">
