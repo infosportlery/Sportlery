@@ -212,7 +212,7 @@
   </div>
   <div class="row" id="sliderone"></div>
 </div>
-<div class="container">
+<div class="sub-header text-center">
   <div class="row index-contest-signup">
     <h3 style="color: white;"><b><?= Yii::t('app', 'Leave your email behind and get your first points!'); ?></b></h3>
     <queue-signup type="horizontal"></queue-signup>

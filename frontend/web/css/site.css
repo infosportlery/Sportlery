@@ -1139,3 +1139,9 @@ select.form-control {
 .q-widget.q-new-email-signups.q-signup-buttons.q-button {
   background-color: #F46835;
 }
+
+.sub-header {
+  width: 100%;
+  background-color: #212121;
+  
+}
