@@ -442,6 +442,7 @@ table tr {
   background-size: cover;
   color: white;
   position: relative;
+  min-height: 700px;
 }
 .header h1 {font-family: 'Graduate', sans-serif; font-size: 4em;}
 .brand {
@@ -1161,6 +1162,7 @@ h1.h1-default.text-center.h1-header-sub-2 {
 
   .header {
     background-attachment: fixed;
+    height: 0;
   }
 
   .header4 {
