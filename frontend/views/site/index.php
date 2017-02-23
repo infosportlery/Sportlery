@@ -28,7 +28,6 @@
       <div class="mailing col-md-12">
 
         <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
         <style type="text/css">
           #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
           /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
@@ -41,7 +40,7 @@
           <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?= Yii::t('app', 'Email Address') ?>" required>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aa872f36fd0b3fc238705937c_3032f2fb1e" tabindex="-1" value=""></div>
-            <div class="clear" style="min-width: 25%;"><input type="submit" value="<?= Yii::t('app', 'Subscribe') ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <div class="clear" style="min-width: 25%; display: inline-block;"><input type="submit" value="<?= Yii::t('app', 'Subscribe') ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </div>
         </form>
         </div>
