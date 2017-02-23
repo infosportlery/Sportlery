@@ -258,8 +258,8 @@
 
 <div class="container" >
   <div class="row text-center">
-    <div class="col-md-3 col-md-offset-3"></div>
-      <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe>
+    <div class="col-md-3 col-md-offset-3"> <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe></div>
+     
   </div>  
   <hr class="hr-invisible">
   <div class="row text-center">
