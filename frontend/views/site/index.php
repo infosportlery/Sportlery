@@ -21,9 +21,11 @@
     <hr class="hr-invisible-sm">
     
     <div class="row text-center">
+      <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
       <h3 style="color: white;"><b><?= Yii::t('app', 'Soon the online contest will begin!'); ?></b></h3>
       <hr class="hr-invisible-sm">
       <h3 style="color: white;"><b><?= Yii::t('app', 'Leave your email behind and get your first points!'); ?></b></h3>
+      </div>
       <div class="mailing col-md-12">
 
         <!-- Begin MailChimp Signup Form -->
