@@ -118,11 +118,13 @@ body {
   padding-top: 50px;  
   -webkit-font-smoothing: antialiased;
   font-family: 'Source Sans Pro', sans-serif;
+  max-width: 100%;
 }
 html {
   position: relative;
   min-height: 100%;
   padding-bottom: 250px;
+  max-width: 100%;
 }
 a {color: #29719B;}
 a:hover {color: #105C89;}
