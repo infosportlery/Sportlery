@@ -30,7 +30,7 @@
 	      <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'Door actief mee te doen zul je niet alleen punten scoren en stijgen op de ranglijst, maar maak je ook kans op fantastische prijzen!') ?></p>
 	      <h4><b><?= Yii::t('app', 'THE LUCKY WINNER')?></b></h4>
 	      <p><b><?= Yii::t('app', 'aan het eind van de strijd zal één van jullie er met de GoPro vandoor gaan. Per 100 punten die je behaald ontvang je een loterij ticket. Oftewel, hoe actiever je bent, hoe hoger de kans!') ?></b></p>
-	      <img src="" class="gopro-img">
+        	<?= html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']); ?>
 	      <br>
 	      <h4><?= Yii::t('app', 'PROFESSIONELE SPORTLER') ?></h4>
 	      <img src="" class="sec-price-img">
