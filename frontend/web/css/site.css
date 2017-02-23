@@ -1208,7 +1208,3 @@ input.button#mc-embedded-subscribe:hover {
     transition: all 0.23s ease-in-out 0s;
     width: 100%;
 }
-
-.row {
-      max-width: 100%;
-}
