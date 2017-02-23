@@ -56,10 +56,10 @@
 </div>
 <div class="sub-header text-center" style="max-width: 100%;">
   <div class="row index-contest-signup" style="max-width: 100%;">
-    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">
       <h3 style="color: white;"><b><?= Yii::t('app', 'Join now and win a GoPro!'); ?></b></h3>  
     </div>
-    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-1">
+    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">
       <queue-signup type="horizontal"></queue-signup>  
     </div>
     
