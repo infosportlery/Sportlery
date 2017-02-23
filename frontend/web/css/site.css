@@ -1136,6 +1136,7 @@ select.form-control {
 
 .index-contest-signup {
   background-color: #212121; 
+  max-width: 100%;
 }
 
 .sub-header {
