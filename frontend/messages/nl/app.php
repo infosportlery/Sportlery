@@ -1,6 +1,12 @@
 <?php
 return [
 
+	//
+
+	'Email Address' => 'Email Adres',
+	'Subscribe' => 'Aanmelden',
+
+
 	// List of Translations for Index
 
 	'Search for your sport, find a sportsbuddy, book your sport location and play!' => 'Zoek jouw sport, vind een Sportbuddy, boek een sport locatie en speel!',

@@ -38,10 +38,10 @@
         <form action="//sportlery.us15.list-manage.com/subscribe/post?u=aa872f36fd0b3fc238705937c&amp;id=3032f2fb1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
           
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?= Yii::t('app', 'Email Address') ?>" required>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aa872f36fd0b3fc238705937c_3032f2fb1e" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <div class="clear" style="min-width: 25%;"><input type="submit" value="<?= Yii::t('app', 'Subscribe') ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
             </div>
         </form>
         </div>
