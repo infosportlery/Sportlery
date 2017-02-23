@@ -1146,7 +1146,7 @@ button.q-button {
 
 }
 
-.h1-header-sub-1.h2-header-sub-2 {
+.h1-header-sub-1.h1-header-sub-2 {
   display: none;
 }
 
@@ -1165,7 +1165,7 @@ button.q-button {
     display: block;
   }
 
-  .h2-header-sub-2 {
+  .h1-header-sub-2 {
     display: none;
   }
 }
