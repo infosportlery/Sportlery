@@ -1244,6 +1244,10 @@ input.button#mc-embedded-subscribe:hover {
   display: none;
 }
 
-  .text-rankings-col {
-    border-right: 1px solid #e6e6e6; 
-  }
+.text-rankings-col {
+  border-right: 1px solid #e6e6e6; 
+}
+
+img.prize-image {
+  max-width: 100%;
+}
