@@ -1123,10 +1123,6 @@ select.form-control {
 /* Animations
 /* -------------------------------------------------------------------------- */
 
-.navbar {
-  max-width: 96%;
-}
-
 #index-slideup-obj {
   visibility: hidden;
 }
