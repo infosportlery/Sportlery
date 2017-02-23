@@ -4,7 +4,7 @@
 <div class="sub-header">
   <div class="row index-contest-signup">
   	<div class="col-md-5 col-md-offset-1 col-sm-12">
-  		<h4 style="color: white;"><b><?= Yii::t('app', 'Header Text Title'); ?></b></h4>
+  		<h2 style="color: white;"><b><?= Yii::t('app', 'Header Text Title'); ?></b></h2>
   		<p>
   			<?= Yii::t('app', 'header text information'); ?>
   		</p>
