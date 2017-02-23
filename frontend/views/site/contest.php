@@ -51,8 +51,10 @@
 				<p class="content-rankings-p">
 					<?= Yii::t('app', 'Here you can compete for a spot in the rankings. You can earn great prices.') ?> 
 				</p>
+				<p class="content-lottey-p">
+					<?= Yii::t('app', 'Prices') ?>
+				</p>
 			</div>
-
 		</div>
 		<hr class="hr-sm hr-split-rank-lot">
 		<div class="col-md-6 col-sm-12">
@@ -66,6 +68,7 @@
 				<p class="content-lottey-p">
 					<?= Yii::t('app', 'Beside the rankings we also “verloten” prices among our active participants.') ?>
 				</p>
+
 				<p class="content-lottey-p">
 					<?= Yii::t('app', 'How does it work? What can you do? All active particpants make a chance to win, you dont necessarily have to be number 1 in the ranking. By every 50 points you will get a lot in the lottery and the more you do the more chance to win!') ?>
 				</p>
