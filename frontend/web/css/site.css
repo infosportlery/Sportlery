@@ -1188,6 +1188,14 @@ h1.h1-default.text-center.h1-header-sub-2 {
   .parallaxTwo {
     background-attachment: fixed;
   }
+
+  .hr-split-rank-lot {
+    display: inline-block;
+  }
+
+  .text-rankings-col {
+    border-right: none; 
+  }
 }
 
 
@@ -1228,3 +1236,11 @@ input.button#mc-embedded-subscribe:hover {
     text-align: justify;
     font-weight: bold;
 }
+
+.hr-split-rank-lot {
+  display: none;
+}
+
+  .text-rankings-col {
+    border-right: 1px solid #e6e6e6; 
+  }

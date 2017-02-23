@@ -41,19 +41,28 @@
 <div class="container ranking-lottery-container">
 <hr class="hr-sm">
 	<div class="row">
-		<div class="col-md-6 col-sm-12">
+		<div class="col-md-6 col-sm-12 text-rankings-col">
 			<h2 class="text-center">
 				<b>
 					RANKINGS
 				</b>
 			</h2>
+			<div class="content-rankings">
+				
+			</div>
+
 		</div>
+		<hr class="hr-sm hr-split-rank-lot">
 		<div class="col-md-6 col-sm-12">
 			<h2 class="text-center">
 				<b>
 					LOTTERY
 				</b>
 			</h2>
+
+			<div class="content-lottery">
+				
+			</div>
 		</div>
 	</div>
 </div>
