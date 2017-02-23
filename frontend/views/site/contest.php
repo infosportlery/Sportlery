@@ -42,14 +42,14 @@
 <hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-6 col-sm-12">
-			<h2>
+			<h2 class="text-center">
 				<b>
 					RANKINGS
 				</b>
 			</h2>
 		</div>
 		<div class="col-md-6 col-sm-12">
-			<h2>
+			<h2 class="text-center">
 				<b>
 					LOTTERY
 				</b>
