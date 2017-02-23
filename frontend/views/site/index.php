@@ -56,10 +56,10 @@
 </div>
 <div class="sub-header text-center">
   <div class="row index-contest-signup">
-    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
       <h3 style="color: white;"><b><?= Yii::t('app', 'Join now and win a GoPro!'); ?></b></h3>  
     </div>
-    <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
       <queue-signup type="horizontal"></queue-signup>  
     </div>
     
@@ -111,7 +111,7 @@
   </div>  
   <hr class="hr-invisible">
   <div class="row text-center">
-    <div class="col-md-10 col-xs-10 col-sm-10 col-sm-offset-1 col-xs-offset-1 col-md-offset-1">
+    <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj">
         <?= Html::img('@web/images/icons/location.png', ['width' => '80']); ?>
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sport Locations'); ?></strong></h1>
@@ -148,10 +148,10 @@
 <div class="container text-center" >
   <div class="row" id="index-mm">
     <div class="row">
-      <div class="col-md-12 col-xs-10 col-xs-offset-1">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <h1 style="color: black;">Matchmaking</h1>  
       </div>
-      <div class="col-md-12 col-xs-10 col-xs-offset-1">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <?php if(Yii::$app->language == 'nl'){
           echo '<div class="img-responsive img-mm-type" id="img-mm-nl"></div>';
         } else {
@@ -174,10 +174,10 @@
 
   <div class="row" id="index-loc">
     <div class="row">
-      <div class="col-md-12 col-xs-10 col-xs-offset-1">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <h1 class="loc-head"><?= Yii::t('app', 'Sport Locations'); ?></h1>  
       </div>
-      <div class="col-md-12 col-xs-10 col-xs-offset-1">
+      <div class="col-md-12 col-sm-12 col-xs-12">
       <?php if(Yii::$app->language == 'nl'){
           echo '<div class="img-responsive img-loc-type" id="img-loc-nl"></div>';
         } else {
@@ -205,10 +205,10 @@
 
   <div class="row" id="index-loc">
     <div class="row">
-      <div class="col-md-12 col-xs-10 col-xs-offset-1">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <h1 class="loc-head"></h1>  
       </div>
-      <div class="col-md-12 col-xs-10 col-xs-offset-1">
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="img-responsive img-les-type" id="img-les"></div>';
       </div>
     </div>
