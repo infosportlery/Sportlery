@@ -1167,6 +1167,7 @@ h1.h1-default.text-center.h1-header-sub-2 {
 
   .header4 {
     background-attachment: fixed;
+    min-height: 0;
   }
 }
 
