@@ -10,7 +10,8 @@
   		</p>
   	</div>
   	<div class="col-md-5 col-sm-12">
-  		<!-- Video Contest --><iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe>
+  		<!-- Video Contest -->
+  		<iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe>
   </div> 
   	</div>
     
@@ -22,10 +23,10 @@
 		<h2><b><?= Yii::t('app', 'THE ULTIMATE SPORT COMMUNITY') ?></b></h2>
 	</div>
 	<div class="row">
-		<div class="col-md-7 col-md-offset-1 col-sm-12">
+		<div class="col-md-8 col-sm-12">
 			<queue-community widget-height='1000px'></queue-community>		
 		</div>
-		<div class="col-md-3 col-sm-12">
+		<div class="col-md-4 col-sm-12">
 	      <h3><b><?= Yii::t('app', 'PRIJZEN')?></b></h3>
 	      <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'Door actief mee te doen zul je niet alleen punten scoren en stijgen op de ranglijst, maar maak je ook kans op fantastische prijzen!') ?></p>
 	      <h4><b><?= Yii::t('app', 'THE LUCKY WINNER')?></b></h4>
