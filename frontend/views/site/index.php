@@ -148,10 +148,10 @@
 <div class="container text-center" >
   <div class="row" id="index-mm">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-10 col-xs-offset-1">
         <h1 style="color: black;">Matchmaking</h1>  
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-10 col-xs-offset-1">
         <?php if(Yii::$app->language == 'nl'){
           echo '<div class="img-responsive img-mm-type" id="img-mm-nl"></div>';
         } else {
@@ -174,10 +174,10 @@
 
   <div class="row" id="index-loc">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-10 col-xs-offset-1">
         <h1 class="loc-head"><?= Yii::t('app', 'Sport Locations'); ?></h1>  
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-10 col-xs-offset-1">
       <?php if(Yii::$app->language == 'nl'){
           echo '<div class="img-responsive img-loc-type" id="img-loc-nl"></div>';
         } else {
@@ -205,10 +205,10 @@
 
   <div class="row" id="index-loc">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-10 col-xs-offset-1">
         <h1 class="loc-head"></h1>  
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-10 col-xs-offset-1">
         <div class="img-responsive img-les-type" id="img-les"></div>';
       </div>
     </div>
