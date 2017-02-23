@@ -1145,3 +1145,27 @@ button.q-button {
   background-color: #212121;
 
 }
+
+.h1-header-sub-1.h2-header-sub-2 {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .h1-header-sub-1 {
+    display: none;
+  }
+
+  .h1-header-sub-2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .h1-header-sub-1 {
+    display: block;
+  }
+
+  .h2-header-sub-2 {
+    display: none;
+  }
+}

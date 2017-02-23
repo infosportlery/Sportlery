@@ -1,11 +1,18 @@
 <div class="header-contest">
 	
 </div>
-<div class="sub-header text-center">
-  <hr>
+<div class="sub-header">
   <div class="row index-contest-signup">
-    <h3 style="color: white;"><b><?= Yii::t('app', 'Join now and win a GoPro!'); ?></b></h3>
-    <queue-signup type="horizontal"></queue-signup>
+  	<div class="col-md-5 col-md-offset-1 col-sm-12">
+  		<h4 style="color: white;"><b><?= Yii::t('app', 'Header Text Title'); ?></b></h4>
+  		<p>
+  			<?= Yii::t('app', 'header text information'); ?>
+  		</p>
+  	</div>
+  	<div class="col-md-6 col-sm-12">
+  		<!-- Video Contest -->
+  	</div>
+    
   </div>
 </div>
 

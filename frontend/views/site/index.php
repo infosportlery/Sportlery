@@ -277,7 +277,8 @@
       </div>
       <div class="col-md-4 col-sm-4 infomation-col" id="index-slideup-obj-2">
         <?= Html::img('@web/images/icons/matchmaking.png', ['width' => '80']); ?>
-        <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
+        <h1 class="h1-default text-center h1-header-sub-1"><strong><?= Yii::t('app', 'Matchmaking'); ?></strong></h1>
+        <h1 class="h1-default text-center h1-header-sub-2"><strong><?= Yii::t('app', 'Match making'); ?></strong></h1>
         <p><?= Yii::t('app', 'Find sportbuddies, create or participate in events and find substitute players for your team.') ?></p>
         <hr class="hr-sm">
          <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-whatis-more']); ?>
