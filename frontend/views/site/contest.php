@@ -39,6 +39,7 @@
 </div>
 
 <div class="container ranking-lottery-container">
+<hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-6 col-sm-12">
 			<h2>
