@@ -99,12 +99,12 @@
   <div class="row" id="sliderone"></div>
 </div>
 <hr class="hr-invisible-sm">
-<div class="row" >
+<div class="container" >
+  <div class="row" >
     <div class="col-md-4 col-md-offset-4 text-center">
       <h1><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
     </div> <!-- end col -->
   </div> <!-- end row -->
-<div class="container" >
   <div class="row text-center">
     <div class="col-md-6 col-md-offset-3 col-sm-12"> <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe></div>
      
