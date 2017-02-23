@@ -1,13 +1,17 @@
 <div class="header-contest">
-	
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<h1>Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</h1>
+	</div>
 </div>
 <div class="sub-header">
   <div class="row index-contest-signup">
   	<div class="col-md-5 col-md-offset-1 col-sm-12">
-  		<h2 style="color: white;"><b><?= Yii::t('app', 'Header Text Title'); ?></b></h2>
-  		<p>
-  			<?= Yii::t('app', 'header text information'); ?>
-  		</p>
+  		<h2 style="color: white;"><b><?= Yii::t('app', 'WELCOME TO THE CONTEST'); ?></b></h2>
+  		<p class="contest-p-header"><?= Yii::t('app', 'In this contest you can win various prices such as a GoPro Session, a Samsung GearFit 2, a Drone and many more!'); ?></p>
+  		<p class="contest-p-header"><?= Yii::t('app', 'You can earn points in the contest by completing different activities, such as inviting your friends, sharing on social media and other actions!'); ?></p>
+  		<p class="contest-p-header"><?= Yii::t('app', 'After the contest you will be invited to join the sportlery community. This contest helps the community to spread the word and expand.'); ?></p>
+  		<p class="contest-p-header"><?= Yii::t('app', 'You will be able to find people, with the same level in sports as you, in your neighbourhood, challenge each other, create and join sporting events, and many more.'); ?></p>
+  		<p class="contest-p-header"><?= Yii::t('app', 'Good Luck! And go get yourself that GoPro!'); ?></p>
   	</div>
   	<div class="col-md-5 col-sm-12">
   		<!-- Video Contest -->
