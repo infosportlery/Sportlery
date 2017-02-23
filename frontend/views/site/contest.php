@@ -10,7 +10,7 @@
   		</p>
   	</div>
   	<div class="col-md-6 col-sm-12">
-  		<!-- Video Contest --><iframe style="width: 100%; height:100%;"  src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe>
+  		<!-- Video Contest --><iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/H9hqRyyrjOs" frameborder="0" allowfullscreen></iframe>
   </div> 
   	</div>
     
