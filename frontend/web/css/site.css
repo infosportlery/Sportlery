@@ -1193,6 +1193,9 @@ h1.h1-default.text-center.h1-header-sub-2 {
     display: inline-block;
   }
 
+}
+
+@media screen and (max-width: 800px) {
   .text-rankings-col {
     border-right: none; 
   }
