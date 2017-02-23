@@ -215,7 +215,10 @@
 <div class="sub-header text-center">
   <div class="row index-contest-signup">
     <h3 style="color: white;"><b><?= Yii::t('app', 'Join now and win a GoPro!'); ?></b></h3>
-    <queue-signup type="horizontal"></queue-signup>
+    <div class="col-md-12 col-sm-12">
+      <queue-signup type="horizontal"></queue-signup>  
+    </div>
+    
   </div>
 </div>
 
