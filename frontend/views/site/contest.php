@@ -17,7 +17,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container contest-container">
 	<div class="row">
 		<h2><b><?= Yii::t('app', 'THE ULTIMATE SPORT COMMUNITY') ?></b></h2>
 	</div>
