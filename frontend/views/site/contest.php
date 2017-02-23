@@ -1,4 +1,14 @@
+<?php 
 
+  use yii\bootstrap\Modal;
+  use yii\helpers\Html;
+  use yii\widgets\ActiveForm;
+  use yii\helpers\Url;
+
+  use yii\widgets\ListView;
+
+
+?>
 <div class="sub-header">
   <div class="row index-contest-signup">
   	<div class="col-md-5 col-md-offset-1 col-sm-12">
