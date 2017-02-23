@@ -48,7 +48,9 @@
 				</b>
 			</h2>
 			<div class="content-rankings">
-				
+				<p class="content-rankings-p">
+					<?= Yii::t('app', 'Here you can compete for a spot in the rankings. You can earn great prices.') ?> 
+				</p>
 			</div>
 
 		</div>
@@ -61,7 +63,20 @@
 			</h2>
 
 			<div class="content-lottery">
-				
+				<p class="content-lottey-p">
+					<?= Yii::t('app', 'Beside the rankings we also “verloten” prices among our active participants.') ?>
+				</p>
+				<p class="content-lottey-p">
+					<?= Yii::t('app', 'How does it work? What can you do? All active particpants make a chance to win, you dont necessarily have to be number 1 in the ranking. By every 50 points you will get a lot in the lottery and the more you do the more chance to win!') ?>
+				</p>
+				<p class="content-lottey-p">
+					<?= Yii::t('app', 'Prices') ?>
+				</p>
+				<p class="content-lottey-p">
+					<?= Yii::t('app', '15 March - uitreiking drone');?><br>
+					<?= Yii::t('app', '29 March - uitreiking drone');?><br>
+					<?= Yii::t('app', '12 April - uitreiking drone');?><br>
+				</p>
 			</div>
 		</div>
 	</div>
