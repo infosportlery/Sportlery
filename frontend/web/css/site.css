@@ -353,7 +353,7 @@ table tr {
   margin-top: -50px;
   text-align: center;
   background-image: url('../images/header2_blur.jpg');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1182,6 +1182,10 @@ h1.h1-default.text-center.h1-header-sub-2 {
   .header4 {
     background-attachment: fixed;
     min-height: 0;
+  }
+
+  .parallaxTwo {
+    background-attachment: fixed;
   }
 }
 
