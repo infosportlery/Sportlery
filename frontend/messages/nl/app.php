@@ -3,7 +3,7 @@ return [
 
 	//
 
-	'Email Address' => 'Email Adres',
+	'Email Address' => 'Email adres',
 	'Subscribe' => 'Aanmelden',
 
 

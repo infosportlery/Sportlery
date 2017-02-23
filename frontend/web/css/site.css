@@ -424,7 +424,7 @@ table tr {
   margin-bottom: 50px;
   text-align: center;
   background-image: url('../images/pexels-photo-167817.jpeg');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -436,7 +436,7 @@ table tr {
   margin-top: -50px;
   text-align: center;
   background-image: url('../images/header.png');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1157,6 +1157,14 @@ h1.h1-default.text-center.h1-header-sub-2 {
 
   h1.h1-default.text-center.h1-header-sub-2 {
     display: none;
+  }
+
+  .header {
+    background-attachment: fixed;
+  }
+
+  .header4 {
+    background-attachment: fixed;
   }
 }
 
