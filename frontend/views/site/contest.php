@@ -37,3 +37,22 @@
 	    </div>
 	</div>
 </div>
+
+<div class="container ranking-lottery-container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<h2>
+				<b>
+					RANKINGS
+				</b>
+			</h2>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<h2>
+				<b>
+					LOTTERY
+				</b>
+			</h2>
+		</div>
+	</div>
+</div>
