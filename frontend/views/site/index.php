@@ -209,7 +209,7 @@
       <div class="row text-center">
       <h3 style="color: white;"><b><?= Yii::t('app', 'Do you want to become one of the first Sportlers? Fill in your e-mail address below:'); ?></b></h3>
       <div class="mailing col-md-12">
-
+        <div style="text-align: left; font-weight: bold; color: rgb(136, 136, 136); padding: 10px; font-family: Arial;"></div> 
                    <!-- Begin MailChimp Signup Form -->
         <style type="text/css">
           #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
