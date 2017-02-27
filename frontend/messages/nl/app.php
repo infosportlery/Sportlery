@@ -3,6 +3,8 @@ return [
 
 	// List of Translations for Index
 
+	'Email Address' => 'Email adres',
+	'Subscribe' => 'Aanmelden',
 	'Soon the online contest will begin!' => 'Binnenkort begint de online contest!',
 	'Leave your email behind and get your first points!' => 'Laat je email achter en verdien je eerste punten',
 
