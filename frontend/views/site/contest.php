@@ -42,8 +42,18 @@
 	      <p><b><?= Yii::t('app', 'aan het eind van de strijd zal één van jullie er met de GoPro vandoor gaan. Per 100 punten die je behaald ontvang je een loterij ticket. Oftewel, hoe actiever je bent, hoe hoger de kans!') ?></b></p>
           <?= html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']); ?>
 	      <br>
-	      <h4><?= Yii::t('app', 'PROFESSIONELE SPORTLER') ?></h4>
+	      <h4><?= Yii::t('app', 'GEARFIT2') ?></h4>
 	      <?= html::img('@web/images/contest-gear-fit2.png', ['class' => 'prize-image']); ?>
+	      <h4><?= Yii::t('app', 'De Kaag Priveles') ?></h4>
+	      <?= html::img('@web/images/brilpingpong.png', ['class' => 'prize-image']); ?>
+	      <h4><?= Yii::t('app', 'Maximum Sports') ?></h4>
+	      <?= html::img('@web/images/maximumsports.png', ['class' => 'prize-image']); ?>
+	      <h4><?= Yii::t('app', 'GolfLes') ?></h4>
+	      <?= html::img('@web/images/golfles.png', ['class' => 'prize-image']); ?>
+	      <h4><?= Yii::t('app', 'Decatlon gift') ?></h4>
+	      <?= html::img('@web/images/logo-giftcard.jpg', ['class' => 'prize-image']); ?>
+	      <h4><?= Yii::t('app', 'brilpingpong') ?></h4>
+	      <?= html::img('@web/images/brilpingpong.png', ['class' => 'prize-image']); ?>
 	    </div>
 	</div>
 </div>
