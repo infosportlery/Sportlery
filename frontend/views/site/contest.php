@@ -42,7 +42,7 @@
 	      <p><b><?= Yii::t('app', 'Every two weeks we will give away this cool drone under our participants. For every 100 points that you make you will get a lottery ticket. So the more active you are, the higher your chances to win!') ?></b></p>
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
 	      <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
-	      <p><b><?= Yii:t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prices for the top 50 participants.') ?></b></p>
+	      <p><b><?= Yii::t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prices for the top 50 participants.') ?></b></p>
 	      <h4><?= Yii::t('app', '#1 THE LUCKY WINNER!') ?></h4>
 	      <?= html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']); ?>
 	      <h4><?= Yii::t('app', '#2 SAMSUNG GEAR 2 WATCH') ?></h4>
