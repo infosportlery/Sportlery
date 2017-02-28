@@ -105,6 +105,8 @@
 	      <?= html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower']); ?>
 		</div>
 	</div>
+
+	<hr class="hr-invisible-sm">
 	<div class="row">
 		<div class="col-md-6 col-sm-12 text-center">
 	      <?= html::img('@web/images/contest-gear-fit2.png', ['class' => ' price-image-lower']); ?>
@@ -113,6 +115,8 @@
 			<?= html::img('@web/images/golfles.png', ['class' => 'price-image-lower']); ?>
 		</div>
 	</div>
+
+	<hr class="hr-invisible-sm">
 	<div class="row">
 		<div class="col-md-6 col-sm-12 text-center">
 	      <?= html::img('@web/images/de_kaag_img.png', ['class' => 'price-image-lower']); ?>
@@ -121,6 +125,8 @@
 	      <?= html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']); ?>
 		</div>
 	</div>
+	
+	<hr class="hr-invisible-sm">
 	<div class="row">
 		<div class="col-md-6 col-sm-12 text-center">
 			<?= html::img('@web/images/logo-giftcard.jpg', ['class' => 'price-image-lower']); ?>
