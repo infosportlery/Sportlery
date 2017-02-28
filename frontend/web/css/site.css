@@ -1251,3 +1251,7 @@ input.button#mc-embedded-subscribe:hover {
 img.prize-image {
   max-width: 100%;
 }
+
+img.prize-image-lower {
+  max-width: 85px;
+}
