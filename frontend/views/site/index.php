@@ -26,7 +26,7 @@
       <hr class="hr-invisible-sm">
       <h3 style="color: white;"><b><?= Yii::t('app', 'Leave your email behind and get your first points!'); ?></b></h3>
       <div class="mailing col-md-12">
-        <hr class="hr-invisible">
+        <hr class="hr-invisible hr-invisible-subscribe">
                    <!-- Begin MailChimp Signup Form -->
         <style type="text/css">
           #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
