@@ -80,7 +80,7 @@
       <h3><b><?= Yii::t('app', 'PRICES')?></b></h3>
         <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'By joining actively in the contest you will make a chance on the fantastic prizes. We have two different categories: the rankings and the lottery. In the rankings it is all about becoming number 1 and with the lottery you get lottery tickets by active participation.') ?></p>
         <h3><b><?= Yii::t('app', 'THE LOTTERY')?></b></h3>
-        <p><b><?= Yii::t('app', 'Every two weeks we will give away this cool drone under our participants. For every 100 points that you make you will get a lottery ticket. So the more active you are, the higher your chances to win!') ?></b></p>
+        <p><b><?= Yii::t('app', 'Every two weeks we will give away this cool drone under our participants. For every 50 points that you make you will get a lottery ticket. So the more active you are, the higher your chances to win!') ?></b></p>
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
         <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
         <p><b><?= Yii::t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prizes for the top 50 participants.') ?></b></p>
