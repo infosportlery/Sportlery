@@ -59,8 +59,11 @@
 <div class="container">
 	<hr class="hr-sm">
 	<div class="row">
-		<h3 class="text-center"><b><?= Yii::t('app', 'HOW TO WIN!') ?></b></h3>
-		<p>By completing these activities in the contest area above these are the points you will earn and howmany times, for more information about the dirrerent actions you can hover on the items in the contest area.</p>
+		<div class="col-md-12">
+			<h3 class="text-center"><b><?= Yii::t('app', 'HOW TO WIN!') ?></b></h3>
+			<p>By completing these activities in the contest area above these are the points you will earn and howmany times, for more information about the dirrerent actions you can hover on the items in the contest area.</p>	
+		</div>
+		
 		<!-- Table Points -->
 		<div class="table-responsive">
 			<table class="table table-bordered">
