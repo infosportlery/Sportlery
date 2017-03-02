@@ -1197,6 +1197,10 @@ h1.h1-default.text-center.h1-header-sub-2 {
     display: inline-block;
   }
 
+  .hr-sm-mob {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1204,9 +1208,13 @@ h1.h1-default.text-center.h1-header-sub-2 {
     border-right: none; 
   }
 
-  
+
 .break-mob {
   display: none;
+}
+
+.hr-sm-mob {
+  display: inline-block;
 }
 
 }
@@ -1269,3 +1277,4 @@ img.price-image-lower {
 img.price-image-lower-first {
   max-width: 100%;
 }
+
