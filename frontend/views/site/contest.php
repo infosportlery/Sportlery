@@ -74,9 +74,9 @@
 					<?= Yii::t('app', 'Prices') ?>
 				</p>
 				<p class="content-lottey-p">
-					<?= Yii::t('app', '15 March - uitreiking drone');?><br>
-					<?= Yii::t('app', '29 March - uitreiking drone');?><br>
-					<?= Yii::t('app', '12 April - uitreiking drone');?><br>
+					<?= Yii::t('app', '15 March - Drone Giveaway');?><br>
+					<?= Yii::t('app', '29 March - Drone Giveaway');?><br>
+					<?= Yii::t('app', '12 April - Drone Giveaway');?><br>
 				</p>
 			</div>
 		</div>
@@ -109,11 +109,11 @@
 
 	<hr class="hr-invisible-sm">
 	<div class="row">
-		<div class="col-md-4 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 			<h5><?= Yii::t('app', 'Samsung GearFit 2') ?><span class="badge">#2</span></h5>
 	      	<?= html::img('@web/images/contest-gear-fit2.png', ['class' => ' price-image-lower']); ?>
 		</div>
-		<div class="col-md-4 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-5 col-sm-12 text-center">
 			<h5><?= Yii::t('app', 'Privéles Kielboot De Kaag') ?><span class="badge">#3</span></h5>
 	      <?= html::img('@web/images/de_kaag_img.png', ['class' => 'price-image-lower']); ?>
 		</div>
@@ -121,11 +121,11 @@
 
 	<hr class="hr-invisible-sm">
 	<div class="row">
-		<div class="col-md-4 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Golf Lesson') ?><span class="badge">#4 &amp; #5</span></h5>
 			<?= html::img('@web/images/golfles.png', ['class' => 'price-image-lower']); ?>
 		</div>
-		<div class="col-md-4 col-md-offset-1 text-center">
+		<div class="col-md-5 text-center">
 		<h5><?= Yii::t('app', 'Maximum Sports Nutrition Plan') ?><span class="badge">#6 / #10</span></h5>
 	      <?= html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']); ?>
 		</div>
@@ -133,11 +133,11 @@
 
 	<hr class="hr-invisible-sm">
 	<div class="row">
-		<div class="col-md-4 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Decathlon Giftcard') ?><span class="badge">#11 / #20</span></h5>
 			<?= html::img('@web/images/logo-giftcard.jpg', ['class' => 'price-image-lower']); ?>
 		</div>
-		<div class="col-md-4 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-5 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Ping Pong Set') ?><span class="badge">#21 / #30</span> &amp; <?= Yii::t('app', 'Sportlery Sunglasses') ?><span class="badge">#31 / #50</span></h5>
 			<?= html::img('@web/images/brilpingpong.png', ['class' => 'price-image-lower']); ?>
 		</div>

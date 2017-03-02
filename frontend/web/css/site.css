@@ -1253,5 +1253,4 @@ img.prize-image {
 }
 
 img.price-image-lower {
-  max-height: 127.5px;
-}
+  max-width: 100%;
