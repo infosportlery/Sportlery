@@ -63,229 +63,232 @@
 			<h3 class="text-center"><b><?= Yii::t('app', 'HOW TO WIN!') ?></b></h3>
 			<p>By completing these activities in the contest area above these are the points you will earn and howmany times, for more information about the dirrerent actions you can hover on the items in the contest area.</p>	
 		</div>
-		
-		<!-- Table Points -->
-		<div class="table-responsive">
-			<table class="table table-bordered">
-				<thead>
-					<tr>
-						<th>
-							ACTION
-						</th>
-						<th>
-							POINTS
-						</th>
-						<th>
-							1X
-						</th>
-						<th>
-							DAILY
-						</th>
-						<th>
-							UNLIMITED
-						</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">
-							FACEBOOK LIKES
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							TWITTER FOLLOW
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							SUBSCRIBE TO OUR YOUTUBE
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							WATCH THE VIDEO
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							FOLLOW ON INSTAGRAM
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							FACEBOOK SHARE
-						</th>
-						<td>
-							+5
-						</td>
-						<td>
-						</td>
-						<td>
-							&#x2713;							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							FACEBOOK SEND MESSAGE
-						</th>
-						<td>
-							+5
-						</td>
-						<td>
-						</td>
-						<td>
-							&#x2713;							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							TWEET
-						</th>
-						<td>
-							+5
-						</td>
-						<td>
-						</td>
-						<td>
-							&#x2713;							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							EMAIL SHARE
-						</th>
-						<td>
-							+5
-						</td>
-						<td>
-						</td>
-						<td>
-							&#x2713;							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							QUEUE COMMENT
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							CONFIRM EMAIL
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							JOIN QUEUE
-						</th>
-						<td>
-							+10
-						</td>
-						<td>
-							&#x2713;
-						</td>
-						<td>							
-						</td>
-						<td>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">
-							INVITED(REFFERED) FRIEND JOINS
-						</th>
-						<td>
-							+25
-						</td>
-						<td>
-						</td>
-						<td>							
-						</td>
-						<td>
-							&#x2713;
-						</td>
-					</tr>
-				</tbody>
-			</table>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<!-- Table Points -->
+			<div class="table-responsive">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>
+								ACTION
+							</th>
+							<th>
+								POINTS
+							</th>
+							<th>
+								1X
+							</th>
+							<th>
+								DAILY
+							</th>
+							<th>
+								UNLIMITED
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">
+								FACEBOOK LIKES
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								TWITTER FOLLOW
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								SUBSCRIBE TO OUR YOUTUBE
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								WATCH THE VIDEO
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								FOLLOW ON INSTAGRAM
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								FACEBOOK SHARE
+							</th>
+							<td>
+								+5
+							</td>
+							<td>
+							</td>
+							<td>
+								&#x2713;							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								FACEBOOK SEND MESSAGE
+							</th>
+							<td>
+								+5
+							</td>
+							<td>
+							</td>
+							<td>
+								&#x2713;							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								TWEET
+							</th>
+							<td>
+								+5
+							</td>
+							<td>
+							</td>
+							<td>
+								&#x2713;							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								EMAIL SHARE
+							</th>
+							<td>
+								+5
+							</td>
+							<td>
+							</td>
+							<td>
+								&#x2713;							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								QUEUE COMMENT
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								CONFIRM EMAIL
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								JOIN QUEUE
+							</th>
+							<td>
+								+10
+							</td>
+							<td>
+								&#x2713;
+							</td>
+							<td>							
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								INVITED(REFFERED) FRIEND JOINS
+							</th>
+							<td>
+								+25
+							</td>
+							<td>
+							</td>
+							<td>							
+							</td>
+							<td>
+								&#x2713;
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- End Table Points -->	
 		</div>
-		<!-- End Table Points -->
 	</div>
 </div>
 
@@ -316,11 +319,11 @@
 				<p class="content-lottey-p">
 					<?= Yii::t('app', 'Prices') ?>
 				</p>
-				<p class="content-lottey-p">
+				<p class="content-lottey-p"><b>
 					<?= Yii::t('app', '15 March');?><br>
 					<?= Yii::t('app', '29 March');?><br>
 					<?= Yii::t('app', '12 April');?><br>
-				</p>
+				</b></p>
 			</div>
 		</div>
 		<hr class="hr-sm hr-split-rank-lot">
