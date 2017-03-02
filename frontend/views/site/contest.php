@@ -67,7 +67,7 @@
 		<div class="col-md-12 text-center">
 			<h3 class="text-center">
 				<b>
-					<?= Yii::t('app', 'LOTTERY ')?>
+					<?= Yii::t('app', 'LOTTERY ')?> - 
 					<?= Yii::t('app', 'WIN A DRONE') ?> <span class="badge">X3</span>
 				</b>
 			</h3>
