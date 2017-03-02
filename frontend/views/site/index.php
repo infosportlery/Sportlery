@@ -22,7 +22,8 @@
     
     <div class="row">
       <div class="col-md-5 col-md-offset-1 col-sm-12">
-        <h2 style="color: white;"><b><?= Yii::t('app', 'WELCOME TO THE CONTEST'); ?></b></h2>
+        <h3 style="color: white;"><b><?= Yii::t('app', 'Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.'); ?></b></h3>  
+        <h2 style="color: white;"><b><?= Yii::t('app', 'SIGNUP TO THE CONTEST BELOW!'); ?></b></h2>
       </div>
       <div class="col-md-4 col-md-offset-1 col-sm-12">
         <!-- Video Contest -->
