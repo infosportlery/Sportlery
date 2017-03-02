@@ -64,12 +64,16 @@
 <div class="container ranking-lottery-container">
 <hr class="hr-sm">
 	<div class="row">
-		<div class="col-md-6 col-sm-12 text-rankings-col">
+		<div class="col-md-12 text-center">
 			<h3 class="text-center">
 				<b>
-					<?= Yii::t('app', 'LOTTERY')?>
+					<?= Yii::t('app', 'LOTTERY ')?>
+					<?= Yii::t('app', 'WIN A DRONE') ?> <span class="badge">X3</span>
 				</b>
 			</h3>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			
 			<div class="content-lottery">
 				<p class="content-lottey-p">
 					<?= Yii::t('app', 'Beside the rankings we also “verloten” prices among our active participants.') ?>
@@ -92,7 +96,6 @@
 		<div class="col-md-6 col-sm-12">
 			<h3 class="text-left">
 				<b>
-					<?= Yii::t('app', 'WIN A DRONE') ?> <span class="badge">X3</span>
 				</b>
 			</h3>
 			<hr class="hr-invisible-sm">
@@ -150,7 +153,7 @@
 		</div>
 		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
-		<h5><?= Yii::t('app', 'Ping Pong Set') ?> <span class="badge">#21 - #30</span> &amp; <br class="break-mob"><?= Yii::t('app', 'Sportlery Sunglasses') ?> <span class="badge">#31 / #50</span></h5>
+		<h5><?= Yii::t('app', 'Ping Pong Set') ?> <span class="badge">#21 - #30</span><br class="break-mob"> &amp; <br class="break-mob"><?= Yii::t('app', 'Sportlery Sunglasses') ?> <span class="badge">#31 / #50</span></h5>
 			<?= html::img('@web/images/brilpingpong.png', ['class' => 'price-image-lower']); ?>
 		</div>
 	</div>
