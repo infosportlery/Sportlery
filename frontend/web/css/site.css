@@ -1070,6 +1070,10 @@ select.form-control {
   background-image: url('../images/mm_en_mob.png'); 
 
 }
+   
+   .header {
+      height: 95vh;
+   }
 
   .img-loc-type {
     background-position: center;
