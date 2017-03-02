@@ -122,10 +122,10 @@
 	<hr class="hr-invisible-sm">
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
-		<h5><?= Yii::t('app', 'Golf Lesson') ?><span class="badge">#4 &amp; #5</span></h5>
+		<h5><?= Yii::t('app', 'Golf Arrangement') ?><span class="badge">#4 &amp; #5</span></h5>
 			<?= html::img('@web/images/golfles.png', ['class' => 'price-image-lower']); ?>
 		</div>
-		<div class="col-md-5 text-center">
+		<div class="col-md-5 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Maximum Sports Nutrition Plan') ?><span class="badge">#6 / #10</span></h5>
 	      <?= html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']); ?>
 		</div>
