@@ -58,7 +58,8 @@
 <div class="container">
 	<hr class="hr-sm">
 	<div class="row">
-		<h3><b><?= Yii::t('app', 'HOW TO WIN!') ?></b></h3>
+		<h3 class="text-center"><b><?= Yii::t('app', 'HOW TO WIN!') ?></b></h3>
+		<p>By completing these activities in the contest area above these are the points you will earn and howmany times, for more information about the dirrerent actions you can hover on the items in the contest area.</p>
 		<!-- Table Points -->
 		<div class="table-responsive">
 			<table class="table table-bordered">
@@ -100,6 +101,51 @@
 					<tr>
 						<th scope="row">
 							TWITTER FOLLOW
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							SUBSCRIBE TO OUR YOUTUBE
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							WATCH THE VIDEO
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							FOLLOW ON INSTAGRAM
 						</th>
 						<td>
 							+10
@@ -204,7 +250,7 @@
 					</tr>
 					<tr>
 						<th scope="row">
-							INVITED FRIEND JOINS
+							INVITED(REFFERED) FRIEND JOINS
 						</th>
 						<td>
 							+25
@@ -226,7 +272,6 @@
 
 
 <div class="container ranking-lottery-container">
-<hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<h3 class="text-center">
