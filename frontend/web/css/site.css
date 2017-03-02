@@ -1214,7 +1214,7 @@ h1.h1-default.text-center.h1-header-sub-2 {
 }
 
 .hr-sm-mob {
-  display: inline-block;
+  display: block;
 }
 
 }

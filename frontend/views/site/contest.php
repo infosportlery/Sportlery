@@ -148,6 +148,7 @@
 		<h5><?= Yii::t('app', 'Decathlon Giftcard') ?> <span class="badge">#11 - #20</span></h5>
 			<?= html::img('@web/images/logo-giftcard.jpg', ['class' => 'price-image-lower']); ?>
 		</div>
+		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Ping Pong Set') ?> <span class="badge">#21 - #30</span> &amp; <br class="break-mob"><?= Yii::t('app', 'Sportlery Sunglasses') ?> <span class="badge">#31 / #50</span></h5>
 			<?= html::img('@web/images/brilpingpong.png', ['class' => 'price-image-lower']); ?>
