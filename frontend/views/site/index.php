@@ -82,18 +82,19 @@
 
 
   <div class="row">
-    <div class="col-md-7 col-md-offset-1 col-sm-12">
+    <div class="col-md-6 col-md-offset-1 col-sm-12">
       <h4><?= Yii::t('app', 'What is our community saying?'); ?></h4>
       <queue-socialproof></queue-socialproof>
     </div>
-    <div class="col-md-3 col-sm-12">
-      <h3><b><?= Yii::t('app', 'PRIJZEN')?></b></h3>
-        <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'Door actief mee te doen zul je niet alleen punten scoren en stijgen op de ranglijst, maar maak je ook kans op fantastische prijzen!') ?></p>
-        <h4><b><?= Yii::t('app', 'THE LUCKY WINNER')?></b></h4>
-        <p><b><?= Yii::t('app', 'aan het eind van de strijd zal één van jullie er met de GoPro vandoor gaan. Per 100 punten die je behaald ontvang je een loterij ticket. Oftewel, hoe actiever je bent, hoe hoger de kans!') ?></b></p>
-        <br>
-        <h4><?= Yii::t('app', 'PROFESSIONELE SPORTLER') ?></h4>
-        <img src="" class="sec-price-img">
+    <div class="col-md-4 col-sm-12">
+      <h3><b><?= Yii::t('app', 'PRICES')?></b></h3>
+        <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'By joining actively in the contest you will make a chance on the fantastic prices. We have two different categories: the rankings and the lottery. In the rankings it is all about becoming number 1 and with the lottery you get lottery tickets by active participation.') ?></p>
+        <h3><b><?= Yii::t('app', 'THE LOTTERY')?></b></h3>
+        <p><b><?= Yii::t('app', 'Every two weeks we will give away this cool drone under our participants. For every 100 points that you make you will get a lottery ticket. So the more active you are, the higher your chances to win!') ?></b></p>
+          <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
+        <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
+        <p><b><?= Yii::t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prices for the top 50 participants.') ?></b></p>
+        <?= html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']); ?>
     </div>
   </div>
 
