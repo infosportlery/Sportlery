@@ -14,12 +14,12 @@
 	  <div class="row index-contest-signup">
 	  	<div class="col-md-5 col-md-offset-1 col-sm-12">
 	  		<h2 style="color: white;"><b><?= Yii::t('app', 'WELCOME TO THE CONTEST'); ?></b></h2>
-	  		<p class="contest-p-header"><?= Yii::t('app', 'In this contest you can win various prices such as a GoPro Session, a Samsung GearFit 2, a Drone and many more!'); ?></p>
+	  		<p class="contest-p-header"><?= Yii::t('app', 'In this contest you can win various prizes such as a GoPro Session, a Samsung GearFit 2, a Drone and many more!'); ?></p>
 	  		<p class="contest-p-header"><?= Yii::t('app', 'You can earn points in the contest by completing different activities, such as inviting your friends, sharing on social media and other actions!'); ?></p>
 	  		<p class="contest-p-header"><?= Yii::t('app', 'After the contest you will be invited to join the sportlery community. This contest helps the community to spread the word and expand.'); ?></p>
 	  		<p class="contest-p-header"><?= Yii::t('app', 'You will be able to find people, with the same level in sports as you, in your neighbourhood, challenge each other, create and join sporting events, and many more. Good Luck! And go get yourself that GoPro!'); ?></p>
 	  	</div>
-	  	<div class="col-md-4 col-md-offset-1 col-sm-12">
+	  	<div class="col-md-5 col-sm-12">
 	  		<!-- Video Contest -->
 	  		<iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
 	  	</div> 
@@ -38,12 +38,12 @@
 		</div>
 		<div class="col-md-4 col-sm-12">
 	      <h3><b><?= Yii::t('app', 'PRICES')?></b></h3>
-	      <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'By joining actively in the contest you will make a chance on the fantastic prices. We have two different categories: the rankings and the lottery. In the rankings it is all about becoming number 1 and with the lottery you get lottery tickets by active participation.') ?></p>
+	      <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'By joining actively in the contest you will make a chance on the fantastic prizes. We have two different categories: the rankings and the lottery. In the rankings it is all about becoming number 1 and with the lottery you get lottery tickets by active participation.') ?></p>
 	      <h3><b><?= Yii::t('app', 'THE LOTTERY')?></b></h3>
 	      <p><b><?= Yii::t('app', 'Every two weeks we will give away this cool drone under our participants. For every 100 points that you make you will get a lottery ticket. So the more active you are, the higher your chances to win!') ?></b></p>
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
 	      <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
-	      <p><b><?= Yii::t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prices for the top 50 participants.') ?></b></p>
+	      <p><b><?= Yii::t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prizes for the top 50 participants.') ?></b></p>
 	      <h4><span class="label label-primary">#1</span> <?= Yii::t('app', 'THE LUCKY WINNER!') ?></h4>
 	      <?= html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']); ?>
 	      <h4><span class="label label-primary">#2</span> <?= Yii::t('app', 'SAMSUNG GEAR 2 WATCH') ?></h4>
@@ -51,7 +51,7 @@
 	      <h4><span class="label label-primary">#3</span> <?= Yii::t('app', 'SAILING COURSE AT "DE KAAG"') ?></h4>
 	      <?= html::img('@web/images/de_kaag_img.png', ['class' => 'prize-image']); ?>
 	      <hr class="hr-sm">
-	      <h5 style="color:#F46835;" class="text-center"><b>More prices below!</b></h5>
+	      <h5 style="color:#F46835;" class="text-center"><b>More prizes below!</b></h5>
 	    </div>
 	</div>
 </div>
@@ -176,6 +176,21 @@
 					</tr>
 					<tr>
 						<th scope="row">
+							FACEBOOK SEND MESSAGE
+						</th>
+						<td>
+							+5
+						</td>
+						<td>
+						</td>
+						<td>
+							&#x2713;							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
 							TWEET
 						</th>
 						<td>
@@ -273,7 +288,7 @@
 
 
 <div class="container ranking-lottery-container">
-	<div class="row">
+	<div class="row text-center">
 		<h2><b><?= Yii::t('app', 'ALL PRICES!') ?></b></h2>
 	</div>
 	<div class="row">
@@ -289,7 +304,7 @@
 			
 			<div class="content-lottery">
 				<p class="content-lottey-p">
-					<?= Yii::t('app', 'Beside the rankings we also “verloten” prices among our active participants.') ?>
+					<?= Yii::t('app', 'Beside the rankings we also Give away prizes among our active participants.') ?>
 				</p>
 
 				<p class="content-lottey-p">
@@ -299,9 +314,9 @@
 					<?= Yii::t('app', 'Prices') ?>
 				</p>
 				<p class="content-lottey-p">
-					<?= Yii::t('app', '15 March - Drone Giveaway');?><br>
-					<?= Yii::t('app', '29 March - Drone Giveaway');?><br>
-					<?= Yii::t('app', '12 April - Drone Giveaway');?><br>
+					<?= Yii::t('app', '15 March');?><br>
+					<?= Yii::t('app', '29 March');?><br>
+					<?= Yii::t('app', '12 April');?><br>
 				</p>
 			</div>
 		</div>
@@ -321,7 +336,7 @@
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<h3><b><?= Yii::t('app', 'RANKINGS') ?></b></h3>
-			<p class="content-lottey-p"><?= Yii::t('app', 'Here you can compete for a spot in the rankings. You can earn great prices.')?></p>
+			<p class="content-lottey-p"><?= Yii::t('app', 'Here you can compete for a spot in the rankings. You can earn great prizes.')?></p>
 		</div>
 	</div>
 	<hr class="hr-sm hr-sm-mob">
@@ -348,13 +363,13 @@
 	<hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
-		<h5><?= Yii::t('app', 'Golf Arrangement') ?> <span class="badge">#4 &amp; #5</span></h5>
-			<?= html::img('@web/images/golfles.png', ['class' => 'price-image-lower']); ?>
+		<h5><?= Yii::t('app', 'Maximum Sports Nutrition Plan') ?> <span class="badge">#4 &amp; #5</span></h5>
+			<?= html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']); ?>
 		</div>
 		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
-		<h5><?= Yii::t('app', 'Maximum Sports Nutrition Plan') ?> <span class="badge">#6 - #10</span></h5>
-	      <?= html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']); ?>
+		<h5><?= Yii::t('app', 'Golf Arrangement') ?> <span class="badge">#6 - #10</span></h5>
+	      <?= html::img('@web/images/golfles.png', ['class' => 'price-image-lower']); ?>
 		</div>
 	</div>
 

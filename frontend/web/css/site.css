@@ -120,6 +120,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   max-width: 100%;
   overflow-x: hidden;
+  text-align: justify;
 }
 html {
   position: relative;
