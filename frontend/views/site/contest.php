@@ -111,7 +111,7 @@
 	<div class="row text-center">
 		<div class="col-md-12 text-center">
 		<h5><?= Yii::t('app', 'GoPro Session') ?> <span class="badge">#1</span></h5>
-	      <?= html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower']); ?>
+	      <?= html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower-first']); ?>
 		</div>
 	</div>
 
