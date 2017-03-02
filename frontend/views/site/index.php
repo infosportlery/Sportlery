@@ -157,28 +157,6 @@
 
 <!-- Parallax One
 ************************************************************************ -->
-<?php if(Yii::$app->language == 'nl') {
-  echo '<div class="parallaxLesNl">';
-} else {
-  echo '<div class="parallaxLes">';  
-} ?>
-<div class="container text-center" id="locations">
-
-  <div class="row" id="index-loc">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="loc-head"></h1>  
-      </div>
-      <div class="col-md-12">
-        <div class="img-responsive img-les-type" id="img-les"></div>';
-      </div>
-    </div>
-  </div>
-
-
-  <hr class="hr-invisible">
-</div> <!-- end container-fluid -->
-</div>
 
 
 
