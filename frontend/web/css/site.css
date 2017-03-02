@@ -1061,6 +1061,10 @@ select.form-control {
   .vertical-rule {
     display: none;
   }
+
+  .break-mob {
+    display: inline-block;
+  }
  
  /* Mobile Images */ 
   .img-mm-type {
@@ -1253,5 +1257,9 @@ img.prize-image {
 }
 
 img.price-image-lower {
-  max-width: 100%;
+  width: 100%;
+}
+
+.break-mob {
+  display: none;
 }
