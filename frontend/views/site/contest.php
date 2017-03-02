@@ -43,11 +43,11 @@
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
 	      <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
 	      <p><b><?= Yii::t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prices for the top 50 participants.') ?></b></p>
-	      <h4><?= Yii::t('app', '#1 THE LUCKY WINNER!') ?></h4>
+	      <h4><span class="label label-primary">#1</span><?= Yii::t('app', 'THE LUCKY WINNER!') ?></h4>
 	      <?= html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']); ?>
-	      <h4><?= Yii::t('app', '#2 SAMSUNG GEAR 2 WATCH') ?></h4>
+	      <h4><span class="label label-primary">#2</span><?= Yii::t('app', 'SAMSUNG GEAR 2 WATCH') ?></h4>
 	      <?= html::img('@web/images/contest-gear-fit2.png', ['class' => 'prize-image']); ?>
-	      <h4><?= Yii::t('app', '#3 SAILING COURSE AT "DE KAAG"') ?></h4>
+	      <h4><span class="label label-primary">#3</span><?= Yii::t('app', 'SAILING COURSE AT "DE KAAG"') ?></h4>
 	      <?= html::img('@web/images/de_kaag_img.png', ['class' => 'prize-image']); ?>
 	    </div>
 	</div>
