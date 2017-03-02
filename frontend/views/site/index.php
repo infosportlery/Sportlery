@@ -20,36 +20,19 @@
     <!-- a -->
     <hr class="hr-invisible-sm">
     
-    <div class="row text-center">
-      <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 style="color: white;"><b><?= Yii::t('app', 'Soon the online contest will begin!'); ?></b></h3>
-      <hr class="hr-invisible-sm">
-      <h3 style="color: white;"><b><?= Yii::t('app', 'Leave your email behind and get your first points!'); ?></b></h3>
+    <div class="row index-contest-signup">
+      <div class="col-md-5 col-md-offset-1 col-sm-12">
+        <h2 style="color: white;"><b><?= Yii::t('app', 'WELCOME TO THE CONTEST'); ?></b></h2>
+        <p class="contest-p-header"><?= Yii::t('app', 'In this contest you can win various prices such as a GoPro Session, a Samsung GearFit 2, a Drone and many more!'); ?></p>
+        <p class="contest-p-header"><?= Yii::t('app', 'You can earn points in the contest by completing different activities, such as inviting your friends, sharing on social media and other actions!'); ?></p>
+        <p class="contest-p-header"><?= Yii::t('app', 'After the contest you will be invited to join the sportlery community. This contest helps the community to spread the word and expand.'); ?></p>
+        <p class="contest-p-header"><?= Yii::t('app', 'You will be able to find people, with the same level in sports as you, in your neighbourhood, challenge each other, create and join sporting events, and many more. Good Luck! And go get yourself that GoPro!'); ?></p>
       </div>
-      <div class="mailing col-md-12">
-
-        <!-- Begin MailChimp Signup Form -->
-        <style type="text/css">
-          #mc_embed_signup{ clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-        </style>
-        <div id="mc_embed_signup">
-        <form action="//sportlery.us15.list-manage.com/subscribe/post?u=aa872f36fd0b3fc238705937c&amp;id=3032f2fb1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-          
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="<?= Yii::t('app', 'Email Address') ?>" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_aa872f36fd0b3fc238705937c_3032f2fb1e" tabindex="-1" value=""></div>
-            <div class="clear" style="min-width: 25%; display: inline-block;"><input type="submit" value="<?= Yii::t('app', 'Subscribe') ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-        </form>
-        </div>
-
-        <!--End mc_embed_signup-->        
-
-      </div>
-    </div>
+      <div class="col-md-4 col-md-offset-1 col-sm-12">
+        <!-- Video Contest -->
+        <iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
+      </div> 
+   </div>
 
     <!-- /a -->
 
