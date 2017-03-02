@@ -30,7 +30,7 @@
             
         </div>
         <div class="row text-center">
-            <h3 style="color: white; text-align: justify;"><b><?= Yii::t('app', 'Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.'); ?></b></h3>  
+            <h3 style="color: white;"><b><?= Yii::t('app', 'Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.'); ?></b></h3>  
             <h3 style="color: white;"><b><?= Yii::t('app', 'SIGNUP TO THE CONTEST BELOW!'); ?></b></h3>
           
         </div>
