@@ -1203,6 +1203,12 @@ h1.h1-default.text-center.h1-header-sub-2 {
   .text-rankings-col {
     border-right: none; 
   }
+
+  
+.break-mob {
+  display: none;
+}
+
 }
 
 
@@ -1260,6 +1266,6 @@ img.price-image-lower {
   width: 100%;
 }
 
-.break-mob {
-  display: none;
+img.price-image-lower-first {
+  max-width: 100%;
 }

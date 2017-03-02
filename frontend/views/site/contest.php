@@ -97,7 +97,7 @@
 			</h3>
 			<hr class="hr-invisible-sm">
 			<div class="content-lottery">
-	      		<?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image-lower']); ?>
+	      		<?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image-lower-first']); ?>
 			</div>
 			
 		</div>
@@ -115,7 +115,7 @@
 		</div>
 	</div>
 
-	<hr class="hr-invisible-sm">
+	<hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 			<h5><?= Yii::t('app', 'Samsung GearFit 2') ?> <span class="badge">#2</span></h5>
@@ -127,7 +127,7 @@
 		</div>
 	</div>
 
-	<hr class="hr-invisible-sm">
+	<hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Golf Arrangement') ?> <span class="badge">#4 &amp; #5</span></h5>
@@ -139,7 +139,7 @@
 		</div>
 	</div>
 
-	<hr class="hr-invisible-sm">
+	<hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Decathlon Giftcard') ?> <span class="badge">#11 - #20</span></h5>
