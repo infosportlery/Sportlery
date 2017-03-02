@@ -1062,9 +1062,6 @@ select.form-control {
     display: none;
   }
 
-  .break-mob {
-    display: inline-block;
-  }
  
  /* Mobile Images */ 
   .img-mm-type {
@@ -1201,6 +1198,10 @@ h1.h1-default.text-center.h1-header-sub-2 {
     display: none;
   }
 
+  .break-mob {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1210,7 +1211,7 @@ h1.h1-default.text-center.h1-header-sub-2 {
 
 
 .break-mob {
-  display: none;
+  display: block;
 }
 
 .hr-sm-mob {
