@@ -49,6 +49,8 @@
 	      <?= html::img('@web/images/contest-gear-fit2.png', ['class' => 'prize-image']); ?>
 	      <h4><span class="label label-primary">#3</span><?= Yii::t('app', 'SAILING COURSE AT "DE KAAG"') ?></h4>
 	      <?= html::img('@web/images/de_kaag_img.png', ['class' => 'prize-image']); ?>
+	      <hr class="hr-sm">
+	      <h5 style="color:#F46835;" class="text-center"><b>More prices below!</b></h5>
 	    </div>
 	</div>
 </div>
@@ -56,9 +58,10 @@
 <div class="container">
 	<hr class="hr-sm">
 	<div class="row">
+		<h3><b><?= Yii::t('app', 'HOW TO WIN!') ?></b></h3>
 		<!-- Table Points -->
 		<div class="table-responsive">
-			<table class="table">
+			<table class="table table-bordered">
 				<thead>
 					<tr>
 						<th>
