@@ -1210,6 +1210,7 @@ h1.h1-default.text-center.h1-header-sub-2 {
   }
 
 
+
 .break-mob {
   display: block;
 }
@@ -1279,3 +1280,6 @@ img.price-image-lower-first {
   max-width: 100%;
 }
 
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}

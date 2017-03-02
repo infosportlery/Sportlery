@@ -56,7 +56,168 @@
 <div class="container">
 	<hr class="hr-sm">
 	<div class="row">
-		
+		<!-- Table Points -->
+		<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>
+							ACTION
+						</th>
+						<th>
+							POINTS
+						</th>
+						<th>
+							1X
+						</th>
+						<th>
+							DAILY
+						</th>
+						<th>
+							UNLIMITED
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">
+							FACEBOOK LIKES
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							TWITTER FOLLOW
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							FACEBOOK SHARE
+						</th>
+						<td>
+							+5
+						</td>
+						<td>
+						</td>
+						<td>
+							&#x2713;							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							TWEET
+						</th>
+						<td>
+							+5
+						</td>
+						<td>
+						</td>
+						<td>
+							&#x2713;							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							EMAIL SHARE
+						</th>
+						<td>
+							+5
+						</td>
+						<td>
+						</td>
+						<td>
+							&#x2713;							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							QUEUE COMMENT
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							CONFIRM EMAIL
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							JOIN QUEUE
+						</th>
+						<td>
+							+10
+						</td>
+						<td>
+							&#x2713;
+						</td>
+						<td>							
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							INVITED FRIEND JOINS
+						</th>
+						<td>
+							+25
+						</td>
+						<td>
+						</td>
+						<td>							
+						</td>
+						<td>
+							&#x2713;
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- End Table Points -->
 	</div>
 </div>
 
