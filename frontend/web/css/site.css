@@ -1209,7 +1209,9 @@ h1.h1-default.text-center.h1-header-sub-2 {
     border-right: none; 
   }
 
-
+.header {
+  height: 850px;
+}
 
 .break-mob {
   display: block;
