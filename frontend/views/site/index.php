@@ -21,13 +21,19 @@
     <hr class="hr-invisible-sm">
     
     <div class="row">
-      <div class="col-md-12 col-md-offset-1 col-sm-12">
-        <div class="col-md-6 col-md-offset-3">
-          <iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
-       
+      <div class="col-md-12 col-sm-12">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
+         
+          </div>
+            
         </div>
-         <h3 style="color: white; text-align: justify;"><b><?= Yii::t('app', 'Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.'); ?></b></h3>  
-        <h3 style="color: white;"><b><?= Yii::t('app', 'SIGNUP TO THE CONTEST BELOW!'); ?></b></h3>
+        <div class="row">
+            <h3 style="color: white; text-align: justify;"><b><?= Yii::t('app', 'Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.'); ?></b></h3>  
+            <h3 style="color: white;"><b><?= Yii::t('app', 'SIGNUP TO THE CONTEST BELOW!'); ?></b></h3>
+          
+        </div>
       </div>
       <div class="col-md-4 col-md-offset-1 col-sm-12">
         <!-- Video Contest -->
