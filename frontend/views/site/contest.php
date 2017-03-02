@@ -21,8 +21,8 @@
   	<div class="col-md-4 col-md-offset-1 col-sm-12">
   		<!-- Video Contest -->
   		<iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
-  </div> 
-  	</div>
+  	</div> 
+   </div>
     
   </div>
 </div>

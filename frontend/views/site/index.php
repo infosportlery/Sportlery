@@ -20,13 +20,9 @@
     <!-- a -->
     <hr class="hr-invisible-sm">
     
-    <div class="row index-contest-signup">
+    <div class="row">
       <div class="col-md-5 col-md-offset-1 col-sm-12">
         <h2 style="color: white;"><b><?= Yii::t('app', 'WELCOME TO THE CONTEST'); ?></b></h2>
-        <p class="contest-p-header"><?= Yii::t('app', 'In this contest you can win various prices such as a GoPro Session, a Samsung GearFit 2, a Drone and many more!'); ?></p>
-        <p class="contest-p-header"><?= Yii::t('app', 'You can earn points in the contest by completing different activities, such as inviting your friends, sharing on social media and other actions!'); ?></p>
-        <p class="contest-p-header"><?= Yii::t('app', 'After the contest you will be invited to join the sportlery community. This contest helps the community to spread the word and expand.'); ?></p>
-        <p class="contest-p-header"><?= Yii::t('app', 'You will be able to find people, with the same level in sports as you, in your neighbourhood, challenge each other, create and join sporting events, and many more. Good Luck! And go get yourself that GoPro!'); ?></p>
       </div>
       <div class="col-md-4 col-md-offset-1 col-sm-12">
         <!-- Video Contest -->
@@ -117,7 +113,7 @@
         <h1 class="h1-default text-center"><strong><?= Yii::t('app', 'Sport Classes'); ?></strong></h1>
         <p><?= Yii::t('app', 'Discover and try-out new sports! A clear overview of all classes and workshops that are being offered in your neighbourhood.'); ?></p>
         <hr class="hr-sm">
-        <?= Html::button(Yii::t('app', 'Read more!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-message-more']); ?>
+        <?= Html::button(Yii::t('app', 'Under Construction'), ['class' => 'btn btn-primary information-btn']); ?>
       </div>
     </div>
   </div> 
@@ -181,28 +177,7 @@
 
 <!-- Parallax One
 ************************************************************************ -->
-<?php if(Yii::$app->language == 'nl') {
-  echo '<div class="parallaxLesNl">';
-} else {
-  echo '<div class="parallaxLes">';  
-} ?>
-<div class="container text-center" id="locations">
 
-  <div class="row" id="index-loc">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <h1 class="loc-head"></h1>  
-      </div>
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="img-responsive img-les-type" id="img-les"></div>';
-      </div>
-    </div>
-  </div>
-
-
-  <hr class="hr-invisible">
-</div> <!-- end container-fluid -->
-</div>
 
 
 
