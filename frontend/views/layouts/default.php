@@ -34,6 +34,7 @@ AppAsset::register($this);
 
     <?php $this->head() ?>
 
+
   </head>
 
   <body>

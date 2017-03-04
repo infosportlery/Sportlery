@@ -32,12 +32,6 @@ AppAsset::register($this);
 
     <?php $this->head() ?>
 
-
-    <link href="https://campaigns.zoho.com/css/ui.theme.css" rel="stylesheet" type="text/css" />
-    <link href="https://campaigns.zoho.com/css/ui.datepicker.css" rel="stylesheet" type="text/css" />
-    <link href="https://campaigns.zoho.com/css/ui.core.css" rel="stylesheet" type="text/css" />
-
-
   </head>
 
   <body>

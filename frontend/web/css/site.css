@@ -278,6 +278,7 @@ table tr {
   margin-top: -50px;
   text-align: center;
   background-image: url('../images/header4.jpg');
+  /*eand omd*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1060,6 +1061,7 @@ select.form-control {
   .vertical-rule {
     display: none;
   }
+
  
  /* Mobile Images */ 
   .img-mm-type {
@@ -1284,4 +1286,3 @@ img.price-image-lower-first {
 @-moz-document url-prefix() {
   fieldset { display: table-cell; }
 }
-

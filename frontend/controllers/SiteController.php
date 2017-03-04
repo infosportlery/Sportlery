@@ -178,7 +178,6 @@ class SiteController extends Controller
 
     public function actionContest()
     {
-      $this->layout = 'default';
       return $this->render('contest');
     }
 
@@ -411,6 +410,7 @@ class SiteController extends Controller
     public function actionChangel() {
       return $this->redirect(['site/index']);
     }
+
 }
 
 ?>
