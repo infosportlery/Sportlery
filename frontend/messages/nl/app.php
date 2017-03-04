@@ -10,6 +10,12 @@ return [
 
 	// List of Translations for Index
 
+	'Email Address' => 'Email adres',
+	'Subscribe' => 'Aanmelden',
+	'Soon the online contest will begin!' => 'Binnenkort begint de online contest!',
+	'Leave your email behind and get your first points!' => 'Laat je email achter en verdien je eerste punten',
+
+
 	'Search for your sport, find a sportsbuddy, book your sport location and play!' => 'Zoek jouw sport, vind een Sportbuddy, boek een sport locatie en speel!',
 	'Want to know more about Sportlery?' => 'Wil je meer weten over Sportlery?',
 	'Explore!' => 'Ontdek het hier!',
@@ -19,7 +25,7 @@ return [
 	'Check all locations' => 'Bekijk alle locaties',
 	'Find sportbuddies, create or participate in events and find substitute players for your team.' => 'Vind sportbuddies, creëer of participeer in evenementen en vind invallers voor jouw team.',
 	'Sport Classes' => 'Sport Lessen',
-	'Discover and try-out new sports! A clear overviewof all classes and workshops that are being offered in your neighbourhood.' => 'Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.',
+	'Discover and try-out new sports! A clear overview of all classes and workshops that are being offered in your neighbourhood.' => 'Probeer en ontdek nieuwe sporten! Overzichtelijk alle lessen en workshops die aangeboden worden bij jou in de buurt.',
 	'Check all classes' => 'Bekijk alle lessen',
 	'Are you in charge of a sport location which can be booked or do you offer sport classes?' => 'Heb jij een een sportlocatie die geboekt kan worden of bied jij lessen aan?',
 	'Share your service on our platform and reach more sports enthusiasts. For benefits click below.' => 'Deel je aanbod op ons platform en bereik meer sporters. Bekijk alle voordelen.',

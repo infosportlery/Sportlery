@@ -1012,7 +1012,7 @@ select.form-control {
 .parallaxLesNl {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   min-height: 800px;
 }
 
@@ -1080,6 +1080,10 @@ select.form-control {
   background-image: url('../images/mm_en_mob.png'); 
 
 }
+   
+   .header {
+      height: 95vh;
+   }
 
   .img-loc-type {
     background-position: center;
@@ -1096,6 +1100,9 @@ select.form-control {
     background-image: url('../images/loc_en_mob.png'); 
   }
 
+   .hr-invisible-subscribe {
+      display: none;
+   }
   .
   .parallaxLesNl {
 
