@@ -11,7 +11,7 @@ BLUE+: #105C89
    display: inline-block !important;
 }
 .infomation-col p {
-  min-height: 70px;
+  min-height: 105px;
 }
 
 .information-btn {
@@ -118,11 +118,15 @@ body {
   padding-top: 50px;  
   -webkit-font-smoothing: antialiased;
   font-family: 'Source Sans Pro', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: justify;
 }
 html {
   position: relative;
   min-height: 100%;
   padding-bottom: 250px;
+  max-width: 100%;
 }
 a {color: #29719B;}
 a:hover {color: #105C89;}
@@ -272,7 +276,6 @@ table tr {
   min-height: 310px;
   padding-top: 25px;
   margin-top: -50px;
-  margin-bottom: 50px;
   text-align: center;
   background-image: url('../images/header4.jpg');
   background-attachment: fixed;
@@ -286,7 +289,6 @@ table tr {
       min-height: 310px;
     padding-top: 25px;
     margin-top: -50px;
-    margin-bottom: 50px;
     text-align: center;
     background-color: #FFF;
     background-attachment: fixed;
@@ -331,7 +333,6 @@ table tr {
     margin-top: -50px;
     margin-bottom: 50px;
     text-align: center;
-    background-color: #EEEEEE;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -352,7 +353,7 @@ table tr {
   margin-top: -50px;
   text-align: center;
   background-image: url('../images/header2_blur.jpg');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -426,7 +427,7 @@ table tr {
   margin-bottom: 50px;
   text-align: center;
   background-image: url('../images/pexels-photo-167817.jpeg');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -438,12 +439,13 @@ table tr {
   margin-top: -50px;
   text-align: center;
   background-image: url('../images/header.png');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   position: relative;
+  min-height: 700px;
 }
 .header h1 {font-family: 'Graduate', sans-serif; font-size: 4em;}
 .brand {
@@ -1009,7 +1011,7 @@ select.form-control {
 .parallaxLesNl {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-height: 800px;
 }
 
@@ -1041,11 +1043,16 @@ select.form-control {
     background-image: url('../images/about_verhaal_ipad_2.png');
   }
 
-  .header h1 {font-size: 3.5em;}
+  .header h1 {font-size: 3.2em;}
   .header1 h1 {font-size: 3.5em;}
   .header2 h1 {font-size: 3.5em;}
   .header3 h1 {font-size: 3.5em;}
   .header4 h1 {font-size: 3.5em;}
+
+
+.navbar {
+  max-width: 96%;
+}
 }
 
 
@@ -1070,10 +1077,6 @@ select.form-control {
   background-image: url('../images/mm_en_mob.png'); 
 
 }
-   
-   .header {
-      height: 95vh;
-   }
 
   .img-loc-type {
     background-position: center;
@@ -1109,6 +1112,9 @@ select.form-control {
   }
 
 
+  .navbar {
+    max-width: 96%;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -1136,6 +1142,85 @@ select.form-control {
 
 #index-loc-slideUp {
   visibility: hidden;
+}
+
+/* Contest CSS */
+
+.index-contest-signup {
+  background-color: #212121; 
+  max-width: 100%;
+}
+
+.sub-header {
+  width: 100%;
+  background-color: #212121;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+h1.h1-default.text-center.h1-header-sub-1 {
+  display: none;
+}
+
+h1.h1-default.text-center.h1-header-sub-2 {
+  display: block;
+}
+
+@media screen and (min-width: 800px) {
+  h1.h1-default.text-center.h1-header-sub-1 {
+    display: block;
+  }
+
+  h1.h1-default.text-center.h1-header-sub-2 {
+    display: none;
+  }
+
+  .header {
+    background-attachment: fixed;
+    min-height: 0;
+  }
+
+  .header4 {
+    background-attachment: fixed;
+    min-height: 0;
+  }
+
+  .parallaxTwo {
+    background-attachment: fixed;
+  }
+
+  .hr-split-rank-lot {
+    display: inline-block;
+  }
+
+  .hr-sm-mob {
+    display: none;
+  }
+
+  .break-mob {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .text-rankings-col {
+    border-right: none; 
+  }
+
+.header {
+  height: 850px;
+}
+
+.break-mob {
+  display: block;
+}
+
+.hr-sm-mob {
+  display: block;
+}
+
 }
 
 input.button#mc-embedded-subscribe:hover {
@@ -1171,4 +1256,32 @@ input.button#mc-embedded-subscribe:hover {
     width: 100%;
 }
 
+.contest-p-header {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.hr-split-rank-lot {
+  display: none;
+}
+
+.text-rankings-col {
+  border-right: 1px solid #e6e6e6; 
+}
+
+img.prize-image {
+  max-width: 100%;
+}
+
+img.price-image-lower {
+  width: 100%;
+}
+
+img.price-image-lower-first {
+  max-width: 100%;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
 
