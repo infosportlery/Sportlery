@@ -1054,7 +1054,6 @@ select.form-control {
 .navbar {
   max-width: 96%;
 }
-
 }
 
 
@@ -1096,6 +1095,9 @@ select.form-control {
     background-image: url('../images/loc_en_mob.png'); 
   }
 
+   .hr-invisible-subscribe {
+      display: none;
+   }
   .
   .parallaxLesNl {
 
@@ -1115,7 +1117,6 @@ select.form-control {
   .navbar {
     max-width: 96%;
   }
-
 }
 
 @media screen and (max-width: 360px) {
@@ -1223,7 +1224,6 @@ h1.h1-default.text-center.h1-header-sub-2 {
 }
 
 }
-
 
 input.button#mc-embedded-subscribe:hover {
   background-color: #105C89;
