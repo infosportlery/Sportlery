@@ -155,9 +155,9 @@
 							</th>
 							<td>
 								+10
-							</td>
-								&#x2713;	
+							</td>	
 							<td>
+								&#x2713;
 							</td>
 							<td>
 														
@@ -172,8 +172,8 @@
 							<td>
 								+10
 							</td>
-								&#x2713;
 							<td>
+								&#x2713;
 							</td>
 							<td>
 															
@@ -188,8 +188,8 @@
 							<td>
 								+10
 							</td>
-								&#x2713;
 							<td>
+								&#x2713;
 							</td>
 							<td>
 															
@@ -246,7 +246,7 @@
 						</tr>
 						<tr>
 							<th scope="row">
-								REFER A FRIEND
+								REFER A FRIEND*
 							</th>
 							<td>
 								+25
@@ -262,7 +262,8 @@
 					</tbody>
 				</table>
 			</div>
-			<!-- End Table Points -->	
+			<!-- End Table Points -->
+			<p>*You will recieve points as soon as your referrals have confirmed their email address.</p>
 		</div>
 	</div>
 </div>
