@@ -271,7 +271,7 @@
 
 <div class="container ranking-lottery-container">
 	<div class="row text-center">
-		<h2><b><?= Yii::t('app', 'ALL PRICES!') ?></b></h2>
+		<h2><b><?= Yii::t('app', 'ALL PRIZES!') ?></b></h2>
 	</div>
 	<div class="row">
 		<div class="col-md-12 text-center">
