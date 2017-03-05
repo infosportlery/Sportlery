@@ -61,7 +61,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h3 class="text-center"><b><?= Yii::t('app', 'HOW TO WIN!') ?></b></h3>
-			<p>By completing these activities in the contest area above these are the points you will earn and howmany times, for more information about the dirrerent actions you can hover on the items in the contest area.</p>	
+			<p>Underneath you will find an overview of all possible activities that will be rewarded with points. Some you can do only once, whereas others can be done daily or even unlimited!</p>	
 		</div>
 	</div>
 	<div class="row">
@@ -91,7 +91,7 @@
 					<tbody>
 						<tr>
 							<th scope="row">
-								FACEBOOK LIKES
+								JOIN THE CONTEST
 							</th>
 							<td>
 								+10
@@ -106,7 +106,7 @@
 						</tr>
 						<tr>
 							<th scope="row">
-								TWITTER FOLLOW
+								EMAIL CONFIRMATION
 							</th>
 							<td>
 								+10
@@ -121,7 +121,7 @@
 						</tr>
 						<tr>
 							<th scope="row">
-								SUBSCRIBE TO OUR YOUTUBE
+								ADD COMMENT
 							</th>
 							<td>
 								+10
@@ -136,15 +136,63 @@
 						</tr>
 						<tr>
 							<th scope="row">
-								WATCH THE VIDEO
+								LIKE ON FACEBOOK
 							</th>
 							<td>
 								+10
 							</td>
 							<td>
-								&#x2713;
+								&#x2713;		
 							</td>
-							<td>							
+							<td>					
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								FOLLOW ON TWITTER
+							</th>
+							<td>
+								+10
+							</td>
+								&#x2713;	
+							<td>
+							</td>
+							<td>
+														
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								SUBSCRIBE TO YOUTUBE
+							</th>
+							<td>
+								+10
+							</td>
+								&#x2713;
+							<td>
+							</td>
+							<td>
+															
+							</td>
+							<td>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">
+								WATCH OUR VIDEO
+							</th>
+							<td>
+								+10
+							</td>
+								&#x2713;
+							<td>
+							</td>
+							<td>
+															
 							</td>
 							<td>
 							</td>
@@ -166,12 +214,13 @@
 						</tr>
 						<tr>
 							<th scope="row">
-								FACEBOOK SHARE
+								SHARE ON FACEBOOK
 							</th>
 							<td>
 								+5
 							</td>
 							<td>
+								
 							</td>
 							<td>
 								&#x2713;							
@@ -181,12 +230,13 @@
 						</tr>
 						<tr>
 							<th scope="row">
-								FACEBOOK SEND MESSAGE
+								POST ON TWITTER
 							</th>
 							<td>
 								+5
 							</td>
 							<td>
+								
 							</td>
 							<td>
 								&#x2713;							
@@ -196,82 +246,7 @@
 						</tr>
 						<tr>
 							<th scope="row">
-								TWEET
-							</th>
-							<td>
-								+5
-							</td>
-							<td>
-							</td>
-							<td>
-								&#x2713;							
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								EMAIL SHARE
-							</th>
-							<td>
-								+5
-							</td>
-							<td>
-							</td>
-							<td>
-								&#x2713;							
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								QUEUE COMMENT
-							</th>
-							<td>
-								+10
-							</td>
-							<td>
-								&#x2713;
-							</td>
-							<td>							
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								CONFIRM EMAIL
-							</th>
-							<td>
-								+10
-							</td>
-							<td>
-								&#x2713;
-							</td>
-							<td>							
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								JOIN QUEUE
-							</th>
-							<td>
-								+10
-							</td>
-							<td>
-								&#x2713;
-							</td>
-							<td>							
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								INVITED(REFFERED) FRIEND JOINS
+								REFER A FRIEND
 							</th>
 							<td>
 								+25
@@ -310,15 +285,12 @@
 			
 			<div class="content-lottery">
 				<p class="content-lottey-p">
-					<?= Yii::t('app', 'Beside the rankings we also Give away prizes among our active participants.') ?>
+					<?= Yii::t('app', 'As often said, participating is more important than winning. Therefore, during the online contest, active participation will be rewarded! Every 50 points you have earned, will also get you a ticket in the lottery. Every two weeks, one of these tickets will be picked at random, and the owner of that ticket will receive a brand-new drone!') ?>
 				</p>
 
-				<p class="content-lottey-p">
-					<?= Yii::t('app', 'How does it work? What can you do? All active particpants make a chance to win, you dont necessarily have to be number 1 in the ranking. By every 50 points you will get a lot in the lottery and the more you do the more chance to win!') ?>
-				</p>
-				<p class="content-lottey-p">
-					<?= Yii::t('app', 'Prices') ?>
-				</p>
+				<p class="content-lottey-p"><u>
+					<?= Yii::t('app', 'Lottery dates:') ?>
+				</u></p>
 				<p class="content-lottey-p"><b>
 					<?= Yii::t('app', '15 March');?><br>
 					<?= Yii::t('app', '29 March');?><br>
@@ -342,7 +314,7 @@
 	<div class="row">
 		<div class="col-md-12 text-center">
 			<h3><b><?= Yii::t('app', 'RANKINGS') ?></b></h3>
-			<p class="content-lottey-p"><?= Yii::t('app', 'Here you can compete for a spot in the rankings. You can earn great prizes.')?></p>
+			<p class="content-lottey-p"><?= Yii::t('app', 'These are the amazing prizes which you can compete for in our online contest!')?></p>
 		</div>
 	</div>
 	<hr class="hr-sm hr-sm-mob">
