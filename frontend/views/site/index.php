@@ -78,12 +78,12 @@
     </div>
     <div class="col-md-4 col-sm-12">
       <h3><b><?= Yii::t('app', 'PRIZES')?></b></h3>
-        <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'By joining actively in the contest you will make a chance on the fantastic prizes. We have two different categories: the rankings and the lottery. In the rankings it is all about becoming number 1 and with the lottery you get lottery tickets by active participation.') ?></p>
+        <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'By joining actively in the contest, you will have a chance to win one of our fantastic prizes. We have two different categories: the rankings and the lottery. In the rankings, it is all about becoming and staying number one. You will also receive lottery tickets for active participation in the contest.') ?></p>
         <h3><b><?= Yii::t('app', 'THE LOTTERY')?></b></h3>
-        <p><b><?= Yii::t('app', 'Every two weeks we will give away this cool drone under our participants. For every 50 points that you make you will get a lottery ticket. So the more active you are, the higher your chances to win!') ?></b></p>
+        <p><b><?= Yii::t('app', 'The lottery, where you can win a drone, will take place every two weeks. For every 50 points you earn in the competition, you will receive a ticket. More points mean more tickets, so more chance for you to win one of the drones!') ?></b></p>
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
         <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
-        <p><b><?= Yii::t('app', 'At the end one of you will go home with that GoPro. Make sure you claim the number one spot on the rankings you see on the left. But there are way more prizes for the top 50 participants.') ?></b></p>
+        <p><b><?= Yii::t('app', 'When the contest ends, one of you will be the new owner of the GoPro. That could be you, if you make sure you become and stay number one in the rankings, to be found on the left side of this page. Don’t worry if you didn’t make it that far, because the entire top 50 will receive one of our prizes!') ?></b></p>
         <?= html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']); ?>
     </div>
   </div>
