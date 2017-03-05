@@ -70,9 +70,9 @@ use yii\bootstrap\NavBar;
         'items' => $menuItems,
     ]);
         
-        foreach(Yii::$app->params['languages'] as $key => $language) {
-            echo '<span class="language" id="'.$key.'">'. Html::a(Html::img("@web/images/flags/".$key.".png"), ['site/changel', 'language' => $key]) .' |</span>';
-        }
+//         foreach(Yii::$app->params['languages'] as $key => $language) {
+//             echo '<span class="language" id="'.$key.'">'. Html::a(Html::img("@web/images/flags/".$key.".png"), ['site/changel', 'language' => $key]) .' |</span>';
+//         }
 
     NavBar::end();
     ?>
