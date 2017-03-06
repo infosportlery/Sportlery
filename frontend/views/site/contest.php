@@ -334,7 +334,7 @@
 		</div>
 		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
-			<h5><?= Yii::t('app', 'Kielboot De Kaag Combi Clinic') ?> <span class="badge">#3</span></h5>
+			<h5><?= Yii::t('app', 'Combi Clinic at "De Kaag"') ?> <span class="badge">#3</span></h5>
 	      <?= Html::a(html::img('@web/images/de_kaag_img.png', ['class' => 'price-image-lower']), 'http://www.dekaag.nl/volwassenen/combi-clinic/', ['target'=>'_blank']); ?>
 		</div>
 	</div>
