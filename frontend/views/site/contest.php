@@ -44,11 +44,11 @@
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
 	      <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
 	      <p><b><?= Yii::t('app', 'When the contest ends, one of you will be the new owner of the GoPro. That could be you, if you make sure you become and stay number one in the rankings, to be found on the left side of this page. Don’t worry if you didn’t make it that far, because the entire top 50 will receive one of our prizes!') ?></b></p>
-	      <h4><span class="label label-primary">#1</span> <?= Yii::t('app', 'THE LUCKY WINNER!') ?></h4>
+	      <h4><span class="label label-primary">#1</span> <?= Yii::t('app', 'GOPRO SESSION HERO!') ?></h4>
 	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html', ['target'=>'_blank']); ?>
-	      <h4><span class="label label-primary">#2</span> <?= Yii::t('app', 'SAMSUNG GEAR 2 WATCH') ?></h4>
+	      <h4><span class="label label-primary">#2</span> <?= Yii::t('app', 'SAMSUNG GEARFIT 2') ?></h4>
 	      <?= Html::a(html::img('@web/images/contest-gear-fit2.png', ['class' => 'prize-image']), 'http://www.samsung.com/global/galaxy/gear-fit2/', ['target'=>'_blank']); ?>
-	      <h4><span class="label label-primary">#3</span> <?= Yii::t('app', 'SAILING COURSE AT "DE KAAG"') ?></h4>
+	      <h4><span class="label label-primary">#3</span> <?= Yii::t('app', ' COMBI CLINIC AT "DE KAAG"') ?></h4>
 	      <?= Html::a(html::img('@web/images/de_kaag_img.png', ['class' => 'prize-image']), 'http://www.dekaag.nl/volwassenen/combi-clinic/', ['target'=>'_blank']); ?>
 	      <hr class="hr-sm">
 	      <h5 style="color:#F46835;" class="text-center"><b>More prizes below!</b></h5>
@@ -321,7 +321,7 @@
 	<hr class="hr-sm hr-sm-mob">
 	<div class="row text-center">
 		<div class="col-md-12 text-center">
-		<h5><?= Yii::t('app', 'GoPro Session') ?> <span class="badge">#1</span></h5>
+		<h5><?= Yii::t('app', 'GoPro HERO Session') ?> <span class="badge">#1</span></h5>
 	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower-first']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html', ['target'=>'_blank']); ?>
 		</div>
 	</div>
@@ -334,7 +334,7 @@
 		</div>
 		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
-			<h5><?= Yii::t('app', 'Privéles Kielboot De Kaag') ?> <span class="badge">#3</span></h5>
+			<h5><?= Yii::t('app', 'Kielboot De Kaag Combi Clinic') ?> <span class="badge">#3</span></h5>
 	      <?= Html::a(html::img('@web/images/de_kaag_img.png', ['class' => 'price-image-lower']), 'http://www.dekaag.nl/volwassenen/combi-clinic/', ['target'=>'_blank']); ?>
 		</div>
 	</div>
