@@ -25,6 +25,7 @@ AppAsset::register($this);
     <meta property="og:type" content="Main Page" />
     <meta property="og:image" content="http://www.sportlery.nl/images/logo.jpg" />
     <meta property="og:url" content="http://www.sportlery.nl/" />
+    <meta name="google-site-verification" content="ozi80Hlv1omrSPOD36n78JVJnrv2Mka5esPRMPZp8yo" />
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <?= $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/ico', 'href' => 'images/favicon.ico']);?>
     <?= Html::csrfMetaTags() ?>
