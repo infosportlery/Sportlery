@@ -322,7 +322,7 @@
 	<div class="row text-center">
 		<div class="col-md-12 text-center">
 		<h5><?= Yii::t('app', 'GoPro Session') ?> <span class="badge">#1</span></h5>
-	      <?= html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower-first']); ?>
+	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower-first']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html'); ?>
 		</div>
 	</div>
 
@@ -330,12 +330,12 @@
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 			<h5><?= Yii::t('app', 'Samsung GearFit 2') ?> <span class="badge">#2</span></h5>
-	      	<?= html::img('@web/images/contest-gear-fit2.png', ['class' => ' price-image-lower']); ?>
+	      	<?= Html::a(html::img('@web/images/contest-gear-fit2.png', ['class' => ' price-image-lower']), 'http://www.samsung.com/global/galaxy/gear-fit2/'); ?>
 		</div>
 		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
 			<h5><?= Yii::t('app', 'Privéles Kielboot De Kaag') ?> <span class="badge">#3</span></h5>
-	      <?= html::img('@web/images/de_kaag_img.png', ['class' => 'price-image-lower']); ?>
+	      <?= Html::a(html::img('@web/images/de_kaag_img.png', ['class' => 'price-image-lower']), 'http://www.dekaag.nl'); ?>
 		</div>
 	</div>
 
@@ -343,12 +343,12 @@
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Maximum Sports Nutrition Plan') ?> <span class="badge">#4 &amp; #5</span></h5>
-			<?= html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']); ?>
+			<?= Html::a(html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']), 'http://maximum-sports.nl/'); ?>
 		</div>
 		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Golf Arrangement') ?> <span class="badge">#6 - #10</span></h5>
-	      <?= html::img('@web/images/golfles.png', ['class' => 'price-image-lower']); ?>
+	      <?= Html::a(html::img('@web/images/golfles.png', ['class' => 'price-image-lower']), 'http://www.golfbaanwaterlandamsterdam.nl/welkom/'); ?>
 		</div>
 	</div>
 
@@ -356,7 +356,7 @@
 	<div class="row">
 		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 		<h5><?= Yii::t('app', 'Decathlon Giftcard') ?> <span class="badge">#11 - #20</span></h5>
-			<?= html::img('@web/images/logo-giftcard.jpg', ['class' => 'price-image-lower']); ?>
+			<?= Html::a(html::img('@web/images/logo-giftcard.jpg', ['class' => 'price-image-lower']), 'https://www.decathlon.nl/coolsingel.html'); ?>
 		</div>
 		<hr class="hr-sm hr-sm-mob">
 		<div class="col-md-5 col-sm-12 text-center">
