@@ -22,7 +22,7 @@ AppAsset::register($this);
     <meta name="description" content="">
     <meta name="author" content="">
     <meta property="og:title" content="Sportlery - Together we sport! -" />
-    <meta property="og:type" content="Main Page" />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="http://www.sportlery.nl/images/logo.jpg" />
     <meta property="og:url" content="http://www.sportlery.nl/" />
     <meta property="og:video" content="https://www.youtube.com/watch?v=BfjCgfLW7Ec" />
