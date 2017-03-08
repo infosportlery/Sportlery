@@ -33,7 +33,7 @@
 		<div class="text-hider">
 		<h2 style="color: white;"><b><?= Yii::t('app', 'LAUNCH'); ?></b></h2>	
 			<h2 style="color: white;"><b><?= Yii::t('app', '@ 16th April!'); ?></b></h2></div>
-            <?= Html::button(Yii::t('app', 'Explore!'), ['class' => 'btn btn-primary information-btn-top', 'id' => 'btn-index-more']); ?>
+            <?= Html::button(Yii::t('app', 'What is Sportlery?'), ['class' => 'btn btn-primary information-btn-top', 'id' => 'btn-index-more']); ?>
           
         </div>
       </div>
@@ -99,11 +99,12 @@
   <div class="row" >
     <div class="col-md-4 col-md-offset-4 text-center">
       <h1><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
+	    <h3>Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</h3>
+
     </div> <!-- end col -->
   </div> <!-- end row -->
 	<div class="row text-center"> 
-		<h3>Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</h3>
-	</div>
+			</div>
   <div class="row text-center">
     <div class="col-md-6 col-md-offset-3 col-sm-12"> <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/3y4G2FyxZnY" frameborder="0" allowfullscreen></iframe></div>
      
