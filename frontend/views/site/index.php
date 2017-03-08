@@ -30,8 +30,7 @@
             
         </div>
         <div class="row text-center">
-            <h3 style="color: white;"><b><?= Yii::t('app', 'Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.'); ?></b></h3>  
-            <h3 style="color: white;"><b><?= Yii::t('app', 'SIGNUP TO THE CONTEST BELOW!'); ?></b></h3>
+            <?= Html::button(Yii::t('app', 'Explore!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-index-more']); ?>
           
         </div>
       </div>
@@ -44,12 +43,11 @@
     <!-- /a -->
 
   </div>
-  <div class="row" id="sliderone"></div>
 </div>
 <div class="sub-header text-center" style="max-width: 100%;">
   <div class="row index-contest-signup" style="max-width: 100%;">
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">
-      <h3 style="color: white;"><b><?= Yii::t('app', 'Join now and win a GoPro!'); ?></b></h3>  
+      <h3 style="color: white;"><b><?= Yii::t('app', 'Join the pre-launch contest of sportlery and win a GoPro!'); ?></b></h3>  
     </div>
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">
       <queue-signup type="horizontal"></queue-signup>  
