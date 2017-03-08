@@ -18,6 +18,10 @@ BLUE+: #105C89
   margin-bottom: 10px;
 }
 
+button.information-btn-top {
+   font-size: 22px;
+}
+
 input .addon {
   color: red;
 }
