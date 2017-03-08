@@ -1059,7 +1059,9 @@ select.form-control {
   .vertical-rule {
     display: none;
   }
-
+   .text-hider {
+      display: block;
+   }
  
  /* Mobile Images */ 
   .img-mm-type {
@@ -1172,6 +1174,10 @@ h1.h1-default.text-center.h1-header-sub-2 {
   h1.h1-default.text-center.h1-header-sub-2 {
     display: none;
   }
+   
+   .text-hider {
+      display: none;
+   }
 
   .header {
     background-attachment: fixed;
