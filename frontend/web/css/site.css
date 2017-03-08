@@ -20,6 +20,7 @@ BLUE+: #105C89
 
 button.information-btn-top {
    font-size: 22px;
+   margin: 15px;
 }
 
 input .addon {
