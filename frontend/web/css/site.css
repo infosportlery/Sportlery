@@ -23,6 +23,10 @@ button.information-btn-top {
    margin: 15px;
 }
 
+.hr-sport {
+   border: 10px solid #F46835;
+}
+
 input .addon {
   color: red;
 }
