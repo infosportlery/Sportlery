@@ -97,8 +97,8 @@
 
 <div class="container" >
   <div class="row" >
-    <div class="col-md-4 col-md-offset-4 text-center">
-      <h1><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
+    <div class="col-md-12 text-center">
+      <h1 style="margin-bottom: 20px;"><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
 	    <h3>Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</h3>
 
     </div> <!-- end col -->
