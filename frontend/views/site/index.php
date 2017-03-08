@@ -99,7 +99,7 @@
     </div> <!-- end col -->
   </div> <!-- end row -->
 	<div class="row text-center"> 
-		<p>Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</p>
+		<h3>Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</h3>
 	</div>
   <div class="row text-center">
     <div class="col-md-6 col-md-offset-3 col-sm-12"> <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/3y4G2FyxZnY" frameborder="0" allowfullscreen></iframe></div>
