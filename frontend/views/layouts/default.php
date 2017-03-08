@@ -26,6 +26,10 @@ AppAsset::register($this);
     <meta property="og:title" content="Sportlery - Together we sport! -" />
     <meta property="og:type" content="Main Page" />
     <meta property="og:image" content="http://www.sportlery.nl/images/logo.jpg" />
+    <meta property="og:video" content="https://www.youtube.com/watch?v=BfjCgfLW7Ec" />
+    <meta property="og:video:secure_url" content="https://www.youtube.com/watch?v=BfjCgfLW7Ec">
+    <meta property="og:video:width" content="472">
+    <meta property="og:video:height" content="296">
     <meta property="og:url" content="http://www.sportlery.nl/" />
     <meta name="google-site-verification" content="ozi80Hlv1omrSPOD36n78JVJnrv2Mka5esPRMPZp8yo" />
     <?= $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/ico', 'href' => 'images/favicon.ico']);?>
