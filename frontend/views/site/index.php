@@ -30,6 +30,9 @@
             
         </div>
         <div class="row text-center">
+	<h2 style="color: white;"><b><?= Yii::t('app', 'LAUNCH'); ?></b></h2>
+		
+	<h2 style="color: white;"><b><?= Yii::t('app', '@ 16th April!'); ?></b></h2> 
             <?= Html::button(Yii::t('app', 'Explore!'), ['class' => 'btn btn-primary information-btn', 'id' => 'btn-index-more']); ?>
           
         </div>
