@@ -93,7 +93,7 @@
 </div>
 
 
-<hr class="hr-sports">
+<hr class="hr-sport">
 
 <div class="container" >
   <div class="row" >
