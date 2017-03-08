@@ -98,8 +98,8 @@
 <div class="container" >
   <div class="row" >
     <div class="col-md-12 text-center">
-      <h1 style="margin-bottom: 20px;"><?= Yii::t('app', 'What is Sportlery?'); ?></h1>
-	    <h3>Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</h3>
+      <h1 style="margin-bottom: 20px;"><b><?= Yii::t('app', 'What is Sportlery?'); ?></b></h1>
+	    <h3 style="margin-bottom:20px;">Sportlery is an online sports community where people can find each other to sport together, organise sport events and book sport locations.</h3>
 
     </div> <!-- end col -->
   </div> <!-- end row -->
