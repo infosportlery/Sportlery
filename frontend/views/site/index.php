@@ -53,9 +53,13 @@
       <h3 style="color: white;"><b><?= Yii::t('app', 'Join the pre-launch contest of Sportlery and win a GoPro!'); ?></b></h3>  
     </div>
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">
-      <queue-signup type="horizontal"></queue-signup>  
-    </div>
-    
+      <div class="row">
+	    <queue-signup type="horizontal"></queue-signup>  
+	      <div class="col-md-10 col-md-offset-1 col-sm-12 text-right">
+		      <a href="/contest" >Already participating? Go to te contest page!</a>
+	      </div>
+    	</div>
+     </div>
   </div>
 </div>
 
