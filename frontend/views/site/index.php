@@ -56,7 +56,7 @@
       <div class="row">
 	    <queue-signup type="horizontal"></queue-signup>  
 	      <div class="col-md-10 col-md-offset-1 col-sm-12 text-right">
-		      <a style="padding-right: 3.85%;" href="/contest" >Already participating? Go to te contest page!</a>
+		      <a style="padding-right: 3.85%;" href="/contest" >Already participating? Go to the contest page!</a>
 	      </div>
     	</div>
      </div>
