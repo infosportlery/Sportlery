@@ -30,6 +30,7 @@ AppAsset::register($this);
     <meta property="og:video:width" content="472">
     <meta property="og:video:height" content="296">
     <meta name="google-site-verification" content="ozi80Hlv1omrSPOD36n78JVJnrv2Mka5esPRMPZp8yo" />
+    <meta name="google-site-verification" content="0J0mFG4CbmlNlK5d93SsATeYIAkqqo66fUOit8uk72U" />
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     <?= $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/ico', 'href' => 'images/favicon.ico']);?>
     <?= Html::csrfMetaTags() ?>
