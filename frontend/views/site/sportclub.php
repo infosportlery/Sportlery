@@ -47,7 +47,7 @@ use yii\helpers\Html;
 	    <h3 style="color: white;"><b><?= Yii::t('app', 'Do you want to become one of the first Sportclubs? Fill in your e-mail address below:'); ?></b></h3>
 	    <div class="mailing col-md-12">
 
-       <!-- Begin MailChimp Signup Form -->
+<!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
