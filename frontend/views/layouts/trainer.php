@@ -45,6 +45,9 @@ SportclubsAsset::register($this);
             <p class="lead"><?= Yii::t('app', 'Sportlery has large and diverse community. Most of them want to discover new sports or simply improve their skills. By offering your classes, you can attract more people and increase the occupancy of your classes!'); ?></p>
             <button class="btn btn-default" id="btn-trainer"><?= Yii::t('app', 'Read more!'); ?></button>
           </div>
+          <div class="col-md-5 col-md-offset-1 col-sm-12" style="margin-top: 50px;">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/_F7AGWAdrVs" frameborder="0" allowfullscreen=""></iframe>
+          </div>
         </div>
     </div>
     </div>
