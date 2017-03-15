@@ -59,4 +59,18 @@ use yii\helpers\Html;
   <hr class="hr-invisible">
 
 </div> <!-- end container -->
+
+<div class="parallax3" style="background-color: rgb(244, 104, 53);padding: 25px 0 25px 0px;">
+	<div class="container" style="background-color: rgb(244, 104, 53);">
+		  <div class="row text-center">
+	    <h3 style="color: white;"><b><?= Yii::t('app', 'Do you want to become one of the first Trainers? Fill in your e-mail address below:'); ?></b></h3>
+	    <div class="mailing col-md-12">
+      
+ 
+
+	    </div>
+	  </div>
+	</div>
+</div>
+
 <hr class="hr-invisible">
