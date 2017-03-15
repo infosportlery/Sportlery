@@ -51,12 +51,7 @@ SportclubsAsset::register($this);
         </div>
     </div>
     </div>
-
-    <div class="container">
-    
     <?= $content ?>
-
-    </div>
 
     <?php require 'footer.php'; ?>
 
