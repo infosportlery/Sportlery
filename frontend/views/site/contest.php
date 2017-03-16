@@ -9,13 +9,16 @@
 
 
 ?>
-<div class="sub-header">
-  <div class="row index-contest-signup">
-	<h2 style="color: white;" class="text-center"><b><?= Yii::t('app', 'Welcome to the Ultimate Sports Community!'); ?></b></h2>
-	<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
-		<h2><b>Launch @ 16th of April!</b></h2>
-		<h3 style="line-height:1.5;">Like &amp; Follow us<br/>Share with your friends<br/>Earn points and WIN!</h3>
-		<a class="btn btn-default" id="howto-contest-btn">How to win?</a>
+<div class="sub-header" style="background-color:#29719B;">
+  <div class="row index-contest-signup" style="margin-left 0px;">
+	<h1 style="color: white;" class="text-center"><b><?= Yii::t('app', 'Welcome to the Ultimate Sports Community!'); ?></b></h1>
+	<hr class="hr-sm">
+	  <div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
+		<h2 style="margin-top: 0px;"><b>Launch @ 16th of April!</b></h2>
+		  <hr class="hr-invisible-sm">
+		<h3 style="line-height:1.5;">Like &amp; Follow us,<br/>Share with your friends,<br/>Earn points and WIN!</h3>
+		  <hr class="hr-invisible-sm">
+		<a class="btn btn-default" id="howto-contest-btn" style="font-size: 22px; margin: 15px;">How to win?</a>
 	</div>
 	<div class="col-md-5 col-sm-12">
 		<!-- Video Contest -->
@@ -34,14 +37,12 @@
 			<queue-community widget-height='1000px'></queue-community>		
 		</div>
 		<div class="col-md-4 col-sm-12">
-	      <h2><b><?= Yii::t('app', '2 ways to Win!')?></b></h2>
-	      <h3><b><?= Yii::t('app', 'THE LOTTERY')?></b></h3>
-	      <p><b><?= Yii::t('app', 'Every 50 points = one Ticket') ?></b></p>
-	      <p><?= Yii::t('app', '15th of March : "Jeroen Spee"') ?></p>
-	      <p><?= Yii::t('app', '29th of March : "TBA"') ?></p>
-	      <p><?= Yii::t('app', '15th of April : "TBA"') ?></p>
+			<h2 style="text-align:center;"><b><u><?= Yii::t('app', '2 ways to Win!')?></u></b></h2>
+	      <h3><b><?= Yii::t('app', 'Lottery')?></b></h3>
+	      <h4 style="font-size:22px;">For every <b>50 points</b> you get <b>one ticket</b></h4>
+	      <h4>Next Draw <b>@29th of March!</b> </h4>
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
-	      <h3><b><?= Yii::t('app', 'RANKINGS') ?></b></h3>
+	      <h3><b><?= Yii::t('app', 'Rankings') ?></b></h3>
 	      <h4><span class="label label-primary">#1</span> <?= Yii::t('app', 'GOPRO HERO SESSION!') ?></h4>
 	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html', ['target'=>'_blank']); ?>
 	      <h4><span class="label label-primary">#2</span> <?= Yii::t('app', 'SAMSUNG GEARFIT 2') ?></h4>
@@ -49,7 +50,7 @@
 	      <h4><span class="label label-primary">#3</span> <?= Yii::t('app', ' COMBI CLINIC AT "DE KAAG"') ?></h4>
 	      <?= Html::a(html::img('@web/images/de_kaag_img.png', ['class' => 'prize-image']), 'http://www.dekaag.nl/volwassenen/combi-clinic/', ['target'=>'_blank']); ?>
 	      <hr class="hr-sm">
-	      <h5 style="color:#F46835;" class="text-center"><b>More prizes below!</b></h5>
+	      <div class="row text-center"><a style="font-size:26px; text-align:center;" class="btn btn-default" id="prizes-button-more"><b>More prizes below!</b></a></div>
 	    </div>
 	</div>
 </div>
@@ -273,18 +274,23 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<h3>
-				<b>
-					<?= Yii::t('app', 'THE LOTTERY ')?>
-				</b>
-			</h3>
+
 		</div>
 		<div class="col-md-6 col-sm-12">
-			
+						
 			<div class="content-lottery">
+				<h3>
+					<b>
+						<?= Yii::t('app', 'THE LOTTERY ')?>
+					</b>
+				</h3>
 				<p class="content-lottey-p" style="text-align: justify;"><b>
 					<?= Yii::t('app', 'The lottery, where you can win a drone, will take place every two weeks. For every 50 points you earn in the competition, you will receive a ticket. More points mean more tickets, so more chance for you to win one of the drones!') ?>
 					</b></p>
+				
+			      <p><?= Yii::t('app', '15th of March : "Jeroen Spee"') ?><br>
+			      <?= Yii::t('app', '29th of March : "TBA"') ?><br>
+			      <?= Yii::t('app', '15th of April : "TBA"') ?></p>
 			</div>
 		</div>
 		<hr class="hr-sm hr-split-rank-lot">
@@ -302,16 +308,17 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<h3><b><?= Yii::t('app', 'RANKINGS') ?></b></h3>
+			
 		</div>
 	</div>
 	<hr class="hr-sm hr-sm-mob">
 	<div class="row text-center">
 		<div class="col-md-6">
+			<h3 style="text-align: left; margin-top: 10.5px;"><b>RANKING</b></h3>
 			<p style="text-align: justify;"><b>When the contest ends, one of you will be the new owner of the GoPro. That could be you, if you make sure you become and stay number one in the rankings, to be found on the left side of this page. Don’t worry if you didn’t make it that far, because the entire top 50 will receive one of our prizes!</b></p>
 		</div>
 		<div class="col-md-6">
-		<h5><?= Yii::t('app', 'GoPro HERO Session') ?> <span class="badge">#1</span></h5>
+		<h5 style="text-align: left;"><?= Yii::t('app', 'GoPro HERO Session') ?> <span class="badge">#1</span></h5>
 	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower-first']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html', ['target'=>'_blank']); ?>
 		</div>
 	</div>
