@@ -318,12 +318,12 @@
 
 	<hr class="hr-sm">
 	<div class="row">
-		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-6 col-sm-12">
 			<h5><?= Yii::t('app', 'Samsung GearFit 2') ?> <span class="badge">#2</span></h5>
 	      	<?= Html::a(html::img('@web/images/contest-gear-fit2.png', ['class' => ' price-image-lower']), 'http://www.samsung.com/global/galaxy/gear-fit2/', ['target'=>'_blank']); ?>
 		</div>
 		<hr class="hr-sm hr-sm-mob">
-		<div class="col-md-5 col-sm-12 text-center">
+		<div class="col-md-6 col-sm-12">
 			<h5><?= Yii::t('app', 'Combi Clinic at "De Kaag"') ?> <span class="badge">#3</span></h5>
 	      <?= Html::a(html::img('@web/images/de_kaag_img.png', ['class' => 'price-image-lower']), 'http://www.dekaag.nl/volwassenen/combi-clinic/', ['target'=>'_blank']); ?>
 		</div>
@@ -331,12 +331,12 @@
 
 	<hr class="hr-sm">
 	<div class="row">
-		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-6 col-sm-12">
 		<h5><?= Yii::t('app', 'Maximum Sports Nutrition Plan') ?> <span class="badge">#4 &amp; #5</span></h5>
 			<?= Html::a(html::img('@web/images/maximumsports.png', ['class' => 'price-image-lower']), 'http://maximum-sports.nl/', ['target'=>'_blank']); ?>
 		</div>
 		<hr class="hr-sm hr-sm-mob">
-		<div class="col-md-5 col-sm-12 text-center">
+		<div class="col-md-6 col-sm-12">
 		<h5><?= Yii::t('app', 'Golf Arrangement') ?> <span class="badge">#6 - #10</span></h5>
 	      <?= Html::a(html::img('@web/images/golfles.png', ['class' => 'price-image-lower']), 'http://www.golfbaanwaterlandamsterdam.nl/welkom/', ['target'=>'_blank']); ?>
 		</div>
@@ -344,12 +344,12 @@
 
 	<hr class="hr-sm">
 	<div class="row">
-		<div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
+		<div class="col-md-6 col-sm-12">
 		<h5><?= Yii::t('app', 'Decathlon Giftcard') ?> <span class="badge">#11 - #20</span></h5>
 			<?= Html::a(html::img('@web/images/logo-giftcard.jpg', ['class' => 'price-image-lower']), 'https://www.decathlon.nl/coolsingel.html', ['target'=>'_blank']); ?>
 		</div>
 		<hr class="hr-sm hr-sm-mob">
-		<div class="col-md-5 col-sm-12 text-center">
+		<div class="col-md-6 col-sm-12r">
 		<h5><?= Yii::t('app', 'Ping Pong Set') ?> <span class="badge">#21 - #30</span><br class="break-mob"> &amp; <br class="break-mob"><?= Yii::t('app', 'Sportlery Sunglasses') ?> <span class="badge">#31 / #50</span></h5>
 			<?= html::img('@web/images/brilpingpong.png', ['class' => 'price-image-lower']); ?>
 		</div>
