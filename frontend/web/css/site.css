@@ -443,6 +443,7 @@ table tr {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  min-height: 860px;
 }
 .header {
   padding-top: 65px;
