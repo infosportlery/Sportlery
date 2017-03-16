@@ -22,11 +22,9 @@
     
     <div class="row">
       <div class="col-md-12 col-sm-12">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
-         
-          </div>
+        <div class="row text-center">
+    <div class="col-md-6 col-md-offset-3 col-sm-12"> <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/3y4G2FyxZnY" frameborder="0" allowfullscreen></iframe></div>
+
             
         </div>
         <div class="row text-center">
@@ -50,7 +48,7 @@
 <div class="sub-header text-center" style="max-width: 100%;">
   <div class="row index-contest-signup" style="max-width: 100%;">
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">
-      <h3 style="color: white;"><b><?= Yii::t('app', 'Join the pre-launch contest of Sportlery and win a GoPro!'); ?></b></h3>  
+      <h3 style="color: white;"><b><?= Yii::t('app', 'Sign up for Sportlery and Join the Ultimate Sports Community'); ?></b></h3>  
     </div>
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-11 col-xs-offset-1">
       <div class="row">
@@ -109,10 +107,7 @@
   </div> <!-- end row -->
 	<div class="row text-center"> 
 			</div>
-  <div class="row text-center">
-    <div class="col-md-6 col-md-offset-3 col-sm-12"> <iframe style="width: 100%;" height="315" src="https://www.youtube.com/embed/3y4G2FyxZnY" frameborder="0" allowfullscreen></iframe></div>
-     
-  </div>  
+
   <hr class="hr-invisible">
   <div class="row text-center">
     <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
