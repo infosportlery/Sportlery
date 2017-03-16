@@ -16,7 +16,7 @@
 	  <div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
 		<h2 style="margin-top: 0px;"><b>Launch @ 16th of April!</b></h2>
 		  <hr class="hr-invisible-sm">
-		<h3 style="line-height:1.5;">Like &amp; Follow us,<br/>Share with your friends,<br/>Earn points and WIN!</h3>
+		<h3 style="line-height:1.5;">Like &amp; Follow us,<br/>Share with your friends,<br/>Earn points and... WIN!</h3>
 		  <hr class="hr-invisible-sm">
 		<a class="btn btn-default" id="howto-contest-btn" style="font-size: 22px; margin: 15px;">How to win?</a>
 	</div>
