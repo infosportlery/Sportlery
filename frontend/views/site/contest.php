@@ -49,7 +49,7 @@
 	      <h4><span class="label label-primary">#3</span> <?= Yii::t('app', ' COMBI CLINIC AT "DE KAAG"') ?></h4>
 	      <?= Html::a(html::img('@web/images/de_kaag_img.png', ['class' => 'prize-image']), 'http://www.dekaag.nl/volwassenen/combi-clinic/', ['target'=>'_blank']); ?>
 	      <hr class="hr-sm">
-	      <div class="row text-center"><a style="font-size:26px; text-align:center;" class="btn btn-default" id="prizes-button-more"><b>More prizes below!</b></a></div>
+	      <div class="row text-center"><a style="font-size:26px; text-align:center;" class="btn btn-default" id="prizes-button-more"><b>MORE PRIZES BELOW!</b></a></div>
 	    </div>
 	</div>
 </div>
