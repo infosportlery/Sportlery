@@ -272,7 +272,7 @@
 		<h2><b><?= Yii::t('app', 'ALL PRIZES!') ?></b></h2>
 	</div>
 	<div class="row">
-		<div class="col-md-12 text-center">
+		<div class="col-md-12">
 			<h3>
 				<b>
 					<?= Yii::t('app', 'THE LOTTERY ')?>
@@ -282,9 +282,9 @@
 		<div class="col-md-6 col-sm-12">
 			
 			<div class="content-lottery">
-				<p class="content-lottey-p">
+				<p class="content-lottey-p" style="text-align: justify;"><b>
 					<?= Yii::t('app', 'The lottery, where you can win a drone, will take place every two weeks. For every 50 points you earn in the competition, you will receive a ticket. More points mean more tickets, so more chance for you to win one of the drones!') ?>
-				</p>
+					</b></p>
 			</div>
 		</div>
 		<hr class="hr-sm hr-split-rank-lot">
@@ -308,7 +308,7 @@
 	<hr class="hr-sm hr-sm-mob">
 	<div class="row text-center">
 		<div class="col-md-6">
-			<p><b>When the contest ends, one of you will be the new owner of the GoPro. That could be you, if you make sure you become and stay number one in the rankings, to be found on the left side of this page. Don’t worry if you didn’t make it that far, because the entire top 50 will receive one of our prizes!</b></p>
+			<p style="text-align: justify;"><b>When the contest ends, one of you will be the new owner of the GoPro. That could be you, if you make sure you become and stay number one in the rankings, to be found on the left side of this page. Don’t worry if you didn’t make it that far, because the entire top 50 will receive one of our prizes!</b></p>
 		</div>
 		<div class="col-md-6">
 		<h5><?= Yii::t('app', 'GoPro HERO Session') ?> <span class="badge">#1</span></h5>
