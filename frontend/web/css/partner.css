@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
+  min-height: 850px;
 }
 .header3 h1 {
   font-size: 80px;
