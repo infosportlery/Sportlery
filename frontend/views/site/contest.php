@@ -261,7 +261,7 @@
 				</table>
 			</div>
 			<!-- End Table Points -->
-			<p>*You will recieve points as soon as your referrals have confirmed their email address.</p>
+			<p id="all-prizes-p">*You will recieve points as soon as your referrals have confirmed their email address.</p>
 		</div>
 	</div>
 </div>
