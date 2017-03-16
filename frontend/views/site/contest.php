@@ -34,13 +34,14 @@
 			<queue-community widget-height='1000px'></queue-community>		
 		</div>
 		<div class="col-md-4 col-sm-12">
-	      <h3><b><?= Yii::t('app', 'PRIZES')?></b></h3>
-	      <p style="text-align: justify; line-height: 1.6;"><?= Yii::t('app', 'By joining actively in the contest, you will have a chance to win one of our fantastic prizes. We have two different categories: the rankings and the lottery. In the rankings, it is all about becoming and staying number one. You will also receive lottery tickets for active participation in the contest.') ?></p>
+	      <h2><b><?= Yii::t('app', '2 ways to Win!')?></b></h2>
 	      <h3><b><?= Yii::t('app', 'THE LOTTERY')?></b></h3>
-	      <p><b><?= Yii::t('app', 'The lottery, where you can win a drone, will take place every two weeks. For every 50 points you earn in the competition, you will receive a ticket. More points mean more tickets, so more chance for you to win one of the drones!') ?></b></p>
+	      <p><b><?= Yii::t('app', 'Every 50 points = one Ticket') ?></b></p>
+	      <p><?= Yii::t('app', '15th of March : "Jeroen Spee"') ?></p>
+	      <p><?= Yii::t('app', '29th of March : "TBA"') ?></p>
+	      <p><?= Yii::t('app', '15th of April : "TBA"') ?></p>
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
-	      <h3><b><?= Yii::t('app', 'THE RANKINGS') ?></b></h3>
-	      <p><b><?= Yii::t('app', 'When the contest ends, one of you will be the new owner of the GoPro. That could be you, if you make sure you become and stay number one in the rankings, to be found on the left side of this page. Don’t worry if you didn’t make it that far, because the entire top 50 will receive one of our prizes!') ?></b></p>
+	      <h3><b><?= Yii::t('app', 'RANKINGS') ?></b></h3>
 	      <h4><span class="label label-primary">#1</span> <?= Yii::t('app', 'GOPRO HERO SESSION!') ?></h4>
 	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html', ['target'=>'_blank']); ?>
 	      <h4><span class="label label-primary">#2</span> <?= Yii::t('app', 'SAMSUNG GEARFIT 2') ?></h4>
@@ -272,10 +273,9 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12 text-center">
-			<h3 class="text-center">
+			<h3>
 				<b>
-					<?= Yii::t('app', 'LOTTERY ')?> - 
-					<?= Yii::t('app', 'WIN A DRONE') ?> <span class="badge">X3</span>
+					<?= Yii::t('app', 'THE LOTTERY ')?>
 				</b>
 			</h3>
 		</div>
@@ -283,17 +283,8 @@
 			
 			<div class="content-lottery">
 				<p class="content-lottey-p">
-					<?= Yii::t('app', 'As often said, participating is more important than winning. Therefore, during the online contest, active participation will be rewarded! Every 50 points you have earned, will also get you a ticket in the lottery. Every two weeks, one of these tickets will be picked at random, and the owner of that ticket will receive a brand-new drone!') ?>
+					<?= Yii::t('app', 'The lottery, where you can win a drone, will take place every two weeks. For every 50 points you earn in the competition, you will receive a ticket. More points mean more tickets, so more chance for you to win one of the drones!') ?>
 				</p>
-
-				<p class="content-lottey-p"><u>
-					<?= Yii::t('app', 'Lottery dates:') ?>
-				</u></p>
-				<p class="content-lottey-p"><b>
-					<?= Yii::t('app', '15 March');?><br>
-					<?= Yii::t('app', '29 March');?><br>
-					<?= Yii::t('app', '12 April');?><br>
-				</b></p>
 			</div>
 		</div>
 		<hr class="hr-sm hr-split-rank-lot">
@@ -310,14 +301,16 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-12 text-center">
+		<div class="col-md-12">
 			<h3><b><?= Yii::t('app', 'RANKINGS') ?></b></h3>
-			<p class="content-lottey-p"><?= Yii::t('app', 'These are the amazing prizes which you can compete for in our online contest!')?></p>
 		</div>
 	</div>
 	<hr class="hr-sm hr-sm-mob">
 	<div class="row text-center">
-		<div class="col-md-12 text-center">
+		<div class="col-md-6">
+			<p><b>When the contest ends, one of you will be the new owner of the GoPro. That could be you, if you make sure you become and stay number one in the rankings, to be found on the left side of this page. Don’t worry if you didn’t make it that far, because the entire top 50 will receive one of our prizes!</b></p>
+		</div>
+		<div class="col-md-6">
 		<h5><?= Yii::t('app', 'GoPro HERO Session') ?> <span class="badge">#1</span></h5>
 	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'price-image-lower-first']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html', ['target'=>'_blank']); ?>
 		</div>
