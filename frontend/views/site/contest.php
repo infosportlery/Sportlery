@@ -10,22 +10,19 @@
 
 ?>
 <div class="sub-header">
-	<div class="container">
-	  <div class="row index-contest-signup">
-	  	<div class="col-md-5 col-md-offset-1 col-sm-12">
-	  		<h2 style="color: white;"><b><?= Yii::t('app', 'WELCOME TO THE CONTEST'); ?></b></h2>
-	  		<p class="contest-p-header"><?= Yii::t('app', 'In this contest you can win various prizes such as a GoPro Session, a Samsung GearFit 2, a Drone and many more!'); ?></p>
-	  		<p class="contest-p-header"><?= Yii::t('app', 'You can earn points in the contest by completing different activities, such as inviting your friends, sharing on social media and other actions!'); ?></p>
-	  		<p class="contest-p-header"><?= Yii::t('app', 'After the contest you will be invited to join the sportlery community. This contest helps the community to spread the word and expand.'); ?></p>
-	  		<p class="contest-p-header"><?= Yii::t('app', 'You will be able to find people, with the same level in sports as you, in your neighbourhood, challenge each other, create and join sporting events, and many more. Good Luck! And go get yourself that GoPro!'); ?></p>
-	  	</div>
-	  	<div class="col-md-5 col-sm-12">
-	  		<!-- Video Contest -->
-	  		<iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
-	  	</div> 
-	   </div>
-
+  <div class="row index-contest-signup">
+	<h2 style="color: white;"><b><?= Yii::t('app', 'Welcome to the Ultimate Sports Community!'); ?></b></h2>
+	<div class="col-md-5 col-md-offset-1 col-sm-12">
+		<h3>Launch @ 16th of April!</h3>
+		<h4>Like &amp; Follow us<br/>Share with your friends<br/>Earn points and WIN!</h4>
+		<button class="btn btn-default">How to win?</button>
 	</div>
+	<div class="col-md-5 col-sm-12">
+		<!-- Video Contest -->
+		<h3>Explanation:</h3>
+		<iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
+	</div> 
+   </div>
 </div>
 
 <div class="container contest-container">
