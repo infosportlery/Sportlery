@@ -10,7 +10,7 @@
 
 ?>
 <div class="sub-header" style="background-color:#29719B;">
-  <div class="row index-contest-signup" style="margin-left 0px;">
+  <div class="row" style="margin-left: 0px;">
 	<h1 style="color: white;" class="text-center"><b><?= Yii::t('app', 'Welcome to the Ultimate Sports Community!'); ?></b></h1>
 	<hr class="hr-sm">
 	  <div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
@@ -22,7 +22,6 @@
 	</div>
 	<div class="col-md-5 col-sm-12">
 		<!-- Video Contest -->
-		<h3>Explanation:</h3>
 		<iframe style="width: 100%; height:315px;"  src="https://www.youtube.com/embed/BfjCgfLW7Ec" frameborder="0" allowfullscreen></iframe>
 	</div> 
    </div>
