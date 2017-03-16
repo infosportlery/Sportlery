@@ -36,7 +36,7 @@
 			<queue-community widget-height='1000px'></queue-community>		
 		</div>
 		<div class="col-md-4 col-sm-12">
-			<h2 style="text-align:center;"><b><u><?= Yii::t('app', '2 ways to Win!')?></u></b></h2>
+			<h2 style="text-align:center;"><b><u><?= Yii::t('app', '2 WAYS TO WIN!')?></u></b></h2>
 	      <h3><b><?= Yii::t('app', 'Lottery')?></b></h3>
 	      <h4 style="font-size:22px;">For every <b>50 points</b> you get <b>one ticket</b></h4>
 	      <h4>Next Draw <b>@29th of March!</b> </h4>
@@ -280,7 +280,7 @@
 			<div class="content-lottery">
 				<h3>
 					<b>
-						<?= Yii::t('app', 'THE LOTTERY ')?>
+						<?= Yii::t('app', 'LOTTERY ')?>
 					</b>
 				</h3>
 				<p class="content-lottey-p" style="text-align: justify;"><b>
@@ -307,7 +307,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			
+			<hr class="hr-invisible-sm">
 		</div>
 	</div>
 	<hr class="hr-sm hr-sm-mob">
