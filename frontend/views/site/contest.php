@@ -11,10 +11,10 @@
 ?>
 <div class="sub-header">
   <div class="row index-contest-signup">
-	<h2 style="color: white;"><b><?= Yii::t('app', 'Welcome to the Ultimate Sports Community!'); ?></b></h2>
-	<div class="col-md-5 col-md-offset-1 col-sm-12">
-		<h3>Launch @ 16th of April!</h3>
-		<h4>Like &amp; Follow us<br/>Share with your friends<br/>Earn points and WIN!</h4>
+	<h2 style="color: white;" class="text-center"><b><?= Yii::t('app', 'Welcome to the Ultimate Sports Community!'); ?></b></h2>
+	<div class="col-md-5 col-md-offset-1 col-sm-12 text-center" style="text-align: justify;">
+		<h2><b>Launch @ 16th of April!</b></h2>
+		<h3 style="line-height:1.5;">Like &amp; Follow us<br/>Share with your friends<br/>Earn points and WIN!</h3>
 		<button class="btn btn-default">How to win?</button>
 	</div>
 	<div class="col-md-5 col-sm-12">
