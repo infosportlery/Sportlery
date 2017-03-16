@@ -54,7 +54,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container" id="howto-contest">
 	<hr class="hr-sm">
 	<div class="row">
 		<div class="col-md-12">
