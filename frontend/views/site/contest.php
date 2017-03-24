@@ -65,7 +65,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<!-- Table Points -->
-			<div class="table-responsive">
+			<div class="table-responsive" id="points-table">
 				<table class="table table-bordered">
 					<thead>
 						<tr>
