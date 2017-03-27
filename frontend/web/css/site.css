@@ -16,7 +16,7 @@ BLUE+: #105C89
   background-position: center;
   background-repeat: no-repeat;
   background-size: 70%;
-  background-image: url('../images/double_points.png');
+/*   background-image: url('../images/double_points.png'); */
 }
 
 .infomation-col p {
