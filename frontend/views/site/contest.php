@@ -39,7 +39,7 @@
 			<h2 style="text-align:center;"><b><u><?= Yii::t('app', '2 WAYS TO WIN!')?></u></b></h2>
 	      <h3><b><?= Yii::t('app', 'Lottery')?></b></h3>
 	      <h4 style="font-size:22px;">For every <b>50 points</b> you get <b>one ticket</b></h4>
-	      <h4>Next Draw <b>@29th of March!</b> </h4>
+	      <h4>Next Draw <b>@12th of April!</b> </h4>
           <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
 	      <h3><b><?= Yii::t('app', 'Rankings') ?></b></h3>
 	      <h4><span class="label label-primary">#1</span> <?= Yii::t('app', 'GOPRO HERO SESSION!') ?></h4>
@@ -288,8 +288,8 @@
 					</b></p>
 				
 			      <p><?= Yii::t('app', '15th of March : "Jeroen Spee"') ?><br>
-			      <?= Yii::t('app', '29th of March : "TBA"') ?><br>
-			      <?= Yii::t('app', '15th of April : "TBA"') ?></p>
+			      <?= Yii::t('app', '29th of March : "Frederick Smit"') ?><br>
+			      <?= Yii::t('app', '12th of April : "TBA"') ?></p>
 			</div>
 		</div>
 		<hr class="hr-sm hr-split-rank-lot">
