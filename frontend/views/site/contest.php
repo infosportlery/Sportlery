@@ -14,7 +14,7 @@
 	<h1 style="color: white;" class="text-center"><b><?= Yii::t('app', 'Welcome to the Ultimate Sports Community!'); ?></b></h1>
 	<hr class="hr-sm">
 	  <div class="col-md-5 col-md-offset-1 col-sm-12 text-center">
-		<h2 style="margin-top: 0px;"><b>Contest ends in</b> <b id="demo"></b></h2>
+		<h2 style="margin-top: 0px;"><b id="change-notice">The contest ends in</b> <b id="demo"></b>!</h2>
 		  <hr class="hr-invisible-sm">
 		<h3 style="line-height:1.5;">Like &amp; Follow us,<br/>Share with your friends,<br/>Earn points and... WIN!</h3>
 		  <hr class="hr-invisible-sm">
@@ -36,12 +36,7 @@
 			<queue-community widget-height='1000px'></queue-community>		
 		</div>
 		<div class="col-md-4 col-sm-12">
-			<h2 style="text-align:center;"><b><u><?= Yii::t('app', '2 WAYS TO WIN!')?></u></b></h2>
-	      <h3><b><?= Yii::t('app', 'Lottery')?></b></h3>
-	      <h4 style="font-size:22px;">For every <b>50 points</b> you get <b>one ticket</b></h4>
-	      <h4>Next Draw <b>@12th of April!</b> </h4>
-          <?= html::img('@web/images/drone-contest.png', ['class' => 'prize-image']); ?>
-	      <h3><b><?= Yii::t('app', 'Rankings') ?></b></h3>
+			<h2 style="text-align:center;"><b><u><?= Yii::t('app', 'RANKINGS')?></u></b></h2>
 	      <h4><span class="label label-primary">#1</span> <?= Yii::t('app', 'GOPRO HERO SESSION!') ?></h4>
 	      <?= Html::a(html::img('@web/images/hero-contest-img.png', ['class' => 'prize-image']), 'https://shop.gopro.com/EMEA/cameras/hero-session/CHDHS-104-master.html', ['target'=>'_blank']); ?>
 	      <h4><span class="label label-primary">#2</span> <?= Yii::t('app', 'SAMSUNG GEARFIT 2') ?></h4>
@@ -289,7 +284,7 @@
 				
 			      <p><?= Yii::t('app', '15th of March : "Jeroen Spee"') ?><br>
 			      <?= Yii::t('app', '29th of March : "Frederick Smit"') ?><br>
-			      <?= Yii::t('app', '12th of April : "TBA"') ?></p>
+			      <?= Yii::t('app', '12th of April : "Robin Kempes"') ?></p>
 			</div>
 		</div>
 		<hr class="hr-sm hr-split-rank-lot">
@@ -388,7 +383,8 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "Ended!";
+	document.getElementById("change-notice").innerHTML = "The Contest has"
     }
 }, 1000);
 </script>
